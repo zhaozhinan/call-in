@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css";*/
+
+/*.container .area{ position:relative; margin:0px auto 30px; font-size:14px; border: 1px solid #dcdcdc;}*/
+
+.hotel-restaurant { margin: 0 30px; }
+#itemTwo, #itemThree { display: none; margin-left: 20px; }
+.hotel-restaurant-bd { background: #F9F9FB; border: 1px solid #dcdcdc; padding: 20px; box-sizing: border-box; margin: 20px 0; }
+.hotel-restaurant-label { float: left; margin-top: 8px; width: 7em; text-align: right; }
+.hotel-restaurant-bd-btn { float: right; margin-top: -2px; }
+
+.tabel-detail{ width:100%; text-align:center; }
+.tabel-detail td{ border-top:1px solid #DCDCDC;font-size:12px; height:45px; line-height:18px; padding: 5px; }
+.tabel-detail th{ height:35px;font-size:14px;background:#F9F9FB; }
+.tabel-detail td.first{ background:#F9F9FB; font-size:14px; }
+
+.hotel-restaurant-sale { position: relative; text-align: left; padding: 0 10px}
+.hotel-restaurant-sale-img { padding-right: 40px }
+.hotel-restaurant-sale-img img { float: left; height: 15px; max-height: 20px; position: absolute; left: 8px; top: 0; z-index: 1; }
+.hotel-restaurant-sale-txt { display: inline-block; max-height: 3em; line-height: 1.5em; overflow: hidden}
+.hotel-restaurant-sale-txt img { vertical-align: middle; margin: -2px 8px 0 0; }
+
+.hotel-restaurant-discribe { text-align: left; padding: 8px 10px 5px; width: 12.5em; position: relative; box-sizing: border-box; }
+.hotel-restaurant-discribe-txt { display: inline-block; width: 20em; max-height: 3em; line-height: 1.5em; overflow: hidden; text-overflow: -o-ellipsis-lastline;  display: -webkit-box; -webkit-line-clamp: 2;  line-clamp: 2; -webkit-box-orient: vertical; }
+/*.hotel-restaurant-discribe .blue { position: absolute; bottom: 0; right: 0; z-index: 1; }*/
+/*.hotel-restaurant-discribe-zwf { display: inline-block; width: 4em; }*/
+
+
+/*.J-propChoose .close { text-decoration: none; font-size: 28px; }*/
+.J-propChoose { width: 450px; height: 190px; margin-left: -225px; }
+.J-propChoose-wrap { margin: 40px 30px 0; }
+.J-propChoose-box { padding-top: 20px; margin: 20px 30px; border-top: 1px solid #dcdcdc; }
+.J-propChoose-box-lable { margin-right: 8px; margin-top: 3px; display: inline-block; vertical-align: middle; }
+.J-propChoose-box .btn-minus, .J-propChoose-box .btn-plus, .J-propChoose-box .input-number{ display: inline-block; width: 30px; height: 24px; text-align: center; line-height: 22px; color: #333; font-size: 18px; border: 1px solid #dcdcdc; vertical-align: middle; margin-right: 5px; text-decoration: none; }
+.J-propChoose-box .input-number { padding: 0 10px; font-size: 14px; line-height: 24px }
+.J-propChoose-box .btn-minus:hover, .J-propChoose-box .btn-plus:hover { border-color: #CCC; }
+.J-propChoose-box .btn-minus:active, .J-propChoose-box .btn-plus:active { border-color: #999; }
+.J-propChoose-box .disabled, .J-propChoose-box .disabled:hover, .J-propChoose-box .disabled:active { opacity: 0.8; border-color: #dcdcdc; color: #999; cursor: no-drop; }
+.J-propChoose-box .right { margin-top: -2px; }
+.hotel-restaurant-discribe-name { max-width: 20em; margin:0 auto; }
+
+.J-propDis { height: auto; transform: translate(0,-50%); -webkit-transform: translate(0,-50%); -moz-transform: translate(0,-50%); -o-transform: translate(0,-50%); -ms-transform: translate(0,-50%); top: 50%; margin-top: 0}
+.J-propDis .window-title { text-align: center; border-bottom: 1px solid #dcdcdc; height: 40px; line-height: 40px; }
+/*.J-propDis .close { text-decoration: none; font-size: 28px; top: 8px; right: 8px; }*/
+.J-propDis .J-propDis-box { margin: 10px 20px; line-height: 18px; font-size: 12px; }
+.J-propDis .J-propDis-box div { margin: 5px 0; }
+
+

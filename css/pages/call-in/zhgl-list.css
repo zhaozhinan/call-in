@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css";*/
+
+.acc-management-list-bd { border: 1px solid #dcdcdc; padding: 20px; background: #F9F9FB; margin-top: 20px; }
+.acc-management-list-bd .input { margin-right: 20px; }
+.acc-management-list-bd .btn { vertical-align: middle; margin-top: -1px; }
+.acc-management-list-num { margin-top: 20px; }
+.acc-management-list-num .right { margin-top: 8px; }
+
+.tabel-detail{ width:100%; text-align:center}
+.tabel-detail td{ border-top:1px solid #DCDCDC;font-size:12px; height:45px; line-height:18px; }
+.tabel-detail th{ height:35px;font-size:14px;background:#F9F9FB; }
+.tabel-detail td.first{ background:#F9F9FB; font-size:14px; }
+
+.css-opt { width: 300px; height: 100px; padding: 30px; text-align: center; margin-left: -150px; margin-top: -80px }
+.css-opt .css-opt-box-txt { margin: 20px 0 30px; }

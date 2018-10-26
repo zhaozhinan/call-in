@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+html { -webkit-text-size-adjust:none}
+body,button,input,select,textarea{ font:14px/1.125 Microsoft Yahei, regular; _font-family:"微软雅黑"; color:#333;word-wrap:break-word}
+body,dl,dt,dd,ul,ol,li,th,td,div,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr,header,section,article,nav{ margin:0; padding:0}
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0; font-weight:100}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color:#999}
+table,tr,td,th{ border-collapse:collapse; border-spacing:0; border-color:#DCDCDC}
+td,th{ border:1px solid #DCDCDC;word-break:break-all; work-wrap:break-word}
+td, td label{ font-size: 12px }
+li{ list-style:none}
+fieldset,img{ border:0}
+q:before,q:after{ content:''}
+input, textarea, button{ outline-style:none}
+textarea{ resize:none; border: 1px solid #dcdcdc;}
+button,input[type=submit]{ cursor:pointer; font-family:Microsoft Yahei, regular}
+img{ vertical-align:top; border: none}
+address,caption,cite,code,dfn,em,i,th,var{ font-style:normal; font-weight:normal}
+legend{ color:#000}
+abbr,acronym{ border:0; font-variant:normal}
+/*label{ cursor:pointer}*/
+pre{ white-space:normal}
+a{ text-decoration:none; color:#1996f9}
+a:hover{ text-decoration:underline; cursor:pointer; color:#055493}
+.clear{ display:block; width:0; height:0; line-height:0; clear:both; overflow:hidden}
+.clearfix:after,.clearfix:before{ content:""; display:table}
+.clearfix:after{ clear:both}
+.clearfix{ *zoom:1; clear:both}
+* html .clearfix,*+html .clearfix{ zoom:1}
+.left{ float:left}
+.right{ float:right}
+.left { _float: left; float: left !important}
+.right{ _float:right; float:right !important}
+.position{position:relative}
+.align-center { _text-align:center; text-align:center !important}
+.align-right { _text-align:right; text-align:right !important}
+.align-left { _text-align:left; text-align:left !important}
+.vt{ vertical-align:top}
+.vm{ vertical-align:middle}
+.vb{ vertical-align:bottom}
+.hide { _display: none; display: none !important}
+.show { _display: block; display: block !important}
+.invisible { visibility: hidden !important}
+.text-hide { font: 0/0; color: transparent; text-shadow: none; background-color: transparent; border:none}
+.hidden { display: none !important; visibility: hidden !important}
+.affix { position: fixed !important}
+.no-bor{ border:none !important}
+.red{ _color:#f05229; color:#f05229 !important}
+.orange{ _color:#ED542B; color:#ED542B !important}
+.blue{ _color:#1996f9; color:#1996f9}
+.blue2{ _color:#26A9E3; color:#26A9E3 !important}
+.green{_color:#84c309; color:#84c309 !important}
+
+.hui{_color:#999; color:#999 !important}
+.red-bor{ border-color:#F00 !important}
+.blue-bor{ border:1px solid #0194FC !important}
+.grey{ background:#CCC !important; box-shadow:none !important}
+.inp{ height:38px; line-height:38px; border:1px solid #DCDCDC; padding-left:10px; border-radius:5px}
+.check{ margin-right:5px; position:relative; top:2px}
+.inp:hover{ border-color:#DDD}
+.inp:focus{ border-color:#0194FC}
+
+.f12{ font-size:12px}
+.f14{ font-size:14px}
+.f15{ font-size:15px}
+.f16{ font-size:16px}
+.f18{ font-size:18px}
+.mt8{ margin-top:6px}
+.mt10{ margin-top:10px}
+.mt20{ margin-top:20px}
+.mt30{ margin-top:30px}
+.ml8{ margin-left:8px}
+.ml10{ margin-left:10px}
+.ml15{ margin-left:15px}
+.ml20{ margin-left:20px}
+.ml30{ margin-left:30px}
+.mr8{ margin-right:8px}
+.mr10{ margin-right:10px}
+.mr15{ margin-right:15px}
+.mr20{ margin-right:20px}
+.mr30{ margin-right:30px}
+.mb10{ margin-bottom:10px}
+.mb20{ margin-bottom:20px}
+.mb30{ margin-bottom:30px}
+.mb40{ margin-bottom: 40px;}
+.m50 {width: 50px;}

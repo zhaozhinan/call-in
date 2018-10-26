@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css";*/
+
+.zhgl-tjzh { margin-top: 30px; }
+.zhgl-tjzh-item { margin-bottom: 20px; }
+.zhgl-tjzh-item-label { width: 6em; float: left; margin-top: 6px; line-height: 18px; }
+.zhgl-tjzh-item .input,
+.zhgl-tjzh-item .bea-sele { margin-right: 10px; float: left; }
+.zhgl-tjzh-item .error { margin-top: 8px; float: left; }
+.zhgl-tjzh-btn { margin-left: 6em; }
+.btn-disabled { background: #CCC; cursor: no-drop; pointer-events: none; box-shadow: none; }
