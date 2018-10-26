@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" >
+<meta http-equiv="Content-Language" content="zh-cn" >
+<title>角色管理</title>
+<meta content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1,user-scalable=yes" name="viewport">
+<link href="../../css/common/reset.css" rel="stylesheet" />
+<link href="../../css/common/base.css" rel="stylesheet" />
+<link href="../../css/pages/call-in/role-management.css" rel="stylesheet" />
+</head>
+
+<body>
+<header class="top">
+  <span class="top-login">您好, zhaozhinan@eventmosh</span>
+  <a href="http://b.evente.cn/account">帐号权限</a>
+  <a href="javascript:alert('即将上线');">活动学堂</a>
+  <a href="javascript:alert('即将上线');">消息中心</a>
+  <a href="javascript:;" onclick="if (confirm('确定要注销账户？')) { location.href= 'http://login.evente.cn/b/logout'; }">退出帐号</a>
+  <a href="javascript:alert('即将上线');">App下载</a>
+</header>
+<nav class="mainNav">
+  <div class="area">
+    <h1><a class="logo" title="进入活动易首页" href="http://www.evente.cn/welcome">活动易</a></h1>
+    <div class="right" style="margin-top:24px">
+    	<!-- 顶级功能菜单 -->
+      <ul class="nav nav-toplist">
+        <li class="first on">
+          <a href="" style="border-bottom:3px solid #0095fb;color:#0063b3">演出赛事</a>
+         </li>
+        <li class="">
+          <a href="">商品小店</a>
+        </li>
+        <li class="">
+          <a href="">会员积分</a>
+        </li>
+        <li class="">
+          <a href="">订单中心</a>
+        </li>
+        <li class="">
+          <a href="">财务报表</a>
+        </li>
+      </ul>
+   	</div>
+  </div>
+</nav>
+<div class="crumbs area">
+	我的当前位置：<a href="#">角色管理</a>
+</div>
+
+<div class="container clearfix">
+  <!-- 左侧主导航 -->
+	<div class="leftMenu">
+		<div class="bg-menuNav"></div>
+		<ul>
+			<li> <a href="javascript:;"><s class="icon-hdgl"></s>用户分析<i class="menu-arrow"></i></a>
+				<ul class="menu">
+					<li><a href="javascript:;">用户列表</a></li>
+					<li><a href="javascript:;">购票者分析</a></li>
+					<li><a href="javascript:;">会员分析</a></li>
+				</ul>
+			</li>
+			<li> <a href="javascript:;"><s class="icon-hdgl"></s>会员积分<i class="menu-arrow"></i></a>
+				<ul class="menu">
+					<li><a href="javascript:;">会员级别</a></li>
+					<li><a href="javascript:;">会员积分</a></li>
+					<li><a href="javascript:;">会员卡</a></li>
+				</ul>
+			</li>
+			<li> <a href="javascript:;"><s class="icon-hdgl"></s>用户通知<i class="menu-arrow"></i></a>
+				<ul class="menu">
+					<li><a href="javascript:;">群发短信</a></li>
+					<li><a href="javascript:;">群发邮件</a></li>
+				</ul>
+			</li>
+			<li> <a href="javascript:;"><s class="icon-hdgl"></s>客服信息<i class="menu-arrow"></i></a>
+				<ul class="menu">
+					<li><a href="javascript:;">客服留言</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+  <div class="container-r">
+		<div class="panel">
+      <div class="panel-title"><span class="panel-tit left">角色管理</span></div>
+    </div>
+    <div class="mt20 conSearchBox">
+      <div class="input-list50">
+        <label class="left labelName"><em class="red f14">*</em>角色名称：</label>
+				<input class="input left" type="text" style="width:222px" value="">
+        <a class="btn btn-e ml20" href="javascript:;" style="margin-top:-3px">添加角色</a>
+			</div>
+		</div>
+		<table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mt20">
+			<tr>
+				<th width="200">角色名称</th>
+				<th>权限</th>
+				<th width="200">操作</th>
+			</tr>
+			<tr>
+				<td>普通员工</td>
+				<td>产品中心、订单中心查看、订单中心修改</td>
+				<td>
+          <div>
+            <a href="javascript:;" class="blue role-modify">修改</a>
+            <a href="javascript:;" class="blue ml10 mr10 role-disabled">禁用</a>
+            <a href="javascript:;" class="blue role-authorization">授权</a>
+          </div>
+					<div style="display:none">
+            <a href="javascript:;" class="blue role-enabled">启用</a>
+          </div>
+				</td>
+			</tr>
+      <tr>
+				<td>主管</td>
+				<td>产品中心、订单中心查看、订单中心修改、财务报表</td>
+				<td>
+          <div>
+            <a href="javascript:;" class="blue role-modify">修改</a>
+            <a href="javascript:;" class="blue ml10 mr10 role-disabled">禁用</a>
+            <a href="javascript:;" class="blue role-authorization">授权</a>
+          </div>
+					<div style="display:none">
+            <a href="javascript:;" class="blue role-enabled">启用</a>
+          </div>
+				</td>
+			</tr>
+      <tr>
+				<td>财务</td>
+				<td>订单中心查看、财务报表</td>
+				<td>
+          <div>
+            <a href="javascript:;" class="blue role-modify">修改</a>
+            <a href="javascript:;" class="blue ml10 mr10 role-disabled">禁用</a>
+            <a href="javascript:;" class="blue role-authorization">授权</a>
+          </div>
+					<div style="display:none">
+            <a href="javascript:;" class="blue role-enabled">启用</a>
+          </div>
+				</td>
+			</tr>
+      <tr>
+				<td>管理员</td>
+				<td>账号管理</td>
+				<td>
+          <div>
+            <a href="javascript:;" class="blue role-modify">修改</a>
+            <a href="javascript:;" class="blue ml10 mr10 role-disabled">禁用</a>
+            <a href="javascript:;" class="blue role-authorization">授权</a>
+          </div>
+					<div style="display:none">
+            <a href="javascript:;" class="blue role-enabled">启用</a>
+          </div>
+				</td>
+			</tr>
+		</table>
+		<div class="clearfix">
+			<div class="pagelist right mt20 mb20">
+				<ul><li class="current">1</li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">下一页</a></li></ul>
+			</div>
+		</div>
+
+	</div>
+</div>
+<footer>
+  <div class="area clearfix">
+    <ul class="footer-left footer">
+      <li style=""><a href="javascript:;">关于我们</a></li>
+      <li style="margin-top:16px"><a href="javascript:;">功能介绍</a></li>
+      <li style="margin-top:16px"><a href="javascript:;">意见反馈</a></li>
+    </ul>
+    <ul class="footer-center footer">
+      <li style=""><a href="javascript:;" style="padding-left:0">联系我们</a></li>
+      <li class="call" style="margin:16px 0"><a href="javascript:;">400-600-5412</a></li>
+      <li class="mail" style=""><a href="javascript:;">BD@eventmosh.com</a></li>
+    </ul>
+    <ul class="footer-right footer">
+      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evetmosh.jpg" alt=""><span>eventmosh</span></li>
+      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evente.jpg" alt=""><span>evente</span></li>
+    </ul>
+  </div>
+</footer>
+<!-- 弹窗 -->
+<div class="my-loyer" style="display:block"></div>
+<!-- 二次确认弹窗 -->
+<div class="my-window my-window-confirm">
+  <div class="my-window-confirm-box align-center">
+    <div class="f14 mb20 my-window-confirm-box-text">确定要禁用本角色吗？</div>
+    <div>
+      <a href="javascript:;" class="btn btn-e mr10 my-window-btn-cancel">取消</a>
+      <a href="javascript:;" class="btn btn-e ml10 my-window-btn-ok">确定</a>
+    </div>
+  </div>
+</div>
+<!-- 修改角色名称弹窗 -->
+<div class="my-window my-window-modify-role">
+  <div class="my-window-modify-role-box align-center">
+    <div class="f14 mb20 my-window-modify-role-text">
+      <input type="text" class="input">
+    </div>
+    <div>
+      <a href="javascript:;" class="btn btn-e mr10 my-window-btn-cancel">取消</a>
+      <a href="javascript:;" class="btn btn-e ml10 my-window-btn-ok">确定</a>
+    </div>
+  </div>
+</div>
+<!-- 授权 -->
+<div class="my-window my-window-authorization" style="display:block;">
+  <div class="my-window-title">权限设置
+    <span class="my-window-close"><img src="http://static.lab.chimelong.com/evente/c/desktop/images/icon-close.png" alt="关闭"></span>
+  </div>
+  <div class="my-window-authorization-box">
+    <div class="ml20 f14">call-in系统</div>
+    <div class="f14 my-window-authorization-box-scroll">
+      <!-- 产品中心 -->
+      <div class="mb10 clearfix list_child">
+        <div id="moudian_0" class="seat_ID"></div>
+        <input id="CheckBox20" type="checkbox" name="menus[]" value="20" class="CheckBoxClass">
+        <label for="CheckBox20" onclick="handleSelect(this, 'menus')" class="CheckBoxLabelClass menusFirstClass W120 nameB" style="margin-left: 10px;">产品中心</label>
+        <!-- 一级菜单下的actions -->
+        <div class="cer tree_line second_tree_line" style="margin-left: 15px;" id="menus_div_10">
+          <input id="CheckBox10" type="checkbox" name="menus[]" value="10" class="CheckBoxClass">
+          <label for="CheckBox10-1-" onclick="handleSelect(this, 'menus')" current-parent="20" class="CheckBoxLabelClass menusSecondClass W120">1-1</label>
+          <!-- 二级菜单下的actions -->
+          <div class="cer tree_line third_tree_line" style="margin-left: 7px;">
+            <input id="CheckBox111" type="checkbox" name="actions[]" value="111" class="CheckBoxClass">
+            <label for="CheckBox111-1-" onclick="handleSelect(this, 'actions')" current-parent="10" class="CheckBoxLabelClass W120" data-trigger="none">1-1-1</label>
+          </div>
+        </div>
+      </div>
+      <!-- 订单中心 -->
+      <div class="mb10 clearfix list_child">
+        <div id="moudian_1" class="seat_ID"></div>
+        <input id="CheckBox30" type="checkbox" name="menus[]" value="30" class="CheckBoxClass">
+        <label for="CheckBox30" onclick="handleSelect(this, 'menus')" class="CheckBoxLabelClass menusFirstClass W120 nameB" style="margin-left: 10px;">订单中心</label>
+        <!-- 一级菜单下的actions -->
+        <div class="cer tree_line second_tree_line" style="margin-left: 15px;" id="menus_div_31">
+          <input id="CheckBox31" type="checkbox" name="menus[]" value="31" class="CheckBoxClass">
+          <label for="CheckBox31-1-" onclick="handleSelect(this, 'menus')" current-parent="30" class="CheckBoxLabelClass menusSecondClass W120">查看</label>
+          <!-- 二级菜单下的actions -->
+          <div class="cer tree_line third_tree_line" style="margin-left: 7px;">
+            <input id="CheckBox131" type="checkbox" name="actions[]" value="131" class="CheckBoxClass">
+            <label for="CheckBox131-1-" onclick="handleSelect(this, 'actions')" current-parent="31" class="CheckBoxLabelClass W120" data-trigger="none">2-1-1</label>
+          </div>
+        </div>
+        <div class="cer tree_line second_tree_line" style="margin-left: 15px;" id="menus_div_41">
+          <input id="CheckBox41" type="checkbox" name="menus[]" value="41" class="CheckBoxClass">
+          <label for="CheckBox41-1-" onclick="handleSelect(this, 'menus')" current-parent="30" class="CheckBoxLabelClass menusSecondClass W120">修改</label>
+          <!-- 二级菜单下的actions -->
+          <div class="cer tree_line third_tree_line" style="margin-left: 7px;">
+            <input id="CheckBox141" type="checkbox" name="menus[]" value="141" class="CheckBoxClass">
+            <label for="CheckBox141-1-" onclick="handleSelect(this, 'menus')" current-parent="41" class="CheckBoxLabelClass menusThirdClass W120">2-2-1</label>
+            <!-- actions -->
+            <div class="cer tree_line fourth_tree_line" style="margin-left: 7px;">
+              <input id="CheckBox1411" type="checkbox" name="actions[]" value="1411" class="CheckBoxClass">
+              <label for="CheckBox1411-1-" onclick="handleSelect(this, 'actions')" current-parent="141" class="CheckBoxLabelClass W120" data-trigger="none">2-2-1-1</label>
+              <input id="CheckBox1412" type="checkbox" name="actions[]" value="1412" class="CheckBoxClass">
+              <label for="CheckBox1412-1-" onclick="handleSelect(this, 'actions')" current-parent="141" class="CheckBoxLabelClass W120" data-trigger="none">2-2-1-2</label>
+            </div>
+          </div>
+          <div class="cer tree_line third_tree_line" style="margin-left: 7px;">
+            <input id="CheckBox151" type="checkbox" name="menus[]" value="151" class="CheckBoxClass">
+            <label for="CheckBox151-1-" onclick="handleSelect(this, 'menus')" current-parent="41" class="CheckBoxLabelClass menusThirdClass W120">2-2-2</label>
+            <!-- actions -->
+            <div class="cer tree_line fourth_tree_line" style="margin-left: 7px;">
+              <input id="CheckBox1511" type="checkbox" name="actions[]" value="1511" class="CheckBoxClass">
+              <label for="CheckBox1511-1-" onclick="handleSelect(this, 'actions')" current-parent="151" class="CheckBoxLabelClass W120" data-trigger="none">2-2-2-1</label>
+              <input id="CheckBox1512" type="checkbox" name="actions[]" value="1512" class="CheckBoxClass">
+              <label for="CheckBox1512-1-" onclick="handleSelect(this, 'actions')" current-parent="151" class="CheckBoxLabelClass W120" data-trigger="none">2-2-2-2</label>
+              <input id="CheckBox1513" type="checkbox" name="actions[]" value="1513" class="CheckBoxClass">
+              <label for="CheckBox1513-1-" onclick="handleSelect(this, 'actions')" current-parent="151" class="CheckBoxLabelClass W120" data-trigger="none">2-2-2-3</label>
+              <input id="CheckBox1514" type="checkbox" name="actions[]" value="1514" class="CheckBoxClass">
+              <label for="CheckBox1514-1-" onclick="handleSelect(this, 'actions')" current-parent="151" class="CheckBoxLabelClass W120" data-trigger="none">2-2-2-4</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 财务报表 -->
+      <div class="mb10 clearfix list_child">
+        <div id="moudian_2" class="seat_ID"></div>
+        <input id="CheckBox32" type="checkbox" name="menus[]" value="32" class="CheckBoxClass">
+        <label for="CheckBox32" onclick="handleSelect(this, 'menus')" class="CheckBoxLabelClass menusFirstClass W120 nameB" style="margin-left: 10px;">财务报表</label>
+        <!-- 一级菜单下的actions -->
+        <div class="cer tree_line second_tree_line" style="margin-left: 15px;" id="menus_div_32">
+          <input id="CheckBox132" type="checkbox" name="menus[]" value="132" class="CheckBoxClass">
+          <label for="CheckBox132-1-" onclick="handleSelect(this, 'menus')" current-parent="32" class="CheckBoxLabelClass menusSecondClass W120">3-1</label>
+          <!-- 二级菜单下的actions -->
+          <div class="cer tree_line third_tree_line" style="margin-left: 7px;">
+            <input id="CheckBox1321" type="checkbox" name="actions[]" value="1321" class="CheckBoxClass">
+            <label for="CheckBox1321-1-" onclick="handleSelect(this, 'actions')" current-parent="132" class="CheckBoxLabelClass W120">3-1-1</label>
+          </div>
+        </div>
+      </div>
+      <!-- 账号管理 -->
+      <div class="mb10 clearfix list_child">
+        <div id="moudian_0" class="seat_ID"></div>
+        <input id="CheckBox33" type="checkbox" name="menus[]" value="33" class="CheckBoxClass">
+        <label for="CheckBox33" onclick="handleSelect(this, 'menus')" class="CheckBoxLabelClass menusFirstClass W120 nameB" style="margin-left: 10px;">账号管理</label>
+        <!-- 一级菜单下的actions -->
+        <div class="cer tree_line second_tree_line" style="margin-left: 15px;" id="menus_div_33">
+          <input id="CheckBox133" type="checkbox" name="menus[]" value="133" class="CheckBoxClass">
+          <label for="CheckBox133-1-" onclick="handleSelect(this, 'menus')" current-parent="33" class="CheckBoxLabelClass menusSecondClass W120">4-1</label>
+          <!-- 二级菜单下的actions -->
+          <div class="cer tree_line third_tree_line" style="margin-left:7px;">
+            <input id="CheckBox1331" type="checkbox" name="actions[]" value="1331" class="CheckBoxClass">
+            <label for="CheckBox1331-1-" onclick="handleSelect(this, 'actions')" current-parent="133" class="CheckBoxLabelClass W120">4-1-1</label>
+            <input id="CheckBox1332" type="checkbox" name="actions[]" value="1332" class="CheckBoxClass">
+            <label for="CheckBox1332-1-" onclick="handleSelect(this, 'actions')" current-parent="133" class="CheckBoxLabelClass W120">4-1-1</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="align-center mt10">
+      <a href="javascript:;" class="btn btn-e mr10 my-window-btn-ok">授权</a>
+      <a href="javascript:;" class="btn btn-e ml10 my-window-btn-cancel">取消</a>
+    </div>
+  </div>
+</div>
+
+<script src="../../js/lib/jquery.min.js"></script>
+<script src="../../js/plugins/My97DatePicker/WdatePicker.js"></script>
+<script src="../../js/main.js"></script>
+<script>
+$('.CheckBoxClass').checkBoxClass();
+
+  function res(){
+  	var h_init = $(window).height(),
+  	h_header = $("header").outerHeight(),
+  	h_crumbs = $(".crumbs").outerHeight(),
+  	h_nav = $(".mainNav").outerHeight(),
+  	h_footer = $("footer").outerHeight();
+  	h_main = h_init - h_header - h_crumbs - h_nav - h_footer/* - 50 - 50 - 79*/-80;
+  	$(".container .con").css("min-height",h_main);
+  }
+  res();
+  $(window).resize(res);
+
+  // 角色的 启用和禁用
+ $('.role-disabled, .role-enabled').on('click', function(e){
+   console.log(e, 'e');
+   var This = $(this),
+       ThisText = This.text();
+   if (ThisText === '禁用') {
+     $('.my-window-confirm').find('.my-window-confirm-box-text').text('确定要禁用本角色吗？');
+   }
+   if (ThisText === '启用') {
+     $('.my-window-confirm').find('.my-window-confirm-box-text').text('确定要启用本角色吗？');
+   }
+
+   $('.my-loyer, .my-window-confirm').fadeIn(200);
+   $('.my-window-btn-cancel').on('click', function(){
+     $('.my-loyer, .my-window').fadeOut(200);
+   })
+   $('.my-window-btn-ok').on('click', function(){
+     $('.my-loyer, .my-window').fadeOut(200);
+     This.parent().hide();
+     This.parent().siblings().show();
+   })
+ })
+// 角色修改
+ $('.role-modify').on('click', function(){
+   $('.my-loyer, .my-window-modify-role').fadeIn(200);
+   $('.my-window-btn-cancel').on('click', function(){
+     $('.my-loyer, .my-window').fadeOut(200);
+   })
+   $('.my-window-btn-ok').on('click', function(){
+     $('.my-loyer, .my-window').fadeOut(200);
+     // do something
+   })
+ })
+
+ // 角色权限
+ $('.role-authorization').on('click', function(){
+   $('.my-loyer, .my-window-authorization').fadeIn(200);
+   $('.my-window-btn-cancel').on('click', function(){
+     $('.my-loyer, .my-window').fadeOut(10);
+   })
+   $('.my-window-btn-ok').on('click', function(){
+     $('.my-loyer, .my-window').fadeOut(10);
+     // do something
+   })
+ })
+</script>
+
+<script>
+    $('.CheckBoxClass').unbind('click');
+    $('#group-list li').unbind('click');
+
+
+    var _selectMenusType  = 'menus';
+    var _selectActionType = 'actions';
+
+    var _selectTrueClass  = "LabelSelected";
+    var _menusDivId       = 'menus_div_';
+    var _checkIdChar      = 'CheckBox';
+    var _checkActIdChar   = 'CheckBox_act_';
+    var _saveRolesUrl     = '/childsrbac';
+    var _ajaxReturnOk     = 'success';
+    function handleSelect (obj, type)
+    {
+        var jQObj               = $(obj);
+        var selectDivContainer  = jQObj.parent();
+        var checkBox            = jQObj.prev('input');
+
+        //选中菜单
+        if (type == _selectMenusType) {
+
+            //是否选中
+            if (jQObj.hasClass(_selectTrueClass)) {
+                //选中时 要取消子集
+                selectDivContainer.find('input[type="checkbox"]').each(function (){
+                    $(this).next('label').removeClass(_selectTrueClass);
+                    $(this).prop("checked", false);
+                });
+
+                //父级别取消
+                var parentChar   = jQObj.attr('current-parent'); //父级标
+                if (parentChar > 0) {
+                    var idStr = _checkIdChar + parentChar;
+                    delParentNode(idStr);
+                }
+
+            } else {
+                //未选中 选中子集
+                selectDivContainer.find('input[type="checkbox"]').each(function () {
+                    var currentLabel = $(this).next('label');
+                    currentLabel.addClass(_selectTrueClass);
+                    $(this).prop("checked", true);
+                });
+
+                //父级别选中
+                var parentChar   = jQObj.attr('current-parent'); //父级标
+                if (parentChar > 0) {
+                    var idStr = _checkIdChar + parentChar;
+                    addParentNode(idStr);
+                }
+
+            }
+        }
+
+        //选中 action
+        if(type == _selectActionType){
+            var currentLabel = checkBox.next('label');
+            //是否选中
+            if (jQObj.hasClass(_selectTrueClass)) {
+                //取消当前
+                currentLabel.removeClass(_selectTrueClass);
+                checkBox.prop("checked", false);
+
+                //父级别取消
+                var parentChar   = jQObj.attr('current-parent'); //父级标
+                if (parentChar > 0) {
+                    var idStr = _checkIdChar + parentChar;
+                    delParentNode(idStr);
+                }
+
+            } else {
+                //未选中 选当前
+                currentLabel.addClass(_selectTrueClass);
+                checkBox.prop("checked", true);
+                //父级别选中
+                var parentChar   = jQObj.attr('current-parent'); //父级标
+                if (parentChar > 0) {
+                    var idStr = _checkIdChar + parentChar;
+                    addParentNode(idStr);
+                }
+
+            }
+        }
+    }
+
+    /**
+     * 选中父级
+     *
+     * @param idStr
+     */
+    function addParentNode(idStr)
+    {
+        var currentObj = $('#'+idStr);
+
+        currentObj.prop("checked", true);
+        currentObj.next('label').addClass(_selectTrueClass);
+        var parentChar   = currentObj.next('label').attr('current-parent'); //父级标
+        //递归找父级
+        if (parentChar > 0) {
+            idStr = _checkIdChar + parentChar;
+            addParentNode(idStr);
+        }
+    }
+
+    /**
+     * 取消父级
+     */
+    function delParentNode(idStr)
+    {
+        var currentObj = $('#'+idStr);
+        var selectDivContainer  = currentObj.parent();
+        var num        = 0;
+
+        //查找除了本身
+        selectDivContainer.children().find('input[type="checkbox"]').each(function(index){
+            if ( $(this).is(':checked') == true) {
+                num += 1;
+            }
+        });
+
+        //子项无选中
+        if (num <= 0 ){
+            //取消父级
+            currentObj.prop("checked", false);
+            currentObj.next('label').removeClass(_selectTrueClass);
+
+            //递归找父级
+            var parentChar   = currentObj.next('label').attr('current-parent'); //父级标
+            if (parentChar > 0) {
+                idStr = _checkIdChar + parentChar;
+                delParentNode(idStr);
+            }
+        }
+
+    }
+
+    //取消全部选中
+    function cancelAllChecked()
+    {
+        var selectDivContainer = $('#role_auth_list');
+        selectDivContainer.find('input[type="checkbox"]').each(function (){
+            $(this).next('label').removeClass(_selectTrueClass);
+            $(this).prop("checked", false);
+        });
+    }
+
+    //动态部分选中
+    function selectItems(arr, type)
+    {
+        var checkboxChar = '';
+        //action
+        if (type == _selectActionType) {
+            checkboxChar = _checkActIdChar;
+        }
+
+        //菜单
+        if (type == _selectMenusType) {
+            checkboxChar = _checkIdChar;
+        }
+
+        if (arr.length > 0) {
+            for(var i=0;i<arr.length;i++) {
+                var idStr = '#'+checkboxChar+arr[i];
+                $(idStr).prop("checked", true);
+                console.log($(idStr).prop("checked")+'  '+idStr)
+                $(idStr).next('label').addClass(_selectTrueClass);
+            }
+        }
+    }
+
+    //添加角色
+    $('#addroleName').on('click', function(){
+        var param = $('#role_name').serialize();
+        $.ajax({
+            url: "/Childsrbac/addRoles",
+            type: 'post',
+            data: param,
+            success: function(data){
+                var jsonRes = eval(data);
+                if (jsonRes.code == _ajaxReturnOk) {
+                    $.showDialog(jsonRes.msg, 'success');
+                    location.reload(window.location.href);
+                    return;
+                } else {
+                    $.showDialog(jsonRes.msg);
+                }
+
+            },
+            error:function(){
+                $.showDialog('请求异常，请稍后重试!');;
+            }
+        });
+    });
+
+    //修改角色权限
+    $('#submitRolesAuth').on('click', function(){
+        //alert($('#subInputValue').serialize());
+        var roleId = $('#group-list').find("li.on").attr('value');
+
+        var param = $('#subInputValue').serialize();
+        $.ajax({
+            url: "/Childsrbac/updateRoles",
+            type: 'post',
+            data: param+'&roles_id='+roleId,
+            success: function(data){
+                var jsonRes = eval(data);
+                if (jsonRes.code == _ajaxReturnOk) {
+                    $.showDialog(jsonRes.msg, 'success');
+                } else {
+                    $.showDialog(jsonRes.msg);
+                }
+            },
+            error:function(){
+                $.showDialog('请求异常，请稍后重试!');
+            }
+        });
+    });
+
+    //#选中角色
+    $('#group-list li').on('click', function() {
+        var roleId = $.trim($(this).attr('value'));
+        var param  = {roles_id: roleId};
+        cancelAllChecked();
+        $.ajax({
+            url: "/Childsrbac/getRoleItem",
+            type: 'post',
+            data: param,
+            success: function(data){
+                var jsonRes  = eval(data);
+                var rulesSet = jsonRes.data.rules_set;
+
+                if (jsonRes.code == _ajaxReturnOk) {
+                    //选中角色
+                    if (rulesSet && rulesSet.hasOwnProperty(_selectActionType) && rulesSet.hasOwnProperty(_selectMenusType) ){
+                        var actionsArr = rulesSet[_selectActionType];
+                        var menusArr   = rulesSet[_selectMenusType];
+                        selectItems(actionsArr, _selectActionType);
+                        selectItems(menusArr, _selectMenusType);
+                    }
+
+                } else {
+                    $.showDialog(jsonRes.msg);
+                }
+            },
+            error:function(){
+                $.showDialog('请求异常，请稍后重试!');
+            }
+        });
+
+    });
+
+
+</script>
+</body>
+</html>

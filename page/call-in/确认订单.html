@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" >
+<meta http-equiv="Content-Language" content="zh-cn" >
+<title>确认订单</title>
+<meta content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1,user-scalable=yes" name="viewport">
+<link href="../../css/common/reset.css" rel="stylesheet" />
+<link href="../../css/common/base.css" rel="stylesheet" />
+<link href="../../css/pages/call-in/dingdan.css" rel="stylesheet" />
+</head>
+
+<body>
+<header class="top">
+  <span class="top-login">您好, zhaozhinan@eventmosh</span>
+  <a href="http://b.evente.cn/account">帐号权限</a>
+  <a href="javascript:alert('即将上线');">活动学堂</a>
+  <a href="javascript:alert('即将上线');">消息中心</a>
+  <a href="javascript:;" onclick="if (confirm('确定要注销账户？')) { location.href= 'http://login.evente.cn/b/logout'; }">退出帐号</a>
+  <a href="javascript:alert('即将上线');">App下载</a>
+</header>
+<nav class="mainNav">
+  <div class="area">
+    <h1><a class="logo" title="进入活动易首页" href="http://www.evente.cn/welcome">活动易</a></h1>
+    <div class="right" style="margin-top:24px">
+    	<!-- 顶级功能菜单 -->
+      <ul class="nav nav-toplist">
+        <li class="first on">
+          <a href="" style="border-bottom:3px solid #0095fb;color:#0063b3">演出赛事</a>
+         </li>
+        <li class="">
+          <a href="">商品小店</a>
+        </li>
+        <li class="">
+          <a href="">会员积分</a>
+        </li>
+        <li class="">
+          <a href="">订单中心</a>
+        </li>
+        <li class="">
+          <a href="">财务报表</a>
+        </li>
+      </ul>
+   	</div>
+  </div>
+</nav>
+<div class="crumbs area">
+	我的当前位置：<span class="on">确认订单</span>
+</div>
+<div class="container clearfix">
+  <div class="area" style="padding:0 20px;box-sizing:border-box">
+    <div class="panel">
+      <div class="panel-title clearfix" style="margin:0;">
+        <span class="panel-tit">确认订单</span>
+      </div>
+    </div>
+    <div class="css-bgwhite">
+      <table border="0" cellspacing="0" cellpadding="0" class="tabel-order mt20" style="padding:0 20px">
+        <tbody>
+          <tr>
+            <th width="400" class="align-l">
+              <div style="width:150px;margin:0 auto">产品</div>
+            </th>
+            <th width="130">单价</th>
+            <th width="190">数量</th>
+            <th width="130">小计</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- 带有房间、门票信息 表格 -->
+    <div class="dingdan mt20">
+      <div class="table-box mb20">
+        <table border="0" cellspacing="0" cellpadding="0" class="tabel-order tabel-order-gift">
+          <tr>
+            <td width="400" class="first-td align-l clearfix">
+              <div class="piao-xinxi">
+                <p class="po-top"><span class="room-type-labels-item room-type-labels-item-promotion">促销</span>广州长隆酒店</p>
+                <div class="hui clearfix">高级房大床房2天1晚双人游单园游套票单园游套票（动物世界）
+                  <a href="javascript:;" class="blue piao-xinxi-detail">详情></a>
+                  <div class="piao-xinxi-detail-fukuang">
+                    <div>产品详情：</div>
+                    <ul>
+                      <li>产品包括：</li>
+                      <li>1、广州长隆野生动物世界门票2张；</li>
+                      <li>2、酒店主题客房1间1晚；</li>
+                      <li>3、双人自助早餐一份；</li>
+                      <li>4、获得欢迎饮品及水果；</li>
+                      <li>5、免费使用高速无线上网服务。</li>
+                    </ul>
+                    <ul>
+                      <li>产品说明：</li>
+                      <li>游玩动物世界，可在入住期间凭门票、房卡、房卡纸及指纹连续两日多次入园。</li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="hui clearfix">入住日期：2016-12-23 ~ 2016-12-23</p>
+              </div>
+            </td>
+            <td  width="130">
+              <em class="blue cur-price">￥180.00</em>
+              <div class="price-fukuang" style="display:none">
+                <div>2018-07-12<em class="red">￥2580.00/间</em></div>
+                <div>2018-07-12<em class="red">￥3580.00/间</em></div>
+                <div>2018-07-12<em class="red">￥580.00/间</em></div>
+              </div>
+            </td>
+            <td width="190" class="hui">X1</td>
+            <td width="130">￥0.00</td>
+          </tr>
+        </table>
+        <!-- 房间信息 -->
+        <div class="order-info clearfix">
+          <div class="clearfix goupiao-info">
+            <span class="left mr10">房间1</span>
+            <div class="left" style="width:1040px">
+              <div class="clearfix mb10">
+                <label class="goupiao-info-label5"><em class="red">*</em>入住人姓</label>
+                <input type="text" class="input left" placeholder="姓（中文/英文）" style="width:140px">
+                <label  class="goupiao-info-label5"><em class="red">*</em>入住人名</label>
+                <input type="text" class="input left" placeholder="名（中文/英文）" style="width:140px">
+                <label  class="goupiao-info-label5"><em class="red">*</em>证件号</label>
+                <div class="bea-sele mr10">
+                  <div class="e-sele"><span class="on-sele" style="width:100px">身份证</span><em class="i-triangle"><i></i></em></div>
+                  <ul class="bea-opt" style="">
+                    <li class="on">省份证</li>
+                    <li>护照</li>
+                  </ul>
+                </div>
+                <input type="text" class="input left" style="width:320px">
+              </div>
+            </div>
+          </div>
+          <div class="clearfix goupiao-info">
+            <span class="left mr10">房间2</span>
+            <div class="left" style="width:1040px">
+              <div class="clearfix mb10">
+                <label class="goupiao-info-label5"><em class="red">*</em>入住人姓</label>
+                <input type="text" class="input left" placeholder="姓（中文/英文）" style="width:140px">
+                <label  class="goupiao-info-label5"><em class="red">*</em>入住人名</label>
+                <input type="text" class="input left" placeholder="名（中文/英文）" style="width:140px">
+                <label  class="goupiao-info-label5"><em class="red">*</em>证件号</label>
+                <div class="bea-sele mr10">
+                  <div class="e-sele"><span class="on-sele" style="width:100px">身份证</span><em class="i-triangle"><i></i></em></div>
+                  <ul class="bea-opt" style="">
+                    <li class="on">省份证</li>
+                    <li>护照</li>
+                  </ul>
+                </div>
+                <input type="text" class="input left" style="width:320px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-box mb20">
+        <table border="0" cellspacing="0" cellpadding="0" class="tabel-order tabel-order-gift">
+          <tr>
+            <td width="400" class="first-td align-l clearfix">
+              <div class="piao-xinxi">
+                <p class="po-top"><span class="room-type-labels-item room-type-labels-item-promotion">促销</span>广州长隆酒店</p>
+                <p class="hui clearfix">高级房大床房2天1晚双人游单园游套票（动物世界）</p>
+                <p class="hui clearfix">入住日期：2016-12-23 ~ 2016-12-23</p>
+              </div>
+            </td>
+            <td  width="130">￥0.00</td>
+            <td width="190" class="hui">X1</td>
+            <td width="130">￥0.00</td>
+          </tr>
+        </table>
+        <!-- 门票信息 -->
+        <div class="order-info clearfix">
+          <div class="clearfix goupiao-info">
+            <span class="left mr10">门票1</span>
+            <div class="left">
+              <div class="clearfix mb10">
+                <label class="goupiao-info-label7"><em class="red">*</em>入园人身份证</label>
+                <input type="text" class="input left" style="width:226px">
+              </div>
+            </div>
+          </div>
+          <div class="clearfix goupiao-info">
+            <span class="left mr10">门票2</span>
+            <div class="left">
+              <div class="clearfix mb10">
+                <label class="goupiao-info-label7"><em class="red">*</em>入园人身份证</label>
+                <input type="text" class="input left" style="width:226px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-box mb20">
+        <!-- 带有标签 -->
+        <table border="0" cellspacing="0" cellpadding="0" class="tabel-order tabel-order-gift">
+          <tr>
+            <td width="400" class="first-td align-l clearfix">
+              <div class="piao-xinxi">
+                <p class="po-top"><span class="room-type-labels-item room-type-labels-item-promotion">促销</span>广州长隆酒店-麒麟中餐厅</p>
+                <p class="hui clearfix">[室外泳池免费畅玩]白虎美食戏水之旅自助午餐 平日成人全票</p>
+                <p class="hui clearfix">用餐时间：2016-12-23</p>
+                <div class="labels">
+                  <div class="label">不可退改</div>
+                </div>
+              </div>
+            </td>
+            <td  width="130">￥1800.00</td>
+            <td width="190" class="hui">X1</td>
+            <td width="130">￥0.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="table-box mb20">
+        <!-- 赠品 -->
+        <table border="0" cellspacing="0" cellpadding="0" class="tabel-order tabel-order-gift">
+          <tr>
+            <td width="400" class="first-td align-l clearfix">
+              <div class="piao-xinxi">
+                <p class="po-top"><span class="room-type-labels-item room-type-labels-item-gift">赠品</span>【赠品】广州长隆国际大马戏</p>
+                <p class="hui clearfix">长隆野生动物世界+长隆国际马戏大剧院特定日普通座全票</p>
+                <p class="hui clearfix">游玩日期：2016-12-23 20：00-21：30</p>
+              </div>
+            </td>
+            <td  width="130">￥1800.00</td>
+            <td width="190" class="hui">X1</td>
+            <td width="130">￥0.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="table-box mb20">
+        <div>绑定手机号</div>
+        <div class="clearfix mt10">
+          <label class=""><em class="red">*</em>手机号</label>
+          <input type="text" class="input ml10" style="width:226px">
+        </div>
+      </div>
+      <!-- 结算 -->
+  		<div id="jk_Box" class="css-bgwhite mb10 clearfix">
+  			<ul class="jiesuan clearfix">
+  				<li class="clearfix right mr20">
+  					<span class="jiesuan-name">订单金额</span>
+  					<span class="right jiesuan-price">￥27000.00</span>
+  					<p style="width:100%;height:20px;clear:both"></p>
+  					<span class="jiesuan-name">优惠</span>
+  					<span class="jiesuan-price">-￥0.00</span>
+  					<p style="width:100%;height:20px;clear:both"></p>
+  					<span class="jiesuan-name">运费</span>
+  					<span class="jiesuan-price">￥10.00</span>
+  					<p style="width:100%;height:20px;clear:both"></p>
+  					<span class="jiesuan-name">实付金额</span>
+  					<span class="f16 red jiesuan-price">￥27010.00</span>
+  				</li>
+  			</ul>
+  			<div class="clearfix right">
+  				 <div class="align-right mt10">
+  					<a class="btn-y-red btn-y" href="#">提交订单</a>
+  				</div>
+  			 </div>
+  		</div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="area clearfix">
+    <ul class="footer-left footer">
+      <li style=""><a href="javascript:;">关于我们</a></li>
+      <li style="margin-top:16px"><a href="javascript:;">功能介绍</a></li>
+      <li style="margin-top:16px"><a href="javascript:;">意见反馈</a></li>
+    </ul>
+    <ul class="footer-center footer">
+      <li style=""><a href="javascript:;" style="padding-left:0">联系我们</a></li>
+      <li class="call" style="margin:16px 0"><a href="javascript:;">400-600-5412</a></li>
+      <li class="mail" style=""><a href="javascript:;">BD@eventmosh.com</a></li>
+    </ul>
+    <ul class="footer-right footer">
+      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evetmosh.jpg" alt=""><span>eventmosh</span></li>
+      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evente.jpg" alt=""><span>evente</span></li>
+    </ul>
+  </div>
+</footer>
+<!-- 弹窗 -->
+<div class="my-loyer" style="display:none"></div>
+<!-- 弹窗 确认删除 -->
+<div class="my-window my-window-confirm-deletion" style="display:none;min-height:100px;min-width: 320px;margin-top:-50px;margin-left:-160px">
+  <p class="my-window-tit f14">确认删除该商品？</p>
+  <div class="my-window-box">
+    <a href="javascript:;" class="btn-y btn-y-white mr10 my-window-submit">确定</a>
+    <a href="javascript:;" class="btn-y btn-y-red ml10 my-window-cancel">取消</a>
+  </div>
+</div>
+<!-- 弹窗 错误提示 -->
+<div class="my-window my-window-error-message" style="display:none;">
+  <div class="my-window-error-message-box">
+    <img src="../../images/icon_yyc.png" alt="">
+    <div class="">此产品购买数量已达上限</div>
+  </div>
+</div>
+
+<script src="../../js/lib/jquery.min.js"></script>
+<script src="../../js/plugins/My97DatePicker/WdatePicker.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/gouwuche2.20.js"></script>
+<script>
+
+// 详情 弹窗
+$(document).find('.piao-xinxi-detail').mouseenter(function(){
+	$(this).parent().parent().find('.piao-xinxi-detail-fukuang').css('display','inline-block');
+})
+
+$(document).find('.piao-xinxi').mouseleave(function(){
+	$(this).find('.piao-xinxi-detail-fukuang').hide();
+});
+  function res(){
+  	var h_init = $(window).height(),
+  	h_header = $("header").outerHeight(),
+  	h_crumbs = $(".crumbs").outerHeight(),
+  	h_nav = $(".mainNav").outerHeight(),
+  	h_footer = $("footer").outerHeight();
+  	h_main = h_init - h_header - h_crumbs - h_nav - h_footer/* - 50 - 50 - 79*/-80;
+  	$(".container .gouwuche-area").css("min-height",h_main);
+  }
+  res();
+  $(window).resize(res);
+
+</script>
+</body>
+</html>

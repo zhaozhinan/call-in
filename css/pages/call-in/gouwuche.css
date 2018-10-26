@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+/* @import "../../../css/components/left.css"; */
+/* @import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css"; */
+
+.container{ position:relative; margin:0px auto 30px;}
+.align-l{text-align:left}
+.f-bold{font-weight:bold;}
+label {font-size: 12px}
+
+/* 按钮 */
+.btn-y{ display:inline-block; border:none; background:#fd883b; border-radius:5px; text-align:center; line-height:30px; color:#FFF; font-size:14px; height:30px;width:90px; position:relative}
+.btn-y:hover{ background:#e06210; text-decoration:none; color:#FFF}
+.btn-y:active{ background:#fc6705}
+.btn-y-red{box-shadow:none;background:#f1375f;color:#fff;}
+.btn-y-red:hover{background:#dc0533}
+.btn-y-white{background:#fff;box-shadow:none;color:#333;border:1px solid #dcdcdc;box-sizing: border-box;}
+.btn-y-white:hover{background:#fff;color:#333;}
+.btn-y-gray, .btn-y-gray:hover {background: #999;cursor:no-drop;}
+
+/* 模拟单选按钮和多选按钮 */
+.CheckBoxClass,.RadioClass{display: none}
+.CheckBoxLabelClass{padding-left: 30px;cursor: pointer;background:url(../../../images/icon_24/icon-choose.png) no-repeat 7px -32px;line-height: 22px;height: 21px;display: inline-block;}
+.CheckBoxLabelClass:hover, .RadioLabelClass:hover{}
+.LabelSelected{background:url(../../../images/icon_24/icon-choose.png) no-repeat;background-position: 7px 3px}
+.RadioLabelClass{background:url(../../../images/login/reg.png) no-repeat 4px -21px;padding-left: 30px; height: 18px;width: 18px;display: block;float: left;}
+.RadioSelected{background:url(../../../images/login/reg.png) no-repeat 4px 0px;}
+
+/* 表格 */
+.tabel-order{ width: 100%;text-align:center;}
+.tabel-order th,.tabel-order td{border:none;font-size:12px}
+.tabel-order th{background: #F9F9FB;height:35px}
+.tabel-order td{height:40px;position:relative;}
+.tabel-order tr{border:1px solid #dcdcdc;}
+.first-td{position:relative;padding:20px 0;position:relative;line-height:1.5em}
+.first-td img{width:60px;display: inline-block;}
+.first-td p{display:block;width:290px;}
+.first-td p em{display:block;}
+
+/* 弹窗 */
+.my-window-title {text-align: center;height:30px;line-height: 30px;background: #f9f9fb;border-bottom:1px solid #dcdcdc;font-size:14px}
+.my-window-close {position: absolute;top:8px;right:8px;;width: 15px;height: 15px;cursor: pointer;}
+/* 弹窗 */
+.my-window-tit, .my-window-box{text-align: center;margin-top:20px}
+
+/* 页面 */
+.piao-xinxi{line-height:1em;display: inline-block;width:350px}
+.piao-xinxi p {line-height: 20px}
+.piao-xinxi .po-top {line-height: 16px;margin-bottom:5px}
+.labels {margin-top:10px;}
+.labels .label {;display: inline-block;font-size: 12px;color:#f45537;border:1px solid #f45537;height:16px;line-height: 16px;padding:0 3px;border-radius: 3px;}
+.room-type-labels-item {float:left;width:30px;height:16px;line-height: 16px;margin-right:10px;color:#fff;text-align: center;}
+.room-type-labels-item-promotion {background: #fa4858;}
+.room-type-labels-item-gift {background: #ffa303}
+.promotion-tips {position: relative;top:1px}
+/* 错误限制提示 */
+.error-tips {position: absolute;left:20px;margin-top:20px;width:max-content}
+/* 购物车 详情改版 20181024 */
+.piao-xinxi-description-box {position: relative;}
+.piao-xinxi-description {line-height: 20px}
+.piao-xinxi-description-box-info {position: absolute;right:0;cursor: pointer;line-height: 20px}
+.piao-xinxi-description-box-fukuang {width:300px;background: #fff;border:1px solid #dcdcdc;position: absolute;left:270px;margin-top:-5px;z-index: 100}
+.piao-xinxi-description-box-fukuang-tit {text-align: center;height:30px;line-height: 30px;color:#333}
+.piao-xinxi-description-box-fukuang-box {color:#333;min-height: 100px;width:280px;margin:0 auto;}
+.piao-xinxi-description-box-fukuang-box p{width:100%}
+
+
+
+/* 新加购物车 订单赠品 */
+.tabel-order-gift{ width: 100%;text-align:center;}
+.tabel-order-gift tr {border:1px solid #dcdcdc}
+.tabel-order-gift th,.tabel-order-gift td{border:none;font-size:12px}
+.tabel-order-gift th{background: #F9F9FB;height:35px}
+.tabel-order-gift td{height:40px;position:relative;}
+
+/* 数量加减  */
+.number{display:inline-block;overflow:hidden;}
+.number em{float:left;}
+.number span{float:left;width:28px;text-align:center;border:1px solid #ccc; cursor: pointer;font-size:24px;border-radius:3px;color:#666;font-weight:bold;height:28px;line-height:26px;background: #fff}
+.number .input{float:left;margin:0 10px;border-radius:3px;height:28px;width:30px;padding-right:10px}
+.number .input::-webkit-outer-spin-button,
+.number .input::-webkit-inner-spin-button {-webkit-appearance: none;}
+.number .input[type="number"] {-moz-appearance: textfield;}
+
+.dingdan_del{cursor:pointer;}
+.del_order{background:url(../../../images/del.png) center center no-repeat;width:20px;height:20px;display:inline-block;background-size: initial}
+.del_order:hover{background:url(../../../images/del_hover.png) center center no-repeat;}
+
+/* 酒店价格浮框 */
+.cur-price{cursor:pointer;border-bottom:1px dashed #1996f9;}
+.price-fukuang{width:150px;padding:10px;line-height:20px;border:1px solid #dcdcdc;background:#fff;z-index:1000;color:#333;position:absolute;left:50%;margin-left:-80px;text-align: left}
+
+/* 结算 */
+.settlement-bottom-box {background: #F9F9FB;border:1px solid #dcdcdc}
+.settlement {display: flex;justify-content: flex-end;align-items: center;}
+.settlement-number {display: inline-block;;line-height: 35px;height:35px;border-right: 1px solid #dcdcdc;padding-right:10px;margin-right:10px}
+.settlement-price {text-align: left;display: inline-block;line-height: 20px;margin-right:20px}
+.offer-details {cursor: pointer;}
+.choose-again {display: inline-block;width:90px;text-align: center;}
+
+.labels .label {;display: inline-block;font-size: 12px;color:#f45537;border:1px solid #f45537;height:16px;line-height: 16px;padding:0 3px;border-radius: 3px;}
+.room-type-labels-item {float:left;width:30px;height:16px;line-height: 16px;margin-right:10px;color:#fff;text-align: center;font-size: 12px}
+.room-type-labels-item-promotion {background: #fa4858;}
+.room-type-labels-item-gift {background: #ffa303}
+.promotion-tips {position: relative;top:1px}
+/* 20180809 添加购物车 促销明细弹窗 */
+.my-window-promotion-box {margin:20px;border-top:1px dashed #dcdcdc;font-size: 12px}
+.my-window-promotion-box-text {line-height: 16px;float: left;width:600px}
+
+
+/* 购物车为空 */
+.dingdan-none {text-align: center;padding-bottom:20px;line-height: 28px}
+.dingdan-none-img {margin:10px auto;width:93px;height: 97px}
+
+/* loading */
+.loading {text-align: center;position: fixed;top:0;left:0;z-index:999;width:100%;}
+.loading img {vertical-align: middle;position: relative;z-index: 10000}
+.loading-loyer {position:fixed;z-index: 999;top:0;left:0;width:100%;height:100%;background: rgba(0,0,0,0.3);opacity: 0.3;}
+
+/* 购物车 错误提示弹窗 */
+.my-window-error-message {min-width:300px;margin-left:-150px;min-height:150px;margin-top:-75px}
+.my-window-error-message-box {text-align: center;padding:30px 0 0;font-size: 16px;line-height: 50px}
+
+	/* 11 */
+
+
+
+
+
+
+
+
+
+/* 111 */

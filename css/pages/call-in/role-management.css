@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+@import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css";
+
+.container{ position:relative; margin:0px auto 30px;}
+
+/* 角色管理 */
+/* 表格 */
+.align-left,.align-l{text-align:left}
+.tabel-overview, .tabel-detail{ width:100%;text-align:center}
+.tabel-overview td, .tabel-detail td{ border-top:1px solid #DCDCDC;height:50px;}
+.tabel-overview .info-box-top, .tabel-overview .info-box-bot{width:230px}
+.tabel-detail th{font-size:14px; height:35px}
+.tabel-detail td{ height:70px;font-size:14px;position: relative;}
+.tabel-overview th{font-size:14px; height:35px;background:#F9F9FB;}
+.tabel-overview td{ height:50px;font-size:12px;position: relative;}
+.tabel-overview td.first, .tabel-detail td.first{background:#F9F9FB; width:80px; font-size:14px}
+.table_caption{height:30px;line-height:30px;background:#F9F9FB;border:1px solid #DCDCDC;border-bottom:0}
+
+.conSearchBox{padding:20px 19px 0; border:1px solid #DCDCDC; background:#F9F9FB; position:relative; clear:both}
+.conSearchBox .labelName{ min-width:5em; text-align:right;line-height: 30px}
+
+/* 弹窗 */
+.my-window-title {text-align: center;height:30px;line-height: 30px;background: #f9f9fb;border-bottom:1px solid #dcdcdc;font-size:14px}
+.my-window-close {position: absolute;top:8px;right:8px;;width: 15px;height: 15px;cursor: pointer;}
+
+.my-window-confirm, .my-window-modify-role {width:300px;margin-left:-150px;height:150px;margin-top:-75px}
+.my-window-confirm-box, .my-window-modify-role-box {padding: 20px;margin-top:20px}
+.my-window-authorization {width:830px;height: 600px;margin-left:-415px;margin-top:-300px;}
+.my-window-authorization-box {padding:20px 0;width:830px}
+.my-window-authorization-box-scroll {height: 430px;margin:20px 0;overflow: hidden;overflow-y: auto;}
+
+/* 角色权限优化css 12.22 */
+.tree_menm_top{padding:0px 20px;border:1px solid #dcdcdc;background:#F9F9FB;height:58px;line-height:58px;width:1101px;z-index:10;}
+.tree_line{background:url(../../../images/treeview-default-line.gif) 0 0 no-repeat;padding-left:20px;}
+.CheckBoxLabelClass{margin-top:10px}
+.first_tree_line{background-position:0px -2px}
+.second_tree_line{background-position:0px -2px}
+.third_tree_line{background-position:0px -2px}
+.fourth_tree_line{background-position: 0px -2px}
+{margin-bottom:8px}
+.tree_box{border:1px solid #dcdcdc;margin-top:-1px;margin-bottom:50px;position: relative;}
+.tree_line:nth-last-child(1){background-position:0px -1755px}
+.cer{width:800px}
+.position_nav li{border:1px solid #dcdcdc;text-align:center;margin-top:-1px;}
+.position_nav li a{height:36px;line-height:36px;width:120px;display:block;text-decoration:none;font-size:14px;background:#F9F9FB;}
+.position_nav li a:target{padding-top:100px}
+.position_nav li a.active{background:#fff;color:#1996f9;}
+#role_auth_list{width:900px;}
+.clear-both{clear:both}
+.win-tit{height:30px; line-height:30px; text-align:center; border-bottom:1px solid #DCDCDC; background:#FAFAFC}
+.seat_ID{position:relative;top:-60px;left:-40px;}
+.W120{width:120px}
+
+
+
+
+
+
+
+
+/* 111 */
