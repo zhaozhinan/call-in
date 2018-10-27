@@ -39,7 +39,7 @@ label {font-size: 12px}
 .piao-xinxi .po-top {line-height: 16px;margin-bottom:5px}
 .labels {margin-top:10px;}
 .labels .label {;display: inline-block;font-size: 12px;color:#f45537;border:1px solid #f45537;height:16px;line-height: 16px;padding:0 3px;border-radius: 3px;}
-.room-type-labels-item {float:left;width:30px;height:16px;line-height: 16px;margin-right:10px;color:#fff;text-align: center;}
+.room-type-labels-item {float:left;width:30px;height:16px;line-height: 16px;margin-right:10px;color:#fff;text-align: center!important;font-size: 12px}
 .room-type-labels-item-promotion {background: #fa4858;}
 .room-type-labels-item-gift {background: #ffa303}
 .promotion-tips {position: relative;top:1px}
@@ -73,8 +73,9 @@ label {font-size: 12px}
 
 /* 结算 */
 #jk_Box{margin-top:20px}
-#jk_Box .jiesuan{width:inherit;padding:20px 0;background:#f9f9fb;}
+#jk_Box .jiesuan{width:inherit;padding:20px 0;}
 #jk_Box span{text-align:right;}
+.jk_Box {background:#f9f9fb;border:1px solid #dcdcdc}
 .jiesuan-name {float:left;margin-right:20px;width: 80px}
 .jiesuan-price {float: right;min-width:120px}
 .offer-details {cursor: pointer;}
@@ -86,14 +87,16 @@ label {font-size: 12px}
 .room-type-labels-item-promotion {background: #fa4858;}
 .room-type-labels-item-gift {background: #ffa303}
 .promotion-tips {position: relative;top:1px}
-/* 20180809 添加购物车 促销明细弹窗 */
-.my-window-promotion-box {margin:20px;border-top:1px dashed #dcdcdc} /* 明细弹窗 去掉滚动条，高度自适应展示20190914 */
-.my-window-promotion-box-text {line-height: 16px;float: left;width:600px}
+/* 结算 促销明细 */
+.promotion-box {margin:0 20px 20px;border-top:1px dashed #dcdcdc;padding-top:20px}
+.promotion-box-text {line-height: 16px;float: left;width:600px;font-size: 12px}
 
 /* 购物车 错误提示弹窗 */
 .my-window-error-message {min-width:300px;margin-left:-150px;min-height:150px;margin-top:-75px}
 .my-window-error-message-box {text-align: center;padding:30px 0 0;font-size: 16px;line-height: 50px}
 
+/* 弹窗 提交订单 */
+.my-window-tijiao-box {text-align: center;line-height: 20px}
 
 /* 弹窗 */
 .my-window-title {text-align: center;height:30px;line-height: 30px;background: #f9f9fb;border-bottom:1px solid #dcdcdc;font-size:14px}

@@ -237,27 +237,56 @@
       </div>
       <!-- 结算 -->
   		<div id="jk_Box" class="css-bgwhite mb10 clearfix">
-  			<ul class="jiesuan clearfix">
-  				<li class="clearfix right mr20">
-  					<span class="jiesuan-name">订单金额</span>
-  					<span class="right jiesuan-price">￥27000.00</span>
-  					<p style="width:100%;height:20px;clear:both"></p>
-  					<span class="jiesuan-name">优惠</span>
-  					<span class="jiesuan-price">-￥0.00</span>
-  					<p style="width:100%;height:20px;clear:both"></p>
-  					<span class="jiesuan-name">运费</span>
-  					<span class="jiesuan-price">￥10.00</span>
-  					<p style="width:100%;height:20px;clear:both"></p>
-  					<span class="jiesuan-name">实付金额</span>
-  					<span class="f16 red jiesuan-price">￥27010.00</span>
-  				</li>
-  			</ul>
-  			<div class="clearfix right">
-  				 <div class="align-right mt10">
-  					<a class="btn-y-red btn-y" href="#">提交订单</a>
-  				</div>
-  			 </div>
+        <div class="jk_Box">
+    			<ul class="jiesuan clearfix">
+    				<li class="clearfix right mr20">
+    					<span class="jiesuan-name">订单金额</span>
+    					<span class="right jiesuan-price">￥27000.00</span>
+    					<p style="width:100%;height:20px;clear:both"></p>
+    					<span class="jiesuan-name">优惠</span>
+    					<span class="jiesuan-price">-￥0.00</span>
+    					<p style="width:100%;height:20px;clear:both"></p>
+    					<span class="jiesuan-name">运费</span>
+    					<span class="jiesuan-price">￥10.00</span>
+    					<p style="width:100%;height:20px;clear:both"></p>
+    					<span class="jiesuan-name">实付金额</span>
+    					<span class="f16 red jiesuan-price">￥27010.00</span>
+    				</li>
+    			</ul>
+          <div class="promotion-box clearfix">
+            <div class="mb10 f14 f-bold">促销明细</div>
+            <div class="clearfix mb10">
+              <span class="room-type-labels-item room-type-labels-item-promotion">促销</span>
+      				<div class="promotion-box-text">满3送1<span class="red">（已优惠￥-10.00）</span></div>
+      			</div>
+      			<div class="clearfix mb10">
+      				<span class="room-type-labels-item room-type-labels-item-promotion">促销</span>
+      				<div class="promotion-box-text">广州欢乐世界+广州水上乐园立减100元广州欢乐世界+广州水上乐园立减100元广州欢乐世界+广州水上乐园立减100元广州欢乐世界<span class="red">（已优惠￥-10.00）</span></div>
+      			</div>
+      			<div class="clearfix mb10">
+      				<span class="room-type-labels-item room-type-labels-item-promotion">促销</span>
+      				<div class="promotion-box-text">广州欢乐世界+广州水上乐园立减100元广州欢乐世界<span class="red">（已优惠￥-10.00）</span></div>
+      			</div>
+      			<div class="clearfix mb10">
+      				<span class="room-type-labels-item room-type-labels-item-promotion">促销</span>
+      				<div class="promotion-box-text">满3送1<span class="red">（已优惠￥-10.00）</span></div>
+      			</div>
+      			<div class="clearfix mb10">
+      				<span class="room-type-labels-item room-type-labels-item-promotion">促销</span>
+      				<div class="promotion-box-text">广州欢乐世界+广州水上乐园立减100元广州欢乐世界<span class="red">（已优惠￥-10.00）</span></div>
+      			</div>
+      			<div class="clearfix mb10">
+      				<span class="room-type-labels-item room-type-labels-item-promotion">促销</span>
+      				<div class="promotion-box-text">满3送1<span class="red">（已优惠￥-10.00）</span></div>
+      			</div>
+      		</div>
+        </div>
   		</div>
+      <div class="clearfix mb20">
+        <div class="align-right mt10">
+          <a class="btn-y-red btn-y" href="#">提交订单</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -280,15 +309,7 @@
   </div>
 </footer>
 <!-- 弹窗 -->
-<div class="my-loyer" style="display:none"></div>
-<!-- 弹窗 确认删除 -->
-<div class="my-window my-window-confirm-deletion" style="display:none;min-height:100px;min-width: 320px;margin-top:-50px;margin-left:-160px">
-  <p class="my-window-tit f14">确认删除该商品？</p>
-  <div class="my-window-box">
-    <a href="javascript:;" class="btn-y btn-y-white mr10 my-window-submit">确定</a>
-    <a href="javascript:;" class="btn-y btn-y-red ml10 my-window-cancel">取消</a>
-  </div>
-</div>
+<div class="my-loyer" style="display:block"></div>
 <!-- 弹窗 错误提示 -->
 <div class="my-window my-window-error-message" style="display:none;">
   <div class="my-window-error-message-box">
@@ -296,17 +317,36 @@
     <div class="">此产品购买数量已达上限</div>
   </div>
 </div>
+<!-- 弹窗 提交订单提示 -->
+<div class="my-window my-window-tijiao" style="display:block;">
+  <div class="my-window-title"><span class="close">×</span></div>
+  <div class="my-window-tijiao-box">
+    <div class="mt30">已成功提交订单!</div>
+    <div>并已将订单发送至顾客绑定手机号</div>
+  </div>
+</div>
+
 
 <script src="../../js/lib/jquery.min.js"></script>
-<script src="../../js/plugins/My97DatePicker/WdatePicker.js"></script>
 <script src="../../js/main.js"></script>
-<script src="../../js/gouwuche2.20.js"></script>
 <script>
 
 // 详情 弹窗
 $(document).find('.piao-xinxi-detail').mouseenter(function(){
 	$(this).parent().parent().find('.piao-xinxi-detail-fukuang').css('display','inline-block');
 })
+
+// 弹窗关闭
+$(document).on('click', '.my-loyer, .my-window-close', function(){
+	$('.my-loyer, .my-window').fadeOut(200);
+})
+
+// 浮框
+$('.cur-price').mousemove(function(){
+  $(this).siblings('.price-fukuang').stop().fadeIn();
+}).mouseout(function(){
+  $(this).siblings('.price-fukuang').stop().fadeOut();
+});
 
 $(document).find('.piao-xinxi').mouseleave(function(){
 	$(this).find('.piao-xinxi-detail-fukuang').hide();
