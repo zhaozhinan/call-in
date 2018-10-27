@@ -45,6 +45,7 @@
               <span class="panel-tit left">乐园餐厅</span>
             </div>
           </div>
+
           <div class="hotel-restaurant-bd">
             <div class="clearfix">
               <label for="" class="hotel-restaurant-label">选择所属乐园：</label>
@@ -54,35 +55,26 @@
                 </ul>
               </div>
               <div class="bea-sele" id="itemTwo">
-                <div class="e-sele"><span class="on-sele" style="width: 169px">请选择地区</span><em class="i-triangle"><i></i></em></div>
+                <div class="e-sele"><span class="on-sele" style="width: 169px">请选择所属乐园</span><em class="i-triangle"><i></i></em></div>
                 <ul class="bea-opt">
                 </ul>
               </div>
-              <div class="bea-sele" id="itemThree">
-                <div class="e-sele"><span class="on-sele" style="width: 169px">请选择地区</span><em class="i-triangle"><i></i></em></div>
-                <ul class="bea-opt">
-                </ul>
-              </div>
-              <label for="" class="hotel-restaurant-label">用餐日期：</label>
+              <label for="" class="hotel-restaurant-label">游玩日期：</label>
               <input class="input Wdate" name="end_date" value="" placeholder="" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" readonly="readonly"><button class="btn btn-e hotel-restaurant-bd-btn">查询</button>
             </div>
           </div>
+
           <div class="hotel-restaurant-table">
             <table class="tabel-detail mt20" border="1">
               <tr>
                 <th wdith="20%">产品名称</th>
-                <th width="10%">价格</th>
+                <th class="thPlace" width="10%">价格<span class="arrow"><em class="arrow_up"></em><em class="arrow_down"></em></span></th>
                 <th width="25%">促销信息</th>
                 <th width="35%">产品描述</th>
                 <th width="10%">操作</th>
               </tr>
               <tr>
-                <td colspan="7"><span class="hui">暂无数据</span></td>
-              </tr>
-              <tr>
                 <td><div class="hotel-restaurant-discribe-name">123</div></td>
-                <td>33</td>
-                <td>0:00-0:00</td>
                 <td><span class="red">¥200</span></td>
                 <td>
                   <div class="hotel-restaurant-sale clearfix">
@@ -98,8 +90,6 @@
               </tr>
               <tr>
                 <td><div class="hotel-restaurant-discribe-name">123</div></td>
-                <td>33</td>
-                <td>0:00-0:00</td>
                 <td><span class="red">¥200</span></td>
                 <td>
                   <div class="hotel-restaurant-sale clearfix">
@@ -115,8 +105,6 @@
               </tr>
               <tr>
                 <td><div class="hotel-restaurant-discribe-name">123</div></td>
-                <td>33</td>
-                <td>0:00-0:00</td>
                 <td><span class="red">¥200</span></td>
                 <td>
                   <div class="hotel-restaurant-sale clearfix">
@@ -130,8 +118,6 @@
               </tr>
               <tr>
                 <td><div class="hotel-restaurant-discribe-name">尚人冠峰是复古还是如何</div></td>
-                <td>33</td>
-                <td>0:00-0:00</td>
                 <td><span class="red">¥20</span></td>
                 <td>
                   <div class="hotel-restaurant-sale clearfix">
@@ -157,6 +143,15 @@
                 <li><a href="#">下一页</a></li>
               </ul>
             </div>
+            <!-- 为空的时候 -->
+            <div class="loading-error">
+                <img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png">
+                <div class="mt20">暂时没有可售房型，请换个日期试试</div>
+            </div>
+            <!-- ／为空的状态 -->
+            <!-- 加载时候的loading -->
+            <div class="loading"></div>
+            <!-- ／加载时候的loading -->
           </div>
         </div>
     </div>
@@ -203,7 +198,7 @@
     <script>
       $(function(){
         $.ajax({
-          url: '../../data/json.js',
+          url: '../../data/call-in/LeYuanMenPiao.js',
           async: false,
           success: function(result) {
             var data = $.parseJSON(result);
@@ -214,30 +209,15 @@
 
             $('#itemOne').find('.bea-opt').find('li').on('click', function(){
               $('#itemTwo').show().find('.bea-opt').html('');
-              $('#itemTwo').find('.on-sele').text('请选择所属酒店').css('color', '#999');
-              $('#itemThree').hide();
+              $('#itemTwo').find('.on-sele').text('请选择所属乐园').css('color', '#999');
               for(var i=0; i<data.length; i++) {
                 if($(this).text() === data[i].name) {
-                  for(var j=0; j<data[i].jiudian.length; j++) {
-                    console.log(data[i].jiudian[j].name);
-                    $('#itemTwo').find('.bea-opt').append('<li>'+ data[i].jiudian[j].name +'</li>');
+                  for(var j=0; j<data[i].list.length; j++) {
+                    console.log(data[i].list[j].name);
+                    $('#itemTwo').find('.bea-opt').append('<li>'+ data[i].list[j].name +'</li>');
                   }
                 }
               }
-
-              $('#itemTwo').find('.bea-opt').find('li').on('click', function(){
-                $('#itemThree').show().find('.bea-opt').html('');
-                $('#itemThree').find('.on-sele').text('请选择所属餐厅').css('color', '#999');
-                for(var i=0; i<data.length; i++) {
-                  for(var j=0; j<data[i].jiudian.length; j++) {
-                    if($(this).text() === data[i].jiudian[j].name) {
-                      for(var o=0; o<data[i].jiudian[j].list.length; o++) {
-                        $('#itemThree').find('.bea-opt').append('<li>'+ data[i].jiudian[j].list[o].name +'</li>');
-                      }
-                    }
-                  }
-                }
-              });
             });
           },
         });

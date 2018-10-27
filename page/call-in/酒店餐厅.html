@@ -86,13 +86,10 @@
                 <th wdith="15%">产品名称</th>
                 <th width="10%">用餐时段</th>
                 <th width="10%">使用时间</th>
-                <th width="5%">价格</th>
-                <th width="25%">促销信息</th>
-                <th width="25%">产品描述</th>
-                <th width="10%">操作</th>
-              </tr>
-              <tr>
-                <td colspan="7"><span class="hui">暂无数据</span></td>
+                <th class="thPlace" width="10%">价格<span class="arrow"><em class="arrow_up"></em><em class="arrow_down"></em></span></th>
+                <th width="24%">促销信息</th>
+                <th width="24%">产品描述</th>
+                <th width="7%">操作</th>
               </tr>
               <tr>
                 <td><div class="hotel-restaurant-discribe-name">123</div></td>
@@ -173,6 +170,17 @@
               </ul>
             </div>
           </div>
+
+          <!-- 为空的时候 -->
+          <div class="loading-error">
+              <img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png">
+              <div class="mt20">暂时没有可售房型，请换个日期试试</div>
+          </div>
+          <!-- ／为空的状态 -->
+          <!-- 加载时候的loading -->
+          <div class="loading"></div>
+          <!-- ／加载时候的loading -->
+
         </div>
     </div>
 
@@ -218,7 +226,7 @@
     <script>
       $(function(){
         $.ajax({
-          url: '../../data/json.js',
+          url: '../../data/call-in/json.js',
           async: false,
           success: function(result) {
             var data = $.parseJSON(result);
