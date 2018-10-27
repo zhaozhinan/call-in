@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <title>订单中心</title>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1,user-scalable=yes" name="viewport">
+    <link href="../../css/common/reset.css" rel="stylesheet" />
+    <link href="../../css/common/base.css" rel="stylesheet" />
+    <link href="../../css/pages/call-in/order-list.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 公共的头部 -->
+    <header class="top">
+        <span class="top-login">您好, zhaozhinan@eventmosh</span>
+        <a href="javascript:;" onclick="if (confirm('确定要注销账户？')) { location.href= 'http://login.evente.cn/b/logout'; }">退出帐号</a>
+    </header>
+    <nav class="mainNav">
+        <div class="area">
+            <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a></h1>
+            <div class="right" style="margin-top:24px">
+                <ul class="nav nav-toplist">
+                    <li class="first on"><a href="#">酒店房间</a></li>
+                    <li><a href="#">酒店餐厅</a></li>
+                    <li><a href="#">乐园门票</a></li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">订单中心</a></li>
+                    <li><a href="#">财务报表</a></li>
+                    <li><a href="#">账户管理</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="crumbs area">
+        我的当前位置：<span class="on">订单中心</span>
+    </div>
+    <!-- ／公共的头部 -->
+    <div class="container clearfix">
+        <div class="order-list">
+          <div class="panel">
+            <div class="panel-title">
+              <span class="panel-tit left">订单中心</span>
+            </div>
+          </div>
+
+          <div class="order-list-bd">
+            <div class="clearfix">
+              <label for="" class="order-list-label">订单之间：</label><span class="date-item"><span>今日</span><span>最近7日</span><span>最近30日</span></span><input class="input Wdate" name="end_date" value="" placeholder="" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" readonly="readonly"><span class="date-connect">-</span><input class="input Wdate" name="end_date" value="" placeholder="" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" readonly="readonly">
+            </div>
+            <div class="clearfix mt20">
+              <label for="" class="order-list-label">订单类型：</label>
+              <div class="bea-sele">
+                <div class="e-sele">
+                  <span class="on-sele" style="width:110px">全部</span>
+                  <em class="i-triangle"><i></i></em>
+                </div>
+                <ul class="bea-opt">
+                  <li>全部</li>
+                </ul>
+              </div>
+              <div class="order-type">
+                <div class="order-type-item">1</div>
+                <div class="order-type-item">2</div>
+                <div class="order-type-item">3</div>
+              </div>
+            </div>
+            <div class="clearfix mt20">
+              <label for="" class="order-list-label">订单状态：</label>
+              <div class="bea-sele">
+                <div class="e-sele">
+                  <span class="on-sele" style="width:110px">全部</span>
+                  <em class="i-triangle"><i></i></em>
+                </div>
+                <ul class="bea-opt">
+                  <li>全部</li>
+                  <li>审核中</li>
+                  <li>退款中</li>
+                  <li>退款失败</li>
+                  <li>退款成功</li>
+                  <li>已驳回</li>
+                </ul>
+              </div>
+              <label for="" class="order-list-label ml20">订单状态：</label><input type="text" name="" class="input left"><label for="" class="order-list-label ml20">子单编号：</label><input type="text" name="" class="input left">
+            </div>
+            <div class="clearfix mt20">
+              <label for="" class="order-list-label">操作员姓名：</label><input type="text" name="" class="input left" style="width: 151px">
+              <label for="" class="order-list-label ml20">购买人手机：</label>
+              <div class="bea-sele">
+                <div class="e-sele">
+                  <span class="on-sele" style="width:40px">+86</span>
+                  <em class="i-triangle"><i></i></em>
+                </div>
+                <ul class="bea-opt">
+                  <li>+86</li>
+                  <li>+85</li>
+                </ul>
+              </div>
+              <input type="text" name="" class="input tel">
+              <button class="btn btn-e order-list-bd-btn">查询</button>
+            </div>
+          </div>
+
+          <div class="order-list-table">
+            <table class="tabel-info mt20" border="1">
+              <tr>
+                <th width="15%">交易单号</th>
+                <th width="8%">子单编号</th>
+                <th width="12%">订单时间</th>
+                <th width="12%">购买人信息</th>
+                <th width="35%">订单详情</th>
+                <th width="6%">订单状态</th>
+                <th width="6%">操作员</th>
+                <th width="6%">操作</th>
+              </tr>
+              <tr>
+                <td>2018082214277067584475</td>
+                <td class="table-info-list">
+                  <ul>
+                    <li class="table-info-list-item">2881544</li>
+                    <li class="table-info-list-item">2881544</li>
+                  </ul>
+                </td>
+                <td>2018-08-22 14:27:42</td>
+                <td>***<br>(+86)12345678901</td>
+                <td class="table-info-list">
+                  <ul>
+                    <li class="table-info-list-item">123 × 2</li>
+                  </ul>
+                </td>
+                <td>已完成</td>
+                <td>***</td>
+                <td><a class="blue" href="#">查看订单</a></td>
+              </tr>
+              <tr>
+                <td>2018082214277067584475</td>
+                <td class="table-info-list">
+                  <ul>
+                    <li class="table-info-list-item">2881544</li>
+                  </ul>
+                </td>
+                <td>2018-08-22 14:27:42</td>
+                <td>***<br>(+86)12345678901</td>
+                <td class="table-info-list table-info-list-order">
+                  <ul>
+                    <li class="table-info-list-item">******************************************* × 2</li>
+                    <li class="table-info-list-item">*** × 2</li>
+                  </ul>
+                </td>
+                <td>已完成</td>
+                <td>***</td>
+                <td><a class="blue" href="#">查看订单</a></td>
+              </tr>
+              <tr>
+                <td>2018082214277067584475</td>
+                <td class="table-info-list">
+                  <ul>
+                    <li class="table-info-list-item">2881544</li>
+                  </ul>
+                </td>
+                <td>2018-08-22 14:27:42</td>
+                <td>***<br>(+86)12345678901</td>
+                <td class="table-info-list table-info-list-order">
+                  <ul>
+                    <li class="table-info-list-item">************************************************************************** × 2</li>
+                    <li class="table-info-list-item">***************************************************************** × 2</li>
+                  </ul>
+                </td>
+                <td>已完成</td>
+                <td>***</td>
+                <td><a class="blue" href="#">查看订单</a></td>
+              </tr>
+            </table>
+            <div class="pagelist mt20 mb20 clearfix">
+              <ul class="right">
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="current">3</li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">下一页</a></li>
+              </ul>
+            </div>
+            <!-- 为空的时候 -->
+            <div class="loading-error">
+                <img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png">
+                <div class="mt20">暂时没有可售房型，请换个日期试试</div>
+            </div>
+            <!-- ／为空的状态 -->
+            <!-- 加载时候的loading -->
+            <div class="loading"></div>
+            <!-- ／加载时候的loading -->
+          </div>
+        </div>
+    </div>
+
+    <script src="../../js/lib/jquery.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="https://static.evente.cn/libs/js/plugins/My97DatePicker/WdatePicker.js"></script>
+    <!-- <script src="./json.js"></script> -->
+    <script>
+      $(function(){
+
+      });
+    </script>
+</body>
+
+</html>
