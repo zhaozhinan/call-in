@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.order-list { margin: 0 30px; }
+#itemTwo, #itemThree { display: none; margin-left: 20px; }
+.order-list-bd { background: #F9F9FB; border: 1px solid #dcdcdc; padding: 20px; box-sizing: border-box; margin: 20px 0; }
+.order-list-label { float: left; margin-top: 8px; width: 7em; text-align: right; }
+.date-item span { margin-right: 10px; font-size: 12px; }
+.order-list-bd-btn { float: right; margin-top: -2px; }
+.date-connect { padding: 0 8px; color: #999 }
+.order-type { float: left; }
+.order-list-bd .input { width: 170px; }
+.order-list-bd .tel { margin-left: 10px; }
+
+.tabel-detail, .tabel-info { width:100%; text-align:center; }
+.tabel-detail td{ border-top:1px solid #DCDCDC;font-size:12px; height:45px; line-height:18px; padding: 5px; }
+.tabel-detail th, .tabel-info th { height:35px;font-size:14px;background:#F9F9FB; }
+.tabel-detail td.first, .tabel-info td.first { background:#F9F9FB; font-size:14px; }
+.tabel-info td { padding: 8px; }
+.tabel-info .table-info-list { padding: 0; }
+.table-info-list-item { border-top: 1px solid #dcdcdc; padding: 8px; word-break: break-all; }
+.table-info-list-item:nth-of-type(1) { border-top: none }
+
+.loading-error { text-align:center; line-height:50px; color:#ccc; padding:76px 0px; }
+.loading-error img { margin: 0 auto; }
+/* loading */
+.loading { height:150px; text-align:center; line-height:50px; color:#ccc; padding:120px 0px 0px; background: url('http://static.inner.chimelong.com:30221/evente/c/wap/img/hotel/loading.gif') no-repeat center center; background-size: 30px 30px; }
+
+
