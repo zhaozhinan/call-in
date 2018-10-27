@@ -18,6 +18,7 @@
 .tabel-detail td{ border-top:1px solid #DCDCDC;font-size:12px; height:45px; line-height:18px; padding: 5px; }
 .tabel-detail th{ height:35px;font-size:14px;background:#F9F9FB; }
 .tabel-detail td.first{ background:#F9F9FB; font-size:14px; }
+.thPlace { cursor: pointer; }
 
 .hotel-restaurant-sale { position: relative; text-align: left; padding: 0 10px}
 .hotel-restaurant-sale-img { padding-right: 40px }
@@ -49,5 +50,15 @@
 /*.J-propDis .close { text-decoration: none; font-size: 28px; top: 8px; right: 8px; }*/
 .J-propDis .J-propDis-box { margin: 10px 20px; line-height: 18px; font-size: 12px; }
 .J-propDis .J-propDis-box div { margin: 5px 0; }
+
+/* 表格th 上下箭头 */
+.arrow{ width:14px; height:14px; display:inline-block; position:relative;}
+.arrow_down{ display:block; border-right:5px solid transparent; border-left:5px solid transparent; border-top:5px solid #666; border-bottom:5px solid transparent; width:0px; height:0px; position:relative; top:0px; left:5px;}
+.arrow_up{ display:block; border-right:5px solid transparent; border-left:5px solid transparent; border-top:5px solid transparent; border-bottom:5px solid #666; width:0px; height:0px; position:relative; top:-3px; left:5px;}
+
+.loading-error { text-align:center; line-height:50px; color:#ccc; padding:76px 0px; }
+.loading-error img { margin: 0 auto; }
+/* loading */
+.loading { height:150px; text-align:center; line-height:50px; color:#ccc; padding:120px 0px 0px; background: url('http://static.inner.chimelong.com:30221/evente/c/wap/img/hotel/loading.gif') no-repeat center center; background-size: 30px 30px; }
 
 
