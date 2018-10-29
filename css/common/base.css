@@ -289,7 +289,7 @@ border: 1px solid transparent;
 /* 头部 */
 .top, .public-top{ text-align:right; width:1205px; margin:0px auto 0; height:30px; line-height:30px}
 .top a{ margin-left:35px;}
-.top .top-login{ margin:0 40px 0 0;color:#0095FB}
+.top .top-login{ margin:0 40px 0 0; font-size: 12px}
 .top .top-login a{ color:#0095FB; margin-left:10px;}
 .public-top{ width:1205px}
 .public-top a{ margin-left:20px}
@@ -299,9 +299,10 @@ border: 1px solid transparent;
 .mainNav .logo a{}
 .mainNav .nav{ height:20px; margin-top:24px; display:inline}
 .mainNav .nav li{ float:left; height:20px; line-height:20px; text-align:center; border-left:1px solid #DDD; margin-left: 10px; position:relative;}
+.mainNav .nav li.on a { border-bottom: 3px solid #1996f9; }
 .mainNav .nav li a{ display:block; font-size:16px; text-align:center; text-decoration:none; margin-left:10px; padding-bottom:4px; color:#333}
-.mainNav .nav li.first{ border-left:none}
-.mainNav .nav li a:hover,#hideNav .f16 a:hover{border-bottom:3px solid #055493; color:#055493;}
+.mainNav .nav li.first, .mainNav .nav li:nth-of-type(1){ border-left:none}
+.mainNav .nav li a:hover, #hideNav .f16 a:hover{border-bottom:3px solid #1996f9; color:#055493;}
 
 /* 未登录 */
 .mainNav .noLoged{ color:#0095FA;font-size:12px; vertical-align:top; height:14px; margin-top:43px}
@@ -344,7 +345,7 @@ border: 1px solid transparent;
 .leftMenu li.on a, .leftMenu li.on a:hover{border-left:2px solid #0094FD; border-bottom:none; background:#FFF; color:#0694FC; margin-left:-1px; width:auto; overflow:hidden;transition: all .1s ease-in;}
 
 /* 面包屑 */
-.crumbs{ height:40px; line-height:40px; color:#333}
+.crumbs{ height:40px; line-height:40px; color:#333; font-size: 12px;}
 .crumbs a{ color:#333}
 .crumbs .on{ color:#0e69b3}
 
