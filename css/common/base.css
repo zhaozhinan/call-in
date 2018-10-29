@@ -106,7 +106,7 @@ label span.red{ font-size:12px; text-align:left; display:inline-block; width:12p
 .chose-week li.on{ background-position:95% 8px}
 .chose-week li em{ visibility:hidden}
 .disable-sele { background: #999; opacity: 0.2; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 101; }
-bea-sele.disable { border-color: #dcdcdc; }
+.bea-sele.disable { border-color: #dcdcdc; }
 .btn-edit a{ margin-left:15px}
 .double .i-triangle i{ border-width:5px;margin-top:2px; margin-left:10px}
 .double .i-triangle i.up{ margin-top:9px; border-top:none; border-bottom:5px solid #999}
