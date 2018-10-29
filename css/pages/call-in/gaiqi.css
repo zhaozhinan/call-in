@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+/*@import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css";*/
+
+/*.container .area{ position:relative; margin:0px auto 30px; font-size:14px; border: 1px solid #dcdcdc;}*/
+
+.loading-error { text-align:center; line-height:50px; color:#ccc; padding:76px 0px; }
+.loading-error img { margin: 0 auto; }
+/* loading */
+.loading { height:150px; text-align:center; line-height:50px; color:#ccc; padding:120px 0px 0px; background: url('http://static.inner.chimelong.com:30221/evente/c/wap/img/hotel/loading.gif') no-repeat center center; background-size: 30px 30px; }
+
+/*  表格样式 */
+.tabel-order{ width:100%;text-align:center;}
+.tabel-order td{font-size:12px;height:40px;}
+.tabel-order th{ background:#f9f9fb;height:35px;}
+.tabel-order .first-td{padding:10px 0;position:relative;line-height:1.5em;}
+.tabel-order .first-td img{float:left;margin-left:10px;}
+.tabel-order .first-td p{width:260px;text-align:left;}
+.table-tit th{border:none;}
+.table-tit tr{border:1px solid #dcdcdc;}
+.no-bor_left{border-left:none;}
+.no-bor_right{border-right:none;}
+.tabel-6{border:1px solid #dcdcdc;}
+.tabel-6 th{border:none;}
+caption{border:1px solid #dcdcdc;height:40px;line-height:40px;margin-bottom:-1px;background:#f9f9fb}
+.order_T{text-align:left;height:35px;line-height:35px;background:#fffcdf;}
+.order_B{text-align:left;height:35px;line-height:35px;background:#fffcdf;border:1px solid #dcdcdc;margin-top:-1px}
+.bg-hui{background:#f9f9fb}
+.order_info{border:1px solid #dcdcdc;height:49px;line-height:50px;margin-top:-1px;background:#fffcdf}
+.table-d td{padding:0 10px;}
+
+.ml5{margin-left:5px}
+.mt5{margin-top:5px}
+.mr5{margin-right:5px}
+.mb5{margin-bottom:5px}
+.ml6{margin-left:6px}
+.mt6{margin-top:6px}
+.mr6{margin-right:6px}
+.mb6{margin-bottom:6px}
+.align-l, .align-left {text-align: left}
+.align-center {text-align: center;}
+.align-right {text-align: right}
+
+
+/* 表格中的表格 */
+.tabel-order-child {width:100%;margin:-1px}
+.tabel-order-child td {padding:20px;line-height: 2em}
+
+
+
+/* 申请改期 */
+.rescheduled-info-right {text-align: left}
+.rescheduled-name {display: inline-block;width: 60%;text-align: left}
+.rescheduled-number {display: inline-block;width:30%;text-align: right}
+.grzx-application-rescheduled-num {width:18px;height:18px;line-height: 18px;text-align: center;color:#fff;background: #1996f9;display: inline-block;border-radius: 16px;margin-right:5px}
+.rescheduled-box {position: relative;}
+.table-selected {border:1px solid #1996f9;position: absolute;top:0;left:0;width:100%;height:100%;box-sizing: border-box;z-index: 0;display: none}
+.CheckBoxLabelClass, .input{position: relative;}
+.my-window-rescheduled-tips {min-height:50px;line-height: 50px;text-align: center;padding:25px 0;margin-top:-50px;min-width: 340px;margin-left:-170px}
+.my-window-rescheduled-tips-box {font-size: 20px;}
+.js-rescheduled {cursor: pointer;}
+
+.cl_name{width:6.5em;text-align:right;height:32px;line-height:32px;margin-right:10px;}
+.cl-name{height:32px;line-height:32px;}
+
+/* input 置灰不可编辑 */
+.inp-disabled {background:#f9f9fb}
+.Wdate.inp-disabled {background: #f9f9fb url(../../../images/icon_24/date.png) no-repeat 95% center;}
+/* 模拟下拉框 置灰不可编辑 */
+.bea-sele-inp-disabled, .bea-sele-inp-disabled:hover {position: absolute !important;top:0;left:0;background:transparent;border:none;}
+.bea-sele-disabled {background:#f9f9fb}
+.bea-sele-disabled .on-sele, .bea-sele-disabled .e-sele .i-triangle{background:#f9f9fb}
