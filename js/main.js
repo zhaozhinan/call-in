@@ -488,9 +488,15 @@ $(function(){
 		var onTxt = $(this).find(".on-sele"),
 		onLiTxt = $(this).find(".bea-opt").find(".on");
 		if(onLiTxt.length>0){
-			onTxt.css("color","#333");	
+			onTxt.css("color","#333");
+		}
+
+		if($(this).hasClass('disable')) {
+			$(this).append('<div class="disable-sele"></div>');
 		}
 	});
+
+	$('body').off('click', '.disable-sele');
 });
 
 

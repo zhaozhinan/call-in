@@ -54,17 +54,81 @@
               <label for="" class="order-list-label">订单类型：</label>
               <div class="bea-sele">
                 <div class="e-sele">
-                  <span class="on-sele" style="width:110px">全部</span>
-                  <em class="i-triangle"><i></i></em>
+                  <span class="on-sele">全部</span><em class="i-triangle"><i></i></em>
                 </div>
                 <ul class="bea-opt">
                   <li>全部</li>
                 </ul>
               </div>
               <div class="order-type">
-                <div class="order-type-item">1</div>
-                <div class="order-type-item">2</div>
-                <div class="order-type-item">3</div>
+                <!-- 酒店 -->
+                <div class="order-type-item">
+                  <label for="" class="order-list-label">所属酒店：</label>
+                  <div class="bea-sele disable">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择区域</span><em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>1</li>
+                    </ul>
+                  </div>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择所属酒店</span><em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>11</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- ／酒店 -->
+
+                <!-- 餐厅 -->
+                <!-- <div class="order-type-item">
+                  <label for="" class="order-list-label">所属餐厅：</label>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择区域</span><em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>1</li>
+                    </ul>
+                  </div>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择所属餐厅</span>
+                      <em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>11</li>
+                    </ul>
+                  </div>
+                </div> -->
+                <!-- ／餐厅 -->
+
+                <!-- 门票 -->
+                <!-- <div class="order-type-item">
+                  <label for="" class="order-list-label">所属乐园：</label>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择区域</span>
+                      <em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>1</li>
+                    </ul>
+                  </div>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择所属乐园</span>
+                      <em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>11</li>
+                    </ul>
+                  </div>
+                </div> -->
+                <!-- ／门票 -->
               </div>
             </div>
             <div class="clearfix mt20">
@@ -83,7 +147,7 @@
                   <li>已驳回</li>
                 </ul>
               </div>
-              <label for="" class="order-list-label ml20">订单状态：</label><input type="text" name="" class="input left"><label for="" class="order-list-label ml20">子单编号：</label><input type="text" name="" class="input left">
+              <label for="" class="order-list-label ml20">交易单号：</label><input type="text" name="" class="input left"><label for="" class="order-list-label ml20">子单编号：</label><input type="text" name="" class="input left">
             </div>
             <div class="clearfix mt20">
               <label for="" class="order-list-label">操作员姓名：</label><input type="text" name="" class="input left" style="width: 151px">
@@ -203,7 +267,89 @@
     <!-- <script src="./json.js"></script> -->
     <script>
       $(function(){
-
+        var json = [
+          {
+            "name": "全部",
+          },
+          {
+            "name": "酒店",
+            "list": [
+              {
+                "name": "广州",
+                "item": [
+                  {
+                    "name": "广州长隆酒店",
+                  },
+                  {
+                    "name": "广州番禹大酒店（长隆集团）",
+                  },
+                  {
+                    "name": "广州长隆熊猫酒店",
+                  },
+                  {
+                    "name": "广州长隆香江酒店（长隆野生动物世界店）",
+                  },
+                ]
+              },
+              {
+                "name": "珠海",
+                "item": [
+                  {
+                    "name": "珠海长隆马戏酒店",
+                  },
+                  {
+                    "name": "珠海长隆企鹅酒店",
+                  },
+                  {
+                    "name": "珠海长隆横琴湾酒店",
+                  },
+                  {
+                    "name": "珠海长隆迎海酒店公寓",
+                  },
+                ]
+              }
+            ]
+          },
+          {
+            "name": "酒店",
+            "list": [
+              {
+                "name": "广州",
+                "item": [
+                  {
+                    "name": "广州长隆酒店",
+                  },
+                  {
+                    "name": "广州番禹大酒店（长隆集团）",
+                  },
+                  {
+                    "name": "广州长隆熊猫酒店",
+                  },
+                  {
+                    "name": "广州长隆香江酒店（长隆野生动物世界店）",
+                  },
+                ]
+              },
+              {
+                "name": "珠海",
+                "item": [
+                  {
+                    "name": "珠海长隆马戏酒店",
+                  },
+                  {
+                    "name": "珠海长隆企鹅酒店",
+                  },
+                  {
+                    "name": "珠海长隆横琴湾酒店",
+                  },
+                  {
+                    "name": "珠海长隆迎海酒店公寓",
+                  },
+                ]
+              }
+            ]
+          },
+        ];
       });
     </script>
 </body>

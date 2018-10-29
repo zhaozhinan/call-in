@@ -3,6 +3,10 @@
 .order-list { margin: 0 30px; }
 #itemTwo, #itemThree { display: none; margin-left: 20px; }
 .order-list-bd { background: #F9F9FB; border: 1px solid #dcdcdc; padding: 20px; box-sizing: border-box; margin: 20px 0; }
+.order-list-bd .on-sele { width: 110px; }
+.order-type-item { margin-left: 20px }
+.order-type-item .bea-sele { margin-right: 20px; }
+.order-type-item .on-sele { width: 130px; }
 .order-list-label { float: left; margin-top: 8px; width: 7em; text-align: right; }
 .date-item span { margin-right: 10px; font-size: 12px; }
 .order-list-bd-btn { float: right; margin-top: -2px; }
