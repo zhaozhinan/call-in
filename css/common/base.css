@@ -305,6 +305,7 @@ border: 1px solid transparent;
 .mainNav .nav li a{ display:block; font-size:16px; text-align:center; text-decoration:none; margin-left:10px; padding-bottom:4px; color:#333}
 .mainNav .nav li.first, .mainNav .nav li:nth-of-type(1){ border-left:none}
 .mainNav .nav li a:hover, #hideNav .f16 a:hover{border-bottom:3px solid #1996f9; color:#055493;}
+.mainNav .mainNavDes {line-height: 69px;margin-left:10px;float: left;font-weight: normal;font-size: 18px}
 
 /* 未登录 */
 .mainNav .noLoged{ color:#0095FA;font-size:12px; vertical-align:top; height:14px; margin-top:43px}
