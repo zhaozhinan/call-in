@@ -23,13 +23,13 @@
             <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a></h1>
             <div class="right" style="margin-top:24px">
                 <ul class="nav nav-toplist">
-                    <li class="first on"><a href="#">酒店房间</a></li>
-                    <li><a href="#">酒店餐厅</a></li>
-                    <li><a href="#">乐园门票</a></li>
-                    <li><a href="#">购物车</a></li>
-                    <li><a href="#">订单中心</a></li>
-                    <li><a href="#">财务报表</a></li>
-                    <li><a href="#">账户管理</a></li>
+                    <li><a href="酒店房间.html">酒店房间</a></li>
+                    <li><a href="酒店餐厅.html">酒店餐厅</a></li>
+                    <li><a href="乐园门票.html">乐园门票</a></li>
+                    <li><a href="购物车.html">购物车</a></li>
+                    <li class="on"><a href="./订单列表.html">订单中心</a></li>
+                    <li><a href="财务报表.html">财务报表</a></li>
+                    <li><a href="账号管理-列表.html">账户管理</a></li>
                 </ul>
             </div>
         </div>
@@ -54,17 +54,81 @@
               <label for="" class="order-list-label">订单类型：</label>
               <div class="bea-sele">
                 <div class="e-sele">
-                  <span class="on-sele" style="width:110px">全部</span>
-                  <em class="i-triangle"><i></i></em>
+                  <span class="on-sele">全部</span><em class="i-triangle"><i></i></em>
                 </div>
                 <ul class="bea-opt">
                   <li>全部</li>
                 </ul>
               </div>
               <div class="order-type">
-                <div class="order-type-item">1</div>
-                <div class="order-type-item">2</div>
-                <div class="order-type-item">3</div>
+                <!-- 酒店 -->
+                <div class="order-type-item">
+                  <label for="" class="order-list-label">所属酒店：</label>
+                  <div class="bea-sele disable">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择区域</span><em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>1</li>
+                    </ul>
+                  </div>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择所属酒店</span><em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>11</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- ／酒店 -->
+
+                <!-- 餐厅 -->
+                <!-- <div class="order-type-item">
+                  <label for="" class="order-list-label">所属餐厅：</label>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择区域</span><em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>1</li>
+                    </ul>
+                  </div>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择所属餐厅</span>
+                      <em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>11</li>
+                    </ul>
+                  </div>
+                </div> -->
+                <!-- ／餐厅 -->
+
+                <!-- 门票 -->
+                <!-- <div class="order-type-item">
+                  <label for="" class="order-list-label">所属乐园：</label>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择区域</span>
+                      <em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>1</li>
+                    </ul>
+                  </div>
+                  <div class="bea-sele">
+                    <div class="e-sele">
+                      <span class="on-sele">请选择所属乐园</span>
+                      <em class="i-triangle"><i></i></em>
+                    </div>
+                    <ul class="bea-opt">
+                      <li>11</li>
+                    </ul>
+                  </div>
+                </div> -->
+                <!-- ／门票 -->
               </div>
             </div>
             <div class="clearfix mt20">
@@ -83,7 +147,7 @@
                   <li>已驳回</li>
                 </ul>
               </div>
-              <label for="" class="order-list-label ml20">订单状态：</label><input type="text" name="" class="input left"><label for="" class="order-list-label ml20">子单编号：</label><input type="text" name="" class="input left">
+              <label for="" class="order-list-label ml20">交易单号：</label><input type="text" name="" class="input left"><label for="" class="order-list-label ml20">子单编号：</label><input type="text" name="" class="input left">
             </div>
             <div class="clearfix mt20">
               <label for="" class="order-list-label">操作员姓名：</label><input type="text" name="" class="input left" style="width: 151px">
@@ -104,7 +168,7 @@
           </div>
 
           <div class="order-list-table">
-            <table class="tabel-info mt20" border="1">
+            <table class="table-info mt20" border="1">
               <tr>
                 <th width="15%">交易单号</th>
                 <th width="8%">子单编号</th>
@@ -132,7 +196,7 @@
                 </td>
                 <td>已完成</td>
                 <td>***</td>
-                <td><a class="blue" href="#">查看订单</a></td>
+                <td><a class="blue" href="./订单详情.html">查看订单</a></td>
               </tr>
               <tr>
                 <td>2018082214277067584475</td>
@@ -151,7 +215,7 @@
                 </td>
                 <td>已完成</td>
                 <td>***</td>
-                <td><a class="blue" href="#">查看订单</a></td>
+                <td><a class="blue" href="./订单详情.html">查看订单</a></td>
               </tr>
               <tr>
                 <td>2018082214277067584475</td>
@@ -170,7 +234,7 @@
                 </td>
                 <td>已完成</td>
                 <td>***</td>
-                <td><a class="blue" href="#">查看订单</a></td>
+                <td><a class="blue" href="./订单详情.html">查看订单</a></td>
               </tr>
             </table>
             <div class="pagelist mt20 mb20 clearfix">
@@ -203,7 +267,89 @@
     <!-- <script src="./json.js"></script> -->
     <script>
       $(function(){
-
+        var json = [
+          {
+            "name": "全部",
+          },
+          {
+            "name": "酒店",
+            "list": [
+              {
+                "name": "广州",
+                "item": [
+                  {
+                    "name": "广州长隆酒店",
+                  },
+                  {
+                    "name": "广州番禹大酒店（长隆集团）",
+                  },
+                  {
+                    "name": "广州长隆熊猫酒店",
+                  },
+                  {
+                    "name": "广州长隆香江酒店（长隆野生动物世界店）",
+                  },
+                ]
+              },
+              {
+                "name": "珠海",
+                "item": [
+                  {
+                    "name": "珠海长隆马戏酒店",
+                  },
+                  {
+                    "name": "珠海长隆企鹅酒店",
+                  },
+                  {
+                    "name": "珠海长隆横琴湾酒店",
+                  },
+                  {
+                    "name": "珠海长隆迎海酒店公寓",
+                  },
+                ]
+              }
+            ]
+          },
+          {
+            "name": "酒店",
+            "list": [
+              {
+                "name": "广州",
+                "item": [
+                  {
+                    "name": "广州长隆酒店",
+                  },
+                  {
+                    "name": "广州番禹大酒店（长隆集团）",
+                  },
+                  {
+                    "name": "广州长隆熊猫酒店",
+                  },
+                  {
+                    "name": "广州长隆香江酒店（长隆野生动物世界店）",
+                  },
+                ]
+              },
+              {
+                "name": "珠海",
+                "item": [
+                  {
+                    "name": "珠海长隆马戏酒店",
+                  },
+                  {
+                    "name": "珠海长隆企鹅酒店",
+                  },
+                  {
+                    "name": "珠海长隆横琴湾酒店",
+                  },
+                  {
+                    "name": "珠海长隆迎海酒店公寓",
+                  },
+                ]
+              }
+            ]
+          },
+        ];
       });
     </script>
 </body>

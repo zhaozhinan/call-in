@@ -14,10 +14,10 @@
 .hotel-restaurant-label { float: left; margin-top: 8px; width: 7em; text-align: right; }
 .hotel-restaurant-bd-btn { float: right; margin-top: -2px; }
 
-.tabel-detail{ width:100%; text-align:center; }
-.tabel-detail td{ border-top:1px solid #DCDCDC;font-size:12px; height:45px; line-height:18px; padding: 5px; }
-.tabel-detail th{ height:35px;font-size:14px;background:#F9F9FB; }
-.tabel-detail td.first{ background:#F9F9FB; font-size:14px; }
+.table-detail { width:100%; text-align:center; }
+.table-detail td{ border-top:1px solid #DCDCDC;font-size:12px; height:45px; line-height:18px; padding: 5px; }
+.table-detail th{ height:35px;font-size:14px;background:#F9F9FB; }
+.table-detail td.first{ background:#F9F9FB; font-size:14px; }
 .thPlace { cursor: pointer; }
 
 .hotel-restaurant-sale { position: relative; text-align: left; padding: 0 10px}
