@@ -62,7 +62,7 @@
               <span class="ml20 time_tab">
                 <span class="ml10"><a href="iavascript:;" class="act">全部</a></span>
                 <span class="ml10"><a href="iavascript:;" class="">今日</a></span>
-                <span class="ml10"><a href="iavascript:;" class="">最近7日</a></span>
+                <span class="ml10"><a href="iavascript:;" class="">本周</a></span>
                 <span class="ml10"><a href="iavascript:;" class="">最近30日</a></span>
               </span>
             </div>
@@ -313,9 +313,12 @@
   	$(this).siblings().children('a').removeClass('act');
 
     var txt = $(this).text(),
+        weekDayNum = new Date().getDay() - 1,
         today = getDateStr(0),
         week  = getDateStr(-7),
+        weekDay = getDateStr(-weekDayNum),
         month = getDateStr(-30);
+        // console.log(typeof weekDayNum, weekDayNum, weekDay);
     if (txt === '全部') {
       $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val('');
     }
@@ -324,6 +327,10 @@
     }
     if (txt === '最近7日') {
       $('.Wdate[name="start_date"]').val(week);
+      $('.Wdate[name="end_date"]').val(today);
+    }
+    if (txt === '本周') {
+      $('.Wdate[name="start_date"]').val(weekDay);
       $('.Wdate[name="end_date"]').val(today);
     }
     if (txt === '最近30日') {
