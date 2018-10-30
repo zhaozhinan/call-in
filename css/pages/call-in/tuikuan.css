@@ -25,10 +25,9 @@
 .no-bor_left{border-left:none;}
 .no-bor_right{border-right:none;}
 .tabel-6{border:1px solid #dcdcdc;}
-.tabel-6 th{border:none;}
-caption{border:1px solid #dcdcdc;height:40px;line-height:40px;margin-bottom:-1px;background:#f9f9fb}
+caption{border:1px solid #dcdcdc;height:40px;line-height:40px;margin-bottom:-1px;background:#f9f9fb;font-size: 12px}
 .order_T{text-align:left;height:35px;line-height:35px;background:#fffcdf;}
-.order_B{text-align:left;height:35px;line-height:35px;background:#fffcdf;border:1px solid #dcdcdc;margin-top:-1px}
+.order_B{text-align:left;height:35px;line-height:35px;background:#fffcdf;border:1px solid #dcdcdc;margin-top:-1px;font-size: 12px}
 .bg-hui{background:#f9f9fb}
 .order_info{border:1px solid #dcdcdc;height:49px;line-height:50px;margin-top:-1px;background:#fffcdf}
 .table-d td{padding:0 10px;}
@@ -77,27 +76,44 @@ caption{border:1px solid #dcdcdc;height:40px;line-height:40px;margin-bottom:-1px
 .cl_name{width:6.5em;text-align:right;height:32px;line-height:32px;margin-right:10px;font-size: 12px}
 .cl-name{height:32px;line-height:32px;font-size: 12px}
 
+/* 申请售后 */
+.fir_Boxs {position: relative;}
+.grzx-after-sale-dingdan {width:290px;text-align:left}
+.grzx-after-sale-dingdan-xinxi {width:200px}
+.grzx-after-sale-dingdan-price-box{width:88px;text-align:center;position:relative;}
+.grzx-after-sale-box-border {min-height:30px;line-height: 30px;border:1px solid #dcdcdc;padding:10px;font-size: 12px}
 .grzx-after-sale-description {clear:both;padding-top:20px}
 .grzx-after-sale-description-textarea {padding:10px;border:none;border:1px solid #dcdcdc;font-size: 12px}
 .grzx-after-sale-description-textarea:focus{ border:1px solid #1996f9}
 .bea-sele {font-size: 12px}
-.grzx-rescheduled-reason-box {border:1px solid #dcdcdc;padding:10px;min-height:200px}
 
+/* 数量加减  */
+.number{display:inline-block;overflow:hidden;}
+.number em{float:left;}
+.number span{float:left;width:28px;text-align:center;border:1px solid #ccc; cursor: pointer;font-size:24px;border-radius:3px;color:#666;height:28px;line-height:28px;background: #fff}
+.number .input{float:left;margin:0 10px;border-radius:3px;height:28px}
+.dingdan_del{cursor:pointer;}
+/* 酒店价格浮框 */
+.cur-price{cursor:pointer;border-bottom:1px dashed #1996f9;}
+.price-fukuang{width:150px;padding:10px;line-height:20px;border:1px solid #dcdcdc;background:#fff;z-index:1000;color:#333;position:absolute;left:50%;margin-left:-80px;text-align: left}
 
-/* input 置灰不可编辑 */
-.inp-disabled {background:#f9f9fb}
-.Wdate.inp-disabled {background: #f9f9fb url(../../../images/icon_24/date.png) no-repeat 95% center;}
-/* 模拟下拉框 置灰不可编辑 */
-.bea-sele-inp-disabled, .bea-sele-inp-disabled:hover {position: absolute !important;top:0;left:0;background:transparent;border:none;}
-.bea-sele-disabled {background:#f9f9fb}
-.bea-sele-disabled .on-sele, .bea-sele-disabled .e-sele .i-triangle{background:#f9f9fb}
+/* 确认信息  弹窗 */
+.my-window-confirm-information {min-width: 260px;margin-left:-130px}
+.my-window-confirm-information-box {padding:20px;line-height: 20px}
+/* 温馨提示 成功、失败*/
+.my-window-warm-tips {min-width: 430px;margin-left:-215px}
+.my-window-warm-tips-box {padding:20px}
+.my-window-warm-tips-successful {width:390px;margin:0 auto;}
+.my-window-warm-tips-successful-icon {width:50px;height:50px;}
+.my-window-warm-tips-successful-box {line-height: 1.75em;color:#333;width:320px}
+.my-window-warm-tips-successful-box-tit {margin:0 0 5px;color:#000}
+.my-window-warm-tips-successful-line {border-top:1px dashed #999;margin:5px 0 6px}
 
-/* 20180809 修改 保存弹窗  */
-.secondary-confirmation-submit {min-width:300px;margin-left:-150px;min-height:150px;margin-top:-75px}
-.secondary-confirmation-submit-box {text-align: center;padding:30px 0 0;font-size: 16px;line-height: 50px}
-
-/* 弹窗  二次确认 */
-.secondary-confirmation, .secondary-confirmation-failure {min-width:260px;min-height:106px;margin:-53px 0 0 -130px}
+.my-window-warm-tips-failed {width:390px;margin:0 auto;}
+.my-window-warm-tips-failed-icon {width:50px;height:50px;}
+.my-window-warm-tips-failed-box {line-height: 1.75em;color:#333;width:320px}
+.my-window-warm-tips-failed-box-tit {margin:0 0 5px;color:#000}
+.my-window-warm-tips-failed-line {border-top:1px dashed #999;margin:5px 0 6px;}
 
 /* 弹窗 */
 .my-window-tit, .my-window-box{text-align: center;margin-top:20px}

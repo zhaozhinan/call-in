@@ -117,7 +117,7 @@ label span.red{ font-size:12px; text-align:left; display:inline-block; width:12p
 .alert .close:hover{ color:#0084E1}
 
 /* 弹窗 */
-.my-window{ position:fixed; top:50%; left:50%; z-index:1000; background:#FFF; box-shadow:0 1px 2px #999; -moz-box-shadow:0 1px 2px #999; -ms-box-shadow:0 1px 2px #999; -o-box-shadow:0 1px 2px #999; -webkit-box-shadow:0 1px 2px #999; width:402px; height:170px; margin-left:-201px;margin-top:-85px; border-radius: 3px}
+.my-window{ position:fixed; top:50%; left:50%; z-index:1000; background:#FFF; box-shadow:0 1px 2px #999; -moz-box-shadow:0 1px 2px #999; -ms-box-shadow:0 1px 2px #999; -o-box-shadow:0 1px 2px #999; -webkit-box-shadow:0 1px 2px #999; min-width:402px; min-height:170px; margin-left:-201px;margin-top:-85px; border-radius: 3px}
 .my-loyer{ position:fixed; top:0; left:0; width:100%; height:100%; z-index:999; background:#000; -moz-opacity:.2; filter:alpha(opacity=20); opacity:.2}
 .my-window, .my-loyer{ display:none}
 /* /弹窗 */

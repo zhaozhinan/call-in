@@ -49,81 +49,7 @@
   				<div class="grzx-application-rescheduled mt20">
   					<!-- 1 -->
   					<div>
-  						<div class="mb10"><span class="grzx-application-rescheduled-num">1</span>请选择需要改期的产品</div>
-  						<div class="mb20 rescheduled-box">
-  							<div class="table-selected"></div>
-  							<table border="" class="tabel-order">
-  								<tr>
-  									<td width="60">
-  										<input id="CheckBox1" type="checkbox" class="CheckBoxClass">
-  										<label for="CheckBox1" class="CheckBoxLabelClass"></label>
-  									</td>
-  									<td>
-  										<table border="0" cellspacing="0" cellpadding="0" class="tabel-order-child" style="width:1104px">
-  											<tr>
-  												<td width="45%">
-  													<div class="align-l rescheduled-info-left">
-  														<p>游玩日期：2018-09-09 ~ 2018-09-10</p>
-  														<p>取票凭证码：123456</p>
-  													</div>
-  												</td>
-  												<td width="55%">
-  													<div class="rescheduled-info-right">（乐园）广州长隆飞鸟乐园长隆飞鸟乐园（一天）大学生长隆飞鸟乐园全票x1</div>
-  												</td>
-  											</tr>
-  											<tr>
-  												<td colspan="2">
-  													<div class="align-l">
-  														<label for="" class="cl-name left f14">改期时间：</label>
-  														<input class="input Wdate left inp-disabled rescheduled-time" disabled="disabled" style="width:176px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicked:confirmTime,onclearing:emptyTime})" placeholder="请选择改期时间">
-  														<div class="bea-sele ml20" style="display:none">
-  													    <div class="e-sele"><span class="on-sele align-l" style="width:159px">请选择马戏场次</span><em class="i-triangle"><i></i></em></div>
-  													    <ul class="bea-opt" style="">
-  												        <li>1</li>
-  												        <li>2</li>
-  													    </ul>
-  														</div>
-  													</div>
-  												</td>
-  											</tr>
-  									</table>
-  								</td>
-  							</table>
-  						</div>
-  						<div class="mb20 rescheduled-box">
-  							<div class="table-selected"></div>
-  							<table border="" cellspacing="0" cellpadding="0" class="tabel-order">
-  								<tr>
-  									<td width="60">
-  										<input id="CheckBox2" type="checkbox" class="CheckBoxClass">
-  										<label for="CheckBox2" class="CheckBoxLabelClass"></label>
-  									</td>
-  									<td>
-  										<table border="0" cellspacing="0" cellpadding="0" class="tabel-order-child" style="width:1104px">
-  											<tr>
-  												<td width="45%">
-  													<div class="align-l rescheduled-info-left">
-  														<p>游玩日期：2018-09-09 ~ 2018-09-10</p>
-  														<p>取票凭证码：123456</p>
-  													</div>
-  												</td>
-  												<td width="55%">
-  													<div class="rescheduled-info-right">（乐园马戏）广州长隆飞鸟乐园长隆飞鸟乐园（一天）大学生全票x1</div>
-  												</td>
-  											</tr>
-  											<tr>
-  												<td colspan="2">
-  													<div class="align-l">
-  														<label for="" class="cl-name left f14">改期时间：</label>
-  														<input class="input Wdate left inp-disabled rescheduled-time" disabled="disabled" style="width:176px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicked:confirmTime,onclearing:emptyTime})" placeholder="请选择改期时间">
-  													</div>
-  												</td>
-  											</tr>
-  										</table>
-  									</td>
-  								</tr>
-  							</table>
-  						</div>
+  						<div class="mb10 red">产品改期后无法修改，请谨慎操作！</div>
   						<div class="mb20 rescheduled-box">
   							<div class="table-selected"></div>
   							<table border="" class="tabel-order">
@@ -236,10 +162,9 @@
   						</div>
   					</div>
   					<!-- 2 -->
-  					<div class="mb20 clearfix">
-  						<span class="grzx-application-rescheduled-num left mt6">2</span>
+  					<div class="mb20 clearfix grzx-rescheduled-reason-box">
   						<div class="left">
-  							<label for="" class="left cl-name">退款原因：</label>
+  							<label for="" class="left cl-name">改期原因：</label>
   							<div class="bea-sele">
   						    <div class="e-sele">
   									<span class="on-sele" style="width: 140px;">请选择原因</span>
@@ -251,69 +176,62 @@
   						    </ul>
   							</div>
   							<div class="grzx-after-sale-description clearfix" style="display:none">
-  								<label for="" class="left cl-name">退款说明：</label>
+  								<label for="" class="left cl-name">改期说明：</label>
   								<textarea name="name" rows="8" cols="80" placeholder="请填写具体原因(最多100个字)" class="grzx-after-sale-description-textarea"></textarea>
   							</div>
   						</div>
   					</div>
-  					<!-- 3 -->
-  					<div class="">
-  						<span class="grzx-application-rescheduled-num">3</span><input id="CheckBox6" type="checkbox" class="CheckBoxClass">
-  						<label for="CheckBox6" class="CheckBoxLabelClass" style="margin-left:-8px"></label>我已阅读并同意<span class="blue js-rescheduled">《改期须知》</span>
-  					</div>
-  					<div class="ml20">
-  						<a href="javascript:;" class="btn-y btn-j mt20 btn-submit">确认改期</a>
+  					<div>
+  						<a href="javascript:;" class="btn-y btn-y-blue mb20 btn-submit">确认改期</a>
   					</div>
   				</div>
-
-          <!-- 为空的时候 -->
-          <div class="loading-error">
-              <img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png">
-              <div class="mt20">暂时没有可售房型，请换个日期试试</div>
-          </div>
-          <!-- ／为空的状态 -->
-          <!-- 加载时候的loading -->
-          <div class="loading"></div>
-          <!-- ／加载时候的loading -->
-
         </div>
     </div>
 
     <div class="my-loyer"></div>
-    <div class="my-window J-propChoose">
-      <div class="clearfix"><a href="javascript:;" class="close">×</a></div>
-      <div class="J-propChoose-wrap">
-        <div>您的选择是 "<i>自助晚餐 成人票券 平日</i>"</div>
-        <div class="mt10 mb10">用餐日期：<span class="red">2018-08-27</span><span class="ml30">适用时段：</span><i class="red">早餐</i></div>
-        <div class="red">请确认无误后再进行预订。</div>
-      </div>
-      <div class="clearfix J-propChoose-box">
-        <span class="J-propChoose-box-lable">数量：</span><a href="javascript:;" class="btn-minus disabled">-</a><span class="input-number">1</span><a href="javascript:;" class="btn-plus">+</a>
-        <span class="right"><a href="javascript:;" class="btn btn-j">加入购物车</a><a href="javascript:;" class="btn btn-j ml10">立即预订</a></span>
-      </div>
-    </div>
-
-    <div class="my-window J-propDis">
-      <div class="window-title"><span>产品描述</span><a href="javascript:;" class="close">×</a></div>
-      <div class="J-propDis-box">
-        <div>
-          <p>适用对象</p>
-          <p>成人票：身高1.5m以上儿童或成人。</p>
-          <p>免票：一名持票（同日期同餐次）成人可免费携带一名身高在1米以下的小童票进场用餐。</p>
-        </div>
-
-        <div>
-          <p>用餐时间</p>
-          <p>17:30-21:00（以现场营业时间为准）。</p>
-        </div>
-
-        <div>
-          <p>兑换方式</p>
-          <p>请于用餐前出示餐券,需要至少提前一天预定餐位。取票请到长隆酒店一号大堂取票机取票，切勿换取二维码门票。</p>
-        </div>
-      </div>
-    </div>
-
+    <!-- 错误提示 -->
+  	<div class="my-window my-window-error-message" style="display:none;">
+  		<div class="my-window-error-message-box">
+  			<img src="../../images/icon_yyc.png" alt="">
+  			<div class="">请选择退款原因</div>
+  		</div>
+  	</div>
+  	<div class="my-window my-window-error-message" style="display:none;">
+  		<div class="my-window-error-message-box">
+  			<img src="../../images/icon_yyc.png" alt="">
+  			<div class="">请填写退款原因</div>
+  		</div>
+  	</div>
+  	<!-- 确认信息 -->
+  	<div class="my-window secondary-confirmation" style="display:none;min-width:320px;margin-left:-160px">
+  		<div class="align-center">
+  			<p class="secondary-confirmation-title mt20 f14">产品改期后无法再次修改，确认改期？</p>
+  			<div class="mt20">
+  				<a href="jvascript:;" class="btn-y btn-y-white mr10 my-window-cancel">我再想想</a>
+  				<a href="jvascript:;" class="btn-y btn-y-blue ml10 my-window-submit">确定改期</a>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- 温馨提示 成功 、失败 -->
+  	<div class="my-window secondary-confirmation-submit" style="display:none;">
+  		<div class="secondary-confirmation-submit-box" style="display:none">
+  			<img src="../../images/icon_zt_1.png" alt="">
+  			<div class="">改期成功</div>
+  		</div>
+  		<div class="secondary-confirmation-submit-box" style="display:block">
+  			<img src="../../images/icon_fail.png" alt="">
+  			<div class="">改期失败</div>
+  		</div>
+  	</div>
+  	<!-- 改期失败 返回重选 -->
+  	<div class="my-window secondary-confirmation-failure" style="display:none;min-width:320px;margin-left:-160px">
+  		<div class="align-center">
+  			<p class="secondary-confirmation-title mt20 f14">您选择的广州长隆飞鸟乐园成人票无法改期</p>
+  			<div class="mt20">
+  				<a href="jvascript:;" class="btn-y btn-y-blue ml10 my-window-reture-choose">返回重选</a>
+  			</div>
+  		</div>
+  	</div>
     <script src="../../js/lib/jquery.min.js"></script>
     <script src="../../js/main.js"></script>
     <script src="https://static.evente.cn/libs/js/plugins/My97DatePicker/WdatePicker.js"></script>
