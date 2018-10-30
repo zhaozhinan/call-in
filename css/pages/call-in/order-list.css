@@ -8,7 +8,8 @@
 .order-type-item .bea-sele { margin-right: 20px; }
 .order-type-item .on-sele { width: 130px; }
 .order-list-label { float: left; margin-top: 8px; width: 7em; text-align: right; }
-.date-item span { margin-right: 10px; font-size: 12px; }
+.date-item span { margin-right: 10px; font-size: 12px; cursor: pointer; }
+.date-item .on { color: #999 }
 .order-list-bd-btn { float: right; margin-top: -2px; }
 .date-connect { padding: 0 8px; color: #999 }
 .order-type { float: left; }

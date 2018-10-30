@@ -48,7 +48,7 @@
 
           <div class="order-list-bd">
             <div class="clearfix">
-              <label for="" class="order-list-label">订单之间：</label><span class="date-item"><span>今日</span><span>最近7日</span><span>最近30日</span></span><input class="input Wdate" name="end_date" value="" placeholder="" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" readonly="readonly"><span class="date-connect">-</span><input class="input Wdate" name="end_date" value="" placeholder="" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" readonly="readonly">
+              <label for="" class="order-list-label">订单之间：</label><span class="date-item"><span class="on">全部</span><span>今日</span><span>最近7日</span><span>最近30日</span></span><input class="input Wdate" name="start_date" value="" placeholder="" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" readonly="readonly"><span class="date-connect">-</span><input class="input Wdate" name="end_date" value="" placeholder="" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" readonly="readonly">
             </div>
             <div class="clearfix mt20">
               <label for="" class="order-list-label">订单类型：</label>
@@ -56,79 +56,29 @@
                 <div class="e-sele">
                   <span class="on-sele">全部</span><em class="i-triangle"><i></i></em>
                 </div>
-                <ul class="bea-opt">
-                  <li>全部</li>
+                <ul class="bea-opt" id="orderType">
                 </ul>
               </div>
               <div class="order-type">
-                <!-- 酒店 -->
-                <div class="order-type-item">
-                  <label for="" class="order-list-label">所属酒店：</label>
-                  <div class="bea-sele disable">
+                <!-- 联动 -->
+                <div class="order-type-item" style="display: none;">
+                  <label for="" class="order-list-label" id="typeTxt"></label>
+                  <div class="bea-sele">
                     <div class="e-sele">
-                      <span class="on-sele">请选择区域</span><em class="i-triangle"><i></i></em>
+                      <span class="on-sele" id="txtOne">请选择区域</span><em class="i-triangle"><i></i></em>
                     </div>
-                    <ul class="bea-opt">
-                      <li>1</li>
+                    <ul class="bea-opt" id="seleOne">
                     </ul>
                   </div>
                   <div class="bea-sele">
                     <div class="e-sele">
-                      <span class="on-sele">请选择所属酒店</span><em class="i-triangle"><i></i></em>
+                      <span class="on-sele" id="txtTwo"></span><em class="i-triangle"><i></i></em>
                     </div>
-                    <ul class="bea-opt">
-                      <li>11</li>
+                    <ul class="bea-opt" id="seleTwo">
                     </ul>
                   </div>
                 </div>
-                <!-- ／酒店 -->
-
-                <!-- 餐厅 -->
-                <!-- <div class="order-type-item">
-                  <label for="" class="order-list-label">所属餐厅：</label>
-                  <div class="bea-sele">
-                    <div class="e-sele">
-                      <span class="on-sele">请选择区域</span><em class="i-triangle"><i></i></em>
-                    </div>
-                    <ul class="bea-opt">
-                      <li>1</li>
-                    </ul>
-                  </div>
-                  <div class="bea-sele">
-                    <div class="e-sele">
-                      <span class="on-sele">请选择所属餐厅</span>
-                      <em class="i-triangle"><i></i></em>
-                    </div>
-                    <ul class="bea-opt">
-                      <li>11</li>
-                    </ul>
-                  </div>
-                </div> -->
-                <!-- ／餐厅 -->
-
-                <!-- 门票 -->
-                <!-- <div class="order-type-item">
-                  <label for="" class="order-list-label">所属乐园：</label>
-                  <div class="bea-sele">
-                    <div class="e-sele">
-                      <span class="on-sele">请选择区域</span>
-                      <em class="i-triangle"><i></i></em>
-                    </div>
-                    <ul class="bea-opt">
-                      <li>1</li>
-                    </ul>
-                  </div>
-                  <div class="bea-sele">
-                    <div class="e-sele">
-                      <span class="on-sele">请选择所属乐园</span>
-                      <em class="i-triangle"><i></i></em>
-                    </div>
-                    <ul class="bea-opt">
-                      <li>11</li>
-                    </ul>
-                  </div>
-                </div> -->
-                <!-- ／门票 -->
+                <!-- ／联动 -->
               </div>
             </div>
             <div class="clearfix mt20">
@@ -267,89 +217,205 @@
     <!-- <script src="./json.js"></script> -->
     <script>
       $(function(){
+        // 联动选项
         var json = [
           {
-            "name": "全部",
-          },
-          {
             "name": "酒店",
             "list": [
               {
-                "name": "广州",
+                "name": "广州1",
                 "item": [
                   {
-                    "name": "广州长隆酒店",
+                    "name": "广州长隆酒店11"
                   },
                   {
-                    "name": "广州番禹大酒店（长隆集团）",
+                    "name": "广州番禹大酒店（长隆集团）"
                   },
                   {
-                    "name": "广州长隆熊猫酒店",
+                    "name": "广州长隆熊猫酒店"
                   },
                   {
-                    "name": "广州长隆香江酒店（长隆野生动物世界店）",
-                  },
+                    "name": "广州长隆香江酒店（长隆野生动物世界店）"
+                  }
                 ]
               },
               {
-                "name": "珠海",
+                "name": "珠海1",
                 "item": [
                   {
-                    "name": "珠海长隆马戏酒店",
+                    "name": "珠海长隆马戏酒店11"
                   },
                   {
-                    "name": "珠海长隆企鹅酒店",
+                    "name": "珠海长隆企鹅酒店"
                   },
                   {
-                    "name": "珠海长隆横琴湾酒店",
+                    "name": "珠海长隆横琴湾酒店"
                   },
                   {
-                    "name": "珠海长隆迎海酒店公寓",
-                  },
+                    "name": "珠海长隆迎海酒店公寓"
+                  }
                 ]
               }
             ]
           },
           {
-            "name": "酒店",
+            "name": "餐厅",
             "list": [
               {
-                "name": "广州",
+                "name": "广州2",
                 "item": [
                   {
-                    "name": "广州长隆酒店",
+                    "name": "广州长隆酒店22"
                   },
                   {
-                    "name": "广州番禹大酒店（长隆集团）",
+                    "name": "广州番禹大酒店（长隆集团）"
                   },
                   {
-                    "name": "广州长隆熊猫酒店",
+                    "name": "广州长隆熊猫酒店"
                   },
                   {
-                    "name": "广州长隆香江酒店（长隆野生动物世界店）",
-                  },
+                    "name": "广州长隆香江酒店（长隆野生动物世界店）"
+                  }
                 ]
               },
               {
-                "name": "珠海",
+                "name": "珠海2",
                 "item": [
                   {
-                    "name": "珠海长隆马戏酒店",
+                    "name": "珠海长隆马戏酒店22"
                   },
                   {
-                    "name": "珠海长隆企鹅酒店",
+                    "name": "珠海长隆企鹅酒店"
                   },
                   {
-                    "name": "珠海长隆横琴湾酒店",
+                    "name": "珠海长隆横琴湾酒店"
                   },
                   {
-                    "name": "珠海长隆迎海酒店公寓",
-                  },
+                    "name": "珠海长隆迎海酒店公寓"
+                  }
                 ]
               }
             ]
           },
+          {
+            "name": "乐园",
+            "list": [
+              {
+                "name": "广州3",
+                "item": [
+                  {
+                    "name": "广州长隆欢乐世界33"
+                  },
+                  {
+                    "name": "广州长隆水上乐园"
+                  },
+                  {
+                    "name": "广州长隆野生动物世界"
+                  },
+                  {
+                    "name": "广州长隆国际大马戏"
+                  },
+                  {
+                    "name": "广州长隆飞鸟乐园"
+                  }
+                ]
+              },
+              {
+                "name": "珠海3",
+                "item": [
+                  {
+                    "name": "珠海长隆海洋王国33"
+                  },
+                  {
+                    "name": "珠海长隆横琴湾国际马戏城"
+                  }
+                ]
+              }
+            ]
+          }
         ];
+        $('#orderType').append('<li class="on">全部</li>');
+        for(var i=0; i<json.length; i++) {
+          $('#orderType').append('<li>'+ json[i].name +'</li>');
+        }
+
+        $('#orderType').find('li').on('click', function(){
+          var index = $(this).index(),
+              dom   = $('.order-type-item');
+          index > 0 ? dom.show() : dom.hide();
+
+          if(index > 0) {
+            // 一级联动
+            $('#typeTxt').text('所属' + json[index-1].name + '：');
+            $('#txtOne').text('请选择区域').css('color', '#999');
+            $('#txtTwo').text('请选择所属' + json[index-1].name).css('color', '#999');
+            $('#seleOne, #seleTwo').html('');
+            for(var o=0; o<json[index-1].list.length; o++) {
+              console.log(json[index-1].list[o]);
+              $('#seleOne').append('<li>' + json[index-1].list[o].name +'</li>');
+            }
+
+            // 二级联动
+            $('#seleOne').find('li').on('click', function(){
+              $('#seleTwo').html('');
+              for(var o=0; o<json[index-1].list.length; o++) {
+                $('#txtTwo').text('请选择所属' + json[index-1].name).css('color', '#999');
+                for(var k=0; k<json[index-1].list[o].item.length; k++) {
+                  if($(this).text() === json[index-1].list[o].name) {
+                    $('#seleTwo').append('<li>' + json[index-1].list[o].item[k].name +'</li>');
+                  }
+                }
+              }
+            });
+          }
+        });
+      });
+
+      $(function(){
+        $('.date-item span').on('click', function(){
+          var txt = $(this).text(),
+              today = getDateStr(0),
+              week  = getDateStr(7),
+              month = getDateStr(30);
+          // console.log(txt, today, week, month);
+          $('.date-item span').removeClass('on');
+          $(this).addClass('on');
+          if (txt === '全部') {
+            $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val('');
+          }
+          if (txt === '今日') {
+            $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val(today);
+          }
+          if (txt === '最近7日') {
+            $('.Wdate[name="start_date"]').val(today);
+            $('.Wdate[name="end_date"]').val(week);
+          }
+          if (txt === '最近30日') {
+            $('.Wdate[name="start_date"]').val(today);
+            $('.Wdate[name="end_date"]').val(month);
+          }
+        });
+        //  获得 今日 昨日  近7日 近30日 方法
+        function getDateStr(num) {
+          var dates = new Date();
+          dates.setDate(dates.getDate() + num); //获取AddDayCount天后的日期
+          var y = dates.getFullYear();
+          var m = dates.getMonth() + 1; //获取当前月份的日期
+          var d = dates.getDate();
+          var mm;
+          var dd;
+          if (Number(m) >= 10) {
+            mm = `${m}`;
+          } else {
+            mm = `0${m}`;
+          }
+          if (Number(d) >= 10) {
+            dd = `${d}`;
+          } else {
+            dd = `0${d}`;
+          }
+          return `${y}-${mm}-${dd}`;
+        }
       });
     </script>
 </body>
