@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+/* @import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css"; */
+
+.container{ position:relative; margin:0px auto 30px; }
+#itemTwo, #itemThree { display: none; margin-left: 20px; }
+/* 表格 */
+.align-left,.align-l{text-align:left}
+.tabel-overview, .tabel-detail{ width:100%;text-align:center}
+.tabel-overview td, .tabel-detail td{ border-top:1px solid #DCDCDC;height:50px;}
+.tabel-overview .info-box-top, .tabel-overview .info-box-bot{width:230px}
+.tabel-detail th{font-size:14px; height:35px}
+.tabel-detail td{ height:70px;font-size:14px;position: relative;}
+.tabel-overview th{font-size:14px; height:35px;background:#F9F9FB;}
+.tabel-overview td{ height:50px;font-size:12px;position: relative;}
+.tabel-overview td.first, .tabel-detail td.first{background:#F9F9FB; width:80px; font-size:14px}
+.table_caption{height:30px;line-height:30px;background:#F9F9FB;border:1px solid #DCDCDC;border-bottom:0}
+
+/* 弹窗提示 */
+.my-window-message {min-width:402px;top:50%;left:50%;margin-left:-201px;min-height:150px;margin-top:-75px;border-radius:5px}
+.my-window-message-box {text-align: center;padding:30px 0 0;font-size: 16px;line-height: 50px}
+
+/*  */
+.cl-name{width:7em;text-align:right;height:32px;line-height:32px;}
+.cl-check-name{width:7em;text-align:right;height:24px;line-height:24px;}
+
+/*  */
+.data-module {background: #f9f9fb;padding:20px;border:1px solid #dcdcdc;line-height: 30px}
+
+.time_tab a {color:#333}
+.time_tab .act{background:#1a96fa;color:#fff;padding:2px 5px ;}
+.time_tab a:hover{text-decoration:none;}
+
+
+
+
+
+
+/* 111 */

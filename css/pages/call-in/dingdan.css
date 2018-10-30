@@ -15,8 +15,8 @@ label {font-size: 12px}
 .btn-y{ display:inline-block; border:none; background:#fd883b; border-radius:5px; text-align:center; line-height:30px; color:#FFF; font-size:14px; height:30px;width:90px; position:relative}
 .btn-y:hover{ background:#e06210; text-decoration:none; color:#FFF}
 .btn-y:active{ background:#fc6705}
-.btn-y-red{box-shadow:none;background:#f1375f;color:#fff;}
-.btn-y-red:hover{background:#dc0533}
+.btn-y-blue{box-shadow:none;background:#1996f9;color:#fff;}
+.btn-y-blue:hover{background:#0084E1}
 .btn-y-white{background:#fff;box-shadow:none;color:#333;border:1px solid #dcdcdc;box-sizing: border-box;}
 .btn-y-white:hover{background:#fff;color:#333;}
 .btn-y-gray, .btn-y-gray:hover {background: #999;cursor:no-drop;}
@@ -73,7 +73,7 @@ label {font-size: 12px}
 
 /* 结算 */
 #jk_Box{margin-top:20px}
-#jk_Box .jiesuan{width:inherit;padding:20px 0;}
+#jk_Box .jiesuan{width:inherit;padding:20px 0;font-size: 12px}
 #jk_Box span{text-align:right;}
 .jk_Box {background:#f9f9fb;border:1px solid #dcdcdc}
 .jiesuan-name {float:left;margin-right:20px;width: 80px}

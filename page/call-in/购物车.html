@@ -22,7 +22,7 @@
 </header>
 <nav class="mainNav">
   <div class="area">
-    <h1><a class="logo" title="进入活动易首页" href="http://www.evente.cn/welcome">活动易</a></h1>
+    <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a></h1>
     <div class="right" style="margin-top:24px">
     	<!-- 顶级功能菜单 -->
       <ul class="nav nav-toplist">
@@ -64,7 +64,7 @@
         <span class="hui ml10 promotion-tips">不勾选则不参与促销哦~</span>
       </div>
       <div class="promotion-labels-module mb30">
-        <div class="mt10">
+        <div class="mt10 ml30">
           <span class="room-type-labels-item room-type-labels-item-promotion">促销</span>再购买一张欢乐世界门票可以享5折哦~
         </div>
       </div>
@@ -91,7 +91,7 @@
 				</table>
 			</div>
 			<div class="dingdan">
-				<div class="table-box mt10">
+				<div class="table-box mt20">
 					<table border="0" cellspacing="0" cellpadding="0" class="tabel-order">
 						<tr>
 							<td class="first-td" width="36">
@@ -130,6 +130,7 @@
 									<span class="del">-</span>
 									<input class="num1 input align-center" type="number" value="1">
 									<span class="add">+</span>
+                  <input type="text" class="addinpdis" disabled="disabled">
 								</div>
 							</td>
 							<td width="130">￥0.00</td>
@@ -137,7 +138,7 @@
 						</tr>
 					</table>
 				</div>
-				<div class="table-box mt10">
+				<div class="table-box mt20">
 					<table border="0" cellspacing="0" cellpadding="0" class="tabel-order">
 						<tr>
 							<td class="first-td" width="36">
@@ -178,7 +179,7 @@
 						</tr>
 					</table>
 				</div>
-				<div class="table-box mt10">
+				<div class="table-box mt20">
 					<table border="0" cellspacing="0" cellpadding="0" class="tabel-order">
 						<tr>
 							<td class="first-td" width="36">
@@ -214,7 +215,7 @@
 					</table>
 				</div>
 				<!-- 赠品 -->
-				<div class="table-box mt10 tabel-order-gift-box">
+				<div class="table-box mt20 tabel-order-gift-box">
 					<table border="0" cellspacing="0" cellpadding="0" class="tabel-order-gift">
 						<tr>
 							<td class="first-td" width="36"></td>
@@ -234,7 +235,7 @@
 				</div>
 			</div>
 			<!-- 结算 -->
-			<div class="mt10 settlement-bottom-box">
+			<div class="mt20 settlement-bottom-box">
 				<table border="0" cellspacing="0" cellpadding="0" class="tabel-order mt20 mb10">
 					<tbody>
 						<tr style='border:none'>
@@ -317,7 +318,7 @@
   </div>
 </footer>
 <!-- 弹窗 -->
-<div class="my-loyer" style="display:block"></div>
+<div class="my-loyer" style="display:none"></div>
 <!-- 弹窗 确认删除 -->
 <div class="my-window my-window-confirm-deletion" style="display:none;min-height:100px;min-width: 320px;margin-top:-50px;margin-left:-160px">
   <p class="my-window-tit f14">确认删除该商品？</p>
@@ -327,7 +328,7 @@
   </div>
 </div>
 <!-- 弹窗 错误提示 -->
-<div class="my-window my-window-error-message" style="display:block;">
+<div class="my-window my-window-error-message" style="display:none;">
   <div class="my-window-error-message-box">
     <img src="../../images/icon_yyc.png" alt="">
     <div class="">此产品购买数量已达上限</div>
@@ -335,9 +336,8 @@
 </div>
 
 <script src="../../js/lib/jquery.min.js"></script>
-<script src="../../js/plugins/My97DatePicker/WdatePicker.js"></script>
 <script src="../../js/main.js"></script>
-<script src="../../js/gouwuche2.20.js"></script>
+<script src="../../js/gouwuche.js"></script>
 <script>
   function res(){
   	var h_init = $(window).height(),

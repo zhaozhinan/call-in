@@ -22,7 +22,7 @@
 </header>
 <nav class="mainNav">
   <div class="area">
-    <h1><a class="logo" title="进入活动易首页" href="http://www.evente.cn/welcome">活动易</a></h1>
+    <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a></h1>
     <div class="right" style="margin-top:24px">
     	<!-- 顶级功能菜单 -->
       <ul class="nav nav-toplist">
@@ -57,23 +57,36 @@
     <div class="tab-radius" style="border-top:0">
       <div class="tab">
   			<ul class="tab_btn clearfix">
-  				<li><a href="javascript:;">净房</a></li>
-  				<li class="active"><a href="javascript:;">套餐</a></li>
+  				<li class="active"><a href="javascript:;">净房</a></li>
+  				<li><a href="javascript:;">套餐</a></li>
   			</ul>
   			<div class="tab_cons clearfix" style="background: #f9f9fb;padding: 20px;">
-          <div class="tab_con js_tab_con_1" style="display:none">
+          <div class="tab_con js_tab_con_1" style="display:block">
             <div class="clearfix">
               <label for="" class="left" style="line-height:30px">选择预订酒店：</label>
-              <div class="bea-sele">
+              <div class="bea-sele" id="itemOne">
                 <div class="e-sele">
   								<span class="on-sele" style="width:200px">选择区域</span>
   								<em class="i-triangle"><i></i></em>
   							</div>
   							<input type="hidden" name="event_type">
-  							<ul class="bea-opt">
-  								<li>珠海</li>
-  								<li>广州</li>
-  							</ul>
+  							<ul class="bea-opt"></ul>
+  						</div>
+              <div class="bea-sele" id="itemTwo">
+                <div class="e-sele">
+  								<span class="on-sele" style="width:200px">选择所属酒店</span>
+  								<em class="i-triangle"><i></i></em>
+  							</div>
+  							<input type="hidden" name="event_type">
+  							<ul class="bea-opt"></ul>
+  						</div>
+              <div class="bea-sele" id="itemThree">
+                <div class="e-sele">
+  								<span class="on-sele" style="width:200px">选择区域</span>
+  								<em class="i-triangle"><i></i></em>
+  							</div>
+  							<input type="hidden" name="event_type">
+  							<ul class="bea-opt"></ul>
   						</div>
             </div>
             <div class="mt20">
@@ -87,19 +100,32 @@
               </div>
   				  </div>
   				</div>
-  				<div class="tab_con js_tab_con_2">
+  				<div class="tab_con js_tab_con_2" style="display:none">
             <div class="clearfix">
               <label for="" class="left" style="line-height:30px">选择预订酒店：</label>
-              <div class="bea-sele">
+              <div class="bea-sele" id="itemOne">
                 <div class="e-sele">
   								<span class="on-sele" style="width:200px">选择区域</span>
   								<em class="i-triangle"><i></i></em>
   							</div>
   							<input type="hidden" name="event_type">
-  							<ul class="bea-opt">
-  								<li>珠海</li>
-  								<li>广州</li>
-  							</ul>
+  							<ul class="bea-opt"></ul>
+  						</div>
+              <div class="bea-sele" id="itemTwo">
+                <div class="e-sele">
+  								<span class="on-sele" style="width:200px">选择所属酒店</span>
+  								<em class="i-triangle"><i></i></em>
+  							</div>
+  							<input type="hidden" name="event_type">
+  							<ul class="bea-opt"></ul>
+  						</div>
+              <div class="bea-sele" id="itemThree">
+                <div class="e-sele">
+  								<span class="on-sele" style="width:200px">全部</span>
+  								<em class="i-triangle"><i></i></em>
+  							</div>
+  							<input type="hidden" name="event_type">
+  							<ul class="bea-opt"></ul>
   						</div>
             </div>
             <div class="mt20">
@@ -107,7 +133,7 @@
                 <div class="rates_labels clearfix">
                   <div class="mb20 rates_labels_box clearfix">
                     <label for="" class="rates_labels_box_label">房晚：</label>
-                    <span class="rates_labels_box_item">2天1晚</span>
+                    <span class="rates_labels_box_item active">2天1晚</span>
                     <span class="rates_labels_box_item">3天2晚</span>
                     <span class="rates_labels_box_item">4天3晚</span>
                   </div>
@@ -141,7 +167,7 @@
 	    </div>
     </div>
     <!-- 表格 -->
-    <table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mt20">
+    <table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mt20" style="display:none">
       <tr>
         <th width="160">房型类型</th>
         <th width="180">名称</th>
@@ -281,9 +307,51 @@
 </div>
 
 <script src="../../js/lib/jquery.min.js"></script>
-<script src="../../js/plugins/My97DatePicker/WdatePicker.js"></script>
+<script src="https://static.evente.cn/libs/js/plugins/My97DatePicker/WdatePicker.js"></script>
 <script src="../../js/main.js"></script>
 <script>
+
+  $(function(){
+    $.ajax({
+      url: '../../data/call-in/json.js',
+      async: false,
+      success: function(result) {
+        var data = $.parseJSON(result);
+        // console.log(data);
+        for(var i=0; i<data.length; i++) {
+          $('#itemOne').find('.bea-opt').append('<li>'+ data[i].name +'</li>');
+        }
+
+        $('#itemOne').find('.bea-opt').find('li').on('click', function(){
+          $('#itemTwo').show().find('.bea-opt').html('');
+          $('#itemTwo').find('.on-sele').text('选择所属酒店').css('color', '#999');
+          $('#itemThree').hide();
+          for(var i=0; i<data.length; i++) {
+            if($(this).text() === data[i].name) {
+              for(var j=0; j<data[i].jiudian.length; j++) {
+                console.log(data[i].jiudian[j].name);
+                $('#itemTwo').find('.bea-opt').append('<li>'+ data[i].jiudian[j].name +'</li>');
+              }
+            }
+          }
+
+          $('#itemTwo').find('.bea-opt').find('li').on('click', function(){
+            $('#itemThree').show().find('.bea-opt').html('');
+            $('#itemThree').find('.on-sele').text('全部').css('color', '#999');
+            for(var i=0; i<data.length; i++) {
+              for(var j=0; j<data[i].jiudian.length; j++) {
+                if($(this).text() === data[i].jiudian[j].name) {
+                  for(var o=0; o<data[i].jiudian[j].list.length; o++) {
+                    $('#itemThree').find('.bea-opt').append('<li>'+ data[i].jiudian[j].list[o].name +'</li>');
+                  }
+                }
+              }
+            }
+          });
+        });
+      },
+    });
+  });
   $(".tab_btn li").tabs("click");
 
   function res(){
@@ -327,7 +395,7 @@
 
     // 产品描述
     $(function(){
-  		$(document).find('.product-description').each(function(e){
+      $(document).find('.product-description').each(function(e){
   			var text = $(this).text();
   			var text_leng = text.length;
   			if(text_leng >= 20) {
@@ -357,7 +425,10 @@
     	});
     })
 
-
+  // 点击查询
+  $('.btn-search').on('click', function(){
+    $(document).find('.tabel-overview').show();
+  })
 </script>
 </body>
 </html>
