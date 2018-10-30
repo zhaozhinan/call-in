@@ -395,27 +395,6 @@
             $('.Wdate[name="end_date"]').val(month);
           }
         });
-        //  获得 今日 昨日  近7日 近30日 方法
-        function getDateStr(num) {
-          var dates = new Date();
-          dates.setDate(dates.getDate() + num); //获取AddDayCount天后的日期
-          var y = dates.getFullYear();
-          var m = dates.getMonth() + 1; //获取当前月份的日期
-          var d = dates.getDate();
-          var mm;
-          var dd;
-          if (Number(m) >= 10) {
-            mm = `${m}`;
-          } else {
-            mm = `0${m}`;
-          }
-          if (Number(d) >= 10) {
-            dd = `${d}`;
-          } else {
-            dd = `0${d}`;
-          }
-          return `${y}-${mm}-${dd}`;
-        }
       });
     </script>
 </body>

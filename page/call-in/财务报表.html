@@ -56,9 +56,9 @@
           <div class="tab_con js_tab_con_1" style="display:block">
             <div class="cleafix time">
               <label for="" class="cl-name">筛选条件：</label>
-              <input class="input Wdate" style="width:190px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <input class="input Wdate" style="width:190px" name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
               <span> - </span>
-              <input class="input Wdate" style="width:190px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <input class="input Wdate" style="width:190px" name="end_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
               <span class="ml20 time_tab">
                 <span class="ml10"><a href="iavascript:;" class="">昨日</a></span>
                 <span class="ml10"><a href="iavascript:;" class="act">今日</a></span>
@@ -134,9 +134,9 @@
   				<div class="tab_con js_tab_con_2" style="display:none">
             <div class="cleafix time">
               <label for="" class="cl-name">筛选条件：</label>
-              <input class="input Wdate" style="width:190px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <input class="input Wdate" style="width:190px"  name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
               <span> - </span>
-              <input class="input Wdate" style="width:190px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <input class="input Wdate" style="width:190px"  name="end_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
               <span class="ml20 time_tab">
                 <span class="ml10"><a href="iavascript:;" class="">昨日</a></span>
                 <span class="ml10"><a href="iavascript:;" class="act">今日</a></span>
@@ -204,9 +204,9 @@
           <div class="tab_con js_tab_con_3" style="display:none">
             <div class="cleafix time">
               <label for="" class="cl-name">筛选条件：</label>
-              <input class="input Wdate" style="width:190px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <input class="input Wdate" style="width:190px" name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
               <span> - </span>
-              <input class="input Wdate" style="width:190px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <input class="input Wdate" style="width:190px" name="end_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
               <span class="ml20 time_tab">
                 <span class="ml10"><a href="iavascript:;" class="">昨日</a></span>
                 <span class="ml10"><a href="iavascript:;" class="act">今日</a></span>
@@ -456,6 +456,25 @@
   $('.time_tab >span').on('click',function(){
   	$(this).children('a').addClass('act');
   	$(this).siblings().children('a').removeClass('act');
+
+    var txt = $(this).text(),
+        today = getDateStr(0),
+        week  = getDateStr(7),
+        month = getDateStr(30);
+    if (txt === '全部') {
+      $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val('');
+    }
+    if (txt === '今日') {
+      $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val(today);
+    }
+    if (txt === '最近7日') {
+      $('.Wdate[name="start_date"]').val(today);
+      $('.Wdate[name="end_date"]').val(week);
+    }
+    if (txt === '最近30日') {
+      $('.Wdate[name="start_date"]').val(today);
+      $('.Wdate[name="end_date"]').val(month);
+    }
   });
 
   //全选反选
@@ -466,18 +485,6 @@
 			$(this).parent().find(".CheckBoxLabelClass").addClass("LabelSelected");
 		}
 	});
-
-  function res(){
-  	var h_init = $(window).height(),
-  	h_header = $("header").outerHeight(),
-  	h_crumbs = $(".crumbs").outerHeight(),
-  	h_nav = $(".mainNav").outerHeight(),
-  	h_footer = $("footer").outerHeight();
-  	h_main = h_init - h_header - h_crumbs - h_nav - h_footer/* - 50 - 50 - 79*/-80;
-  	$(".container .con").css("min-height",h_main);
-  }
-  res();
-  $(window).resize(res);
 
   // 点击查询
   $('.btn-search').on('click', function(){
