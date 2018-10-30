@@ -29,8 +29,8 @@
         <li><a href="酒店餐厅.html">酒店餐厅</a></li>
         <li><a href="乐园门票.html">乐园门票</a></li>
         <li><a href="购物车.html">购物车</a></li>
-        <li class="on"><a href="./订单列表.html">订单中心</a></li>
-        <li><a href="财务报表.html">财务报表</a></li>
+        <li><a href="订单列表.html">订单中心</a></li>
+        <li class="on"><a href="财务报表.html">财务报表</a></li>
         <li><a href="账号管理-列表.html">账户管理</a></li>
       </ul>
     </div>
@@ -48,7 +48,7 @@
     <div class="tab-radius mb20" style="border-top:0">
       <div class="tab">
   			<ul class="tab_btn clearfix">
-          <li><a href="财务报表-酒店.html">酒店</a></li>
+          <li><a href="财务报表.html">酒店</a></li>
   				<li class="active"><a href="javascript:;">乐园</a></li>
   				<li><a href="财务报表-酒店餐饮.html">酒店餐饮</a></li>
   			</ul>
@@ -56,14 +56,14 @@
   				<div class="tab_con js_tab_con_2">
             <div class="cleafix time">
               <label for="" class="cl-name">筛选条件：</label>
-              <input class="input Wdate" style="width:190px"  name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
-              <span> - </span>
-              <input class="input Wdate" style="width:190px"  name="end_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <input class="input Wdate" style="width:190px"  name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})">
+              <span class="hui">&nbsp;-&nbsp;</span>
+              <input class="input Wdate" style="width:190px"  name="end_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})">
               <span class="ml20 time_tab">
-                <span class="ml10"><a href="iavascript:;" class="">昨日</a></span>
-                <span class="ml10"><a href="iavascript:;" class="act">今日</a></span>
-                <span class="ml10"><a href="iavascript:;" class="">本周</a></span>
-                <span class="ml10"><a href="iavascript:;" class="">本月</a></span>
+                <span class="ml10"><a href="iavascript:;" class="act">全部</a></span>
+                <span class="ml10"><a href="iavascript:;" class="">今日</a></span>
+                <span class="ml10"><a href="iavascript:;" class="">最近7日</a></span>
+                <span class="ml10"><a href="iavascript:;" class="">最近30日</a></span>
               </span>
             </div>
             <div class="clearfix mt20">
@@ -314,8 +314,8 @@
 
     var txt = $(this).text(),
         today = getDateStr(0),
-        week  = getDateStr(7),
-        month = getDateStr(30);
+        week  = getDateStr(-7),
+        month = getDateStr(-30);
     if (txt === '全部') {
       $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val('');
     }
@@ -323,12 +323,12 @@
       $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val(today);
     }
     if (txt === '最近7日') {
-      $('.Wdate[name="start_date"]').val(today);
-      $('.Wdate[name="end_date"]').val(week);
+      $('.Wdate[name="start_date"]').val(week);
+      $('.Wdate[name="end_date"]').val(today);
     }
     if (txt === '最近30日') {
-      $('.Wdate[name="start_date"]').val(today);
-      $('.Wdate[name="end_date"]').val(month);
+      $('.Wdate[name="start_date"]').val(month);
+      $('.Wdate[name="end_date"]').val(today);
     }
   });
 

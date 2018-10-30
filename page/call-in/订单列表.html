@@ -375,8 +375,8 @@
         $('.date-item span').on('click', function(){
           var txt = $(this).text(),
               today = getDateStr(0),
-              week  = getDateStr(7),
-              month = getDateStr(30);
+              week  = getDateStr(-7),
+              month = getDateStr(-30);
           // console.log(txt, today, week, month);
           $('.date-item span').removeClass('on');
           $(this).addClass('on');
@@ -387,12 +387,12 @@
             $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val(today);
           }
           if (txt === '最近7日') {
-            $('.Wdate[name="start_date"]').val(today);
-            $('.Wdate[name="end_date"]').val(week);
+            $('.Wdate[name="start_date"]').val(week);
+            $('.Wdate[name="end_date"]').val(today);
           }
           if (txt === '最近30日') {
-            $('.Wdate[name="start_date"]').val(today);
-            $('.Wdate[name="end_date"]').val(month);
+            $('.Wdate[name="start_date"]').val(month);
+            $('.Wdate[name="end_date"]').val(today);
           }
         });
       });

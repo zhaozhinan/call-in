@@ -33,15 +33,18 @@
 
 
 /*.J-propChoose .close { text-decoration: none; font-size: 28px; }*/
-.J-propChoose { width: 450px; height: 190px; margin-left: -225px; }
+.J-propChoose { width: 460px; height: 200px; margin-left: -230px; }
 .J-propChoose-wrap { margin: 40px 30px 0; }
 .J-propChoose-box { padding-top: 20px; margin: 20px 30px; border-top: 1px solid #dcdcdc; }
-.J-propChoose-box-lable { margin-right: 8px; margin-top: 3px; display: inline-block; vertical-align: middle; }
-.J-propChoose-box .btn-minus, .J-propChoose-box .btn-plus, .J-propChoose-box .input-number{ display: inline-block; width: 30px; height: 24px; text-align: center; line-height: 22px; color: #333; font-size: 18px; border: 1px solid #dcdcdc; vertical-align: middle; margin-right: 5px; text-decoration: none; }
-.J-propChoose-box .input-number { padding: 0 10px; font-size: 14px; line-height: 24px }
+.J-propChoose-box-lable { display: inline-block; vertical-align: middle; }
+/*.J-propChoose-box .btn-minus, .J-propChoose-box .btn-plus, .J-propChoose-box .input-number{ display: inline-block; width: 30px; height: 24px; text-align: center; line-height: 22px; color: #333; font-size: 18px; border: 1px solid #dcdcdc; vertical-align: middle; margin-right: 5px; text-decoration: none; }*/
+.J-propChoose-box .btn-minus, .J-propChoose-box .btn-plus, .J-propChoose-box .input-number { display: inline-block; border: 1px solid #ddd; border-radius: 5px; width: 28px; height: 30px; text-align: center; line-height: 30px; font-size: 16px; cursor: pointer; margin: 0 5px; color: #333; vertical-align: middle; text-decoration: none; }
+.J-propChoose-box .btn-minus, .J-propChoose-box .btn-plus { line-height: 26px; }
+.J-propChoose-box .input-number { padding: 0 10px; font-size: 14px }
 .J-propChoose-box .btn-minus:hover, .J-propChoose-box .btn-plus:hover { border-color: #CCC; }
 .J-propChoose-box .btn-minus:active, .J-propChoose-box .btn-plus:active { border-color: #999; }
 .J-propChoose-box .disabled, .J-propChoose-box .disabled:hover, .J-propChoose-box .disabled:active { opacity: 0.8; border-color: #dcdcdc; color: #999; cursor: no-drop; }
+.J-propChoose-box .btn-minus { line-height: 28px; }
 .J-propChoose-box .right { margin-top: -2px; }
 .hotel-restaurant-discribe-name { max-width: 20em; margin:0 auto; }
 
