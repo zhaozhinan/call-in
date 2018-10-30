@@ -48,90 +48,12 @@
     <div class="tab-radius mb20" style="border-top:0">
       <div class="tab">
   			<ul class="tab_btn clearfix">
-          <li class="active"><a href="javascript:;">酒店</a></li>
-  				<li><a href="javascript:;">乐园</a></li>
-  				<li><a href="javascript:;">酒店餐饮</a></li>
+          <li><a href="财务报表-酒店.html">酒店</a></li>
+  				<li class="active"><a href="javascript:;">乐园</a></li>
+  				<li><a href="财务报表-酒店餐饮.html">酒店餐饮</a></li>
   			</ul>
   			<div class="tab_cons clearfix" style="background: #f9f9fb;padding: 20px;">
-          <div class="tab_con js_tab_con_1" style="display:block">
-            <div class="cleafix time">
-              <label for="" class="cl-name">筛选条件：</label>
-              <input class="input Wdate" style="width:190px" name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
-              <span> - </span>
-              <input class="input Wdate" style="width:190px" name="end_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
-              <span class="ml20 time_tab">
-                <span class="ml10"><a href="iavascript:;" class="">昨日</a></span>
-                <span class="ml10"><a href="iavascript:;" class="act">今日</a></span>
-                <span class="ml10"><a href="iavascript:;" class="">本周</a></span>
-                <span class="ml10"><a href="iavascript:;" class="">本月</a></span>
-              </span>
-            </div>
-            <div class="clearfix mt20">
-              <label for="" class="left cl-name">酒店：</label>
-              <div class="bea-sele" id="itemOne">
-                <div class="e-sele">
-  								<span class="on-sele" style="width:200px">选择区域</span>
-  								<em class="i-triangle"><i></i></em>
-  							</div>
-  							<input type="hidden" name="event_type">
-  							<ul class="bea-opt"></ul>
-  						</div>
-              <div class="bea-sele" id="itemTwo">
-                <div class="e-sele">
-  								<span class="on-sele" style="width:200px">选择所属酒店</span>
-  								<em class="i-triangle"><i></i></em>
-  							</div>
-  							<input type="hidden" name="event_type">
-  							<ul class="bea-opt"></ul>
-  						</div>
-            </div>
-            <div class="clearfix mt20">
-              <label for="" class="left cl-check-name">房型类型：</label>
-              <input id="labelAll" type="checkbox" class="CheckBoxClass">
-              <label for="labelAll" class="CheckBoxLabelClass  CheckBoxAll left">全部类型</label>
-              <div class="left ml30" style="width:850px;">
-                <input id="label1" type="checkbox" class="CheckBoxClass">
-                <label for="label1" class="CheckBoxLabelClass mb10" style="width:175px">高级大床房</label>
-                <input id="label2" type="checkbox" class="CheckBoxClass">
-                <label for="label2" class="CheckBoxLabelClass mb10" style="width:175px">高级双床房</label>
-                <input id="label3" type="checkbox" class="CheckBoxClass">
-                <label for="label3" class="CheckBoxLabelClass mb10" style="width:175px">野趣房双床房</label>
-                <input id="label4" type="checkbox" class="CheckBoxClass">
-                <label for="label4" class="CheckBoxLabelClass mb10" style="width:175px">野趣房双拼房（双床）</label>
-                <input id="label5" type="checkbox" class="CheckBoxClass">
-                <label for="label5" class="CheckBoxLabelClass mb10" style="width:175px">野趣房大床房</label>
-                <input id="label6" type="checkbox" class="CheckBoxClass">
-                <label for="label6" class="CheckBoxLabelClass mb10" style="width:175px">大床套房</label>
-                <input id="label7" type="checkbox" class="CheckBoxClass">
-                <label for="label7" class="CheckBoxLabelClass mb10" style="width:175px">度假园景大床房</label>
-                <input id="label7" type="checkbox" class="CheckBoxClass">
-                <label for="label7" class="CheckBoxLabelClass mb10" style="width:175px">家庭房大床+儿童床</label>
-              </div>
-            </div>
-            <div class="clearfix mt20">
-              <label for="" class="left cl-check-name">渠道来源：</label>
-              <input id="channelAll" type="checkbox" class="CheckBoxClass">
-              <label for="channelAll" class="CheckBoxLabelClass  CheckBoxAll left">全部渠道</label>
-              <div class="left ml30" style="width:850px;">
-                <input id="channel1" type="checkbox" class="CheckBoxClass">
-                <label for="channel1" class="CheckBoxLabelClass mb10" style="width:120px">PC端</label>
-                <input id="channel2" type="checkbox" class="CheckBoxClass">
-                <label for="channel2" class="CheckBoxLabelClass mb10" style="width:120px">移动浏览器</label>
-                <input id="channel3" type="checkbox" class="CheckBoxClass">
-                <label for="channel3" class="CheckBoxLabelClass mb10" style="width:120px">微信</label>
-                <input id="channel4" type="checkbox" class="CheckBoxClass">
-                <label for="channel4" class="CheckBoxLabelClass mb10" style="width:120px">安卓客户端</label>
-                <input id="channel5" type="checkbox" class="CheckBoxClass">
-                <label for="channel5" class="CheckBoxLabelClass mb10" style="width:120px">IOS客户端</label>
-              </div>
-            </div>
-            <div class="clearfix mt10">
-              <label for="" class="cl-name">操作员姓名：</label>
-              <input type="text" class="input">
-              <a class="btn btn-e right btn-search" href="javascript:;">查询</a>
-            </div>
-  				</div>
-  				<div class="tab_con js_tab_con_2" style="display:none">
+  				<div class="tab_con js_tab_con_2">
             <div class="cleafix time">
               <label for="" class="cl-name">筛选条件：</label>
               <input class="input Wdate" style="width:190px"  name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
@@ -176,72 +98,6 @@
                 <label for="label7" class="CheckBoxLabelClass mb10" style="width:175px">长隆国际马戏大剧院</label>
                 <input id="label7" type="checkbox" class="CheckBoxClass">
                 <label for="label7" class="CheckBoxLabelClass mb10" style="width:175px">动物学院</label>
-              </div>
-            </div>
-            <div class="clearfix mt20">
-              <label for="" class="left cl-check-name">渠道来源：</label>
-              <input id="channelAll" type="checkbox" class="CheckBoxClass">
-              <label for="channelAll" class="CheckBoxLabelClass  CheckBoxAll left">全部渠道</label>
-              <div class="left ml30" style="width:850px;">
-                <input id="channel1" type="checkbox" class="CheckBoxClass">
-                <label for="channel1" class="CheckBoxLabelClass mb20" style="width:120px">PC端</label>
-                <input id="channel2" type="checkbox" class="CheckBoxClass">
-                <label for="channel2" class="CheckBoxLabelClass mb20" style="width:120px">移动浏览器</label>
-                <input id="channel3" type="checkbox" class="CheckBoxClass">
-                <label for="channel3" class="CheckBoxLabelClass mb20" style="width:120px">微信</label>
-                <input id="channel4" type="checkbox" class="CheckBoxClass">
-                <label for="channel4" class="CheckBoxLabelClass mb20" style="width:120px">安卓客户端</label>
-                <input id="channel5" type="checkbox" class="CheckBoxClass">
-                <label for="channel5" class="CheckBoxLabelClass mb20" style="width:120px">IOS客户端</label>
-              </div>
-            </div>
-            <div class="clearfix mt10">
-              <label for="" class="cl-name">操作员姓名：</label>
-              <input type="text" class="input">
-              <a class="btn btn-e right btn-search" href="javascript:;">查询</a>
-            </div>
-  			  </div>
-          <div class="tab_con js_tab_con_3" style="display:none">
-            <div class="cleafix time">
-              <label for="" class="cl-name">筛选条件：</label>
-              <input class="input Wdate" style="width:190px" name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
-              <span> - </span>
-              <input class="input Wdate" style="width:190px" name="end_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
-              <span class="ml20 time_tab">
-                <span class="ml10"><a href="iavascript:;" class="">昨日</a></span>
-                <span class="ml10"><a href="iavascript:;" class="act">今日</a></span>
-                <span class="ml10"><a href="iavascript:;" class="">本周</a></span>
-                <span class="ml10"><a href="iavascript:;" class="">本月</a></span>
-              </span>
-            </div>
-            <div class="clearfix mt20">
-              <label for="" class="left cl-check-name">地区筛选：</label>
-              <input id="areaAll" type="checkbox" class="CheckBoxClass">
-              <label for="areaAll" class="CheckBoxLabelClass  CheckBoxAll left">全部地区</label>
-              <div class="left ml30" style="width:850px;">
-                <input id="area1" type="checkbox" class="CheckBoxClass">
-                <label for="area1" class="CheckBoxLabelClass mb10" style="width:120px">广州</label>
-                <input id="area2" type="checkbox" class="CheckBoxClass">
-                <label for="area2" class="CheckBoxLabelClass mb10" style="width:120px">珠海</label>
-              </div>
-            </div>
-            <div class="clearfix mt20">
-              <label for="" class="left cl-check-name">酒店筛选：</label>
-              <input id="labelAll" type="checkbox" class="CheckBoxClass">
-              <label for="labelAll" class="CheckBoxLabelClass  CheckBoxAll left">全部餐厅</label>
-              <div class="left ml30" style="width:850px;">
-                <input id="label1" type="checkbox" class="CheckBoxClass">
-                <label for="label1" class="CheckBoxLabelClass mb20" style="width:175px">长隆酒店白虎自助餐厅</label>
-                <input id="label2" type="checkbox" class="CheckBoxClass">
-                <label for="label2" class="CheckBoxLabelClass mb20" style="width:175px">广州长隆酒店彩蝶谷西餐餐厅</label>
-                <input id="label3" type="checkbox" class="CheckBoxClass">
-                <label for="label3" class="CheckBoxLabelClass mb20" style="width:175px">广州熊猫酒店自助餐厅</label>
-                <input id="label4" type="checkbox" class="CheckBoxClass">
-                <label for="label4" class="CheckBoxLabelClass mb20" style="width:175px">珠海马戏酒店餐厅</label>
-                <input id="label5" type="checkbox" class="CheckBoxClass">
-                <label for="label5" class="CheckBoxLabelClass mb20" style="width:175px">珠海企业酒店餐厅</label>
-                <input id="label6" type="checkbox" class="CheckBoxClass">
-                <label for="label6" class="CheckBoxLabelClass mb20" style="width:175px">珠海长隆横琴湾酒店餐厅</label>
               </div>
             </div>
             <div class="clearfix mt20">
@@ -449,7 +305,6 @@
       },
     });
   });
-  $(".tab_btn li").tabs("click");
   $('.CheckBoxClass').checkBoxClass();
 
   // 时间标签切换

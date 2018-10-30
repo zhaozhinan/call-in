@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" >
+<meta http-equiv="Content-Language" content="zh-cn" >
+<title>财务报表</title>
+<meta content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1,user-scalable=yes" name="viewport">
+<link href="../../css/common/reset.css" rel="stylesheet" />
+<link href="../../css/common/base.css" rel="stylesheet" />
+<link href="../../css/pages/call-in/caiwubaobiao.css" rel="stylesheet" />
+</head>
+
+<body>
+<header class="top">
+  <span class="top-login">您好, zhaozhinan@eventmosh</span>
+  <a href="http://b.evente.cn/account">帐号权限</a>
+  <a href="javascript:alert('即将上线');">活动学堂</a>
+  <a href="javascript:alert('即将上线');">消息中心</a>
+  <a href="javascript:;" onclick="if (confirm('确定要注销账户？')) { location.href= 'http://login.evente.cn/b/logout'; }">退出帐号</a>
+  <a href="javascript:alert('即将上线');">App下载</a>
+</header>
+<nav class="mainNav">
+  <div class="area">
+    <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a><span class="mainNavDes">代客下单系统</span></h1>
+    <div class="right" style="margin-top:24px">
+      <ul class="nav nav-toplist">
+        <li><a href="酒店房间.html">酒店房间</a></li>
+        <li><a href="酒店餐厅.html">酒店餐厅</a></li>
+        <li><a href="乐园门票.html">乐园门票</a></li>
+        <li><a href="购物车.html">购物车</a></li>
+        <li class="on"><a href="./订单列表.html">订单中心</a></li>
+        <li><a href="财务报表.html">财务报表</a></li>
+        <li><a href="账号管理-列表.html">账户管理</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="crumbs area">
+	我的当前位置：<span class="on">财务报表</span>
+</div>
+
+<div class="container clearfix">
+  <div class="area" style="padding:0 20px;box-sizing:border-box">
+    <div class="panel mb20">
+      <div class="panel-title" style="margin:0"><span class="panel-tit left">财务报表</span></div>
+    </div>
+    <div class="tab-radius mb20" style="border-top:0">
+      <div class="tab">
+  			<ul class="tab_btn clearfix">
+          <li><a href="财务报表-酒店.html">酒店</a></li>
+  				<li><a href="财务报表-乐园.html">乐园</a></li>
+  				<li class="active"><a href="javascript:;">酒店餐饮</a></li>
+  			</ul>
+  			<div class="tab_cons clearfix" style="background: #f9f9fb;padding: 20px;">
+          <div class="tab_con js_tab_con_3">
+            <div class="cleafix time">
+              <label for="" class="cl-name">筛选条件：</label>
+              <input class="input Wdate" style="width:190px" name="start_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <span> - </span>
+              <input class="input Wdate" style="width:190px" name="end_date" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+              <span class="ml20 time_tab">
+                <span class="ml10"><a href="iavascript:;" class="">昨日</a></span>
+                <span class="ml10"><a href="iavascript:;" class="act">今日</a></span>
+                <span class="ml10"><a href="iavascript:;" class="">本周</a></span>
+                <span class="ml10"><a href="iavascript:;" class="">本月</a></span>
+              </span>
+            </div>
+            <div class="clearfix mt20">
+              <label for="" class="left cl-check-name">地区筛选：</label>
+              <input id="areaAll" type="checkbox" class="CheckBoxClass">
+              <label for="areaAll" class="CheckBoxLabelClass  CheckBoxAll left">全部地区</label>
+              <div class="left ml30" style="width:850px;">
+                <input id="area1" type="checkbox" class="CheckBoxClass">
+                <label for="area1" class="CheckBoxLabelClass mb10" style="width:120px">广州</label>
+                <input id="area2" type="checkbox" class="CheckBoxClass">
+                <label for="area2" class="CheckBoxLabelClass mb10" style="width:120px">珠海</label>
+              </div>
+            </div>
+            <div class="clearfix mt20">
+              <label for="" class="left cl-check-name">酒店筛选：</label>
+              <input id="labelAll" type="checkbox" class="CheckBoxClass">
+              <label for="labelAll" class="CheckBoxLabelClass  CheckBoxAll left">全部餐厅</label>
+              <div class="left ml30" style="width:850px;">
+                <input id="label1" type="checkbox" class="CheckBoxClass">
+                <label for="label1" class="CheckBoxLabelClass mb20" style="width:175px">长隆酒店白虎自助餐厅</label>
+                <input id="label2" type="checkbox" class="CheckBoxClass">
+                <label for="label2" class="CheckBoxLabelClass mb20" style="width:175px">广州长隆酒店彩蝶谷西餐餐厅</label>
+                <input id="label3" type="checkbox" class="CheckBoxClass">
+                <label for="label3" class="CheckBoxLabelClass mb20" style="width:175px">广州熊猫酒店自助餐厅</label>
+                <input id="label4" type="checkbox" class="CheckBoxClass">
+                <label for="label4" class="CheckBoxLabelClass mb20" style="width:175px">珠海马戏酒店餐厅</label>
+                <input id="label5" type="checkbox" class="CheckBoxClass">
+                <label for="label5" class="CheckBoxLabelClass mb20" style="width:175px">珠海企业酒店餐厅</label>
+                <input id="label6" type="checkbox" class="CheckBoxClass">
+                <label for="label6" class="CheckBoxLabelClass mb20" style="width:175px">珠海长隆横琴湾酒店餐厅</label>
+              </div>
+            </div>
+            <div class="clearfix mt20">
+              <label for="" class="left cl-check-name">渠道来源：</label>
+              <input id="channelAll" type="checkbox" class="CheckBoxClass">
+              <label for="channelAll" class="CheckBoxLabelClass  CheckBoxAll left">全部渠道</label>
+              <div class="left ml30" style="width:850px;">
+                <input id="channel1" type="checkbox" class="CheckBoxClass">
+                <label for="channel1" class="CheckBoxLabelClass mb20" style="width:120px">PC端</label>
+                <input id="channel2" type="checkbox" class="CheckBoxClass">
+                <label for="channel2" class="CheckBoxLabelClass mb20" style="width:120px">移动浏览器</label>
+                <input id="channel3" type="checkbox" class="CheckBoxClass">
+                <label for="channel3" class="CheckBoxLabelClass mb20" style="width:120px">微信</label>
+                <input id="channel4" type="checkbox" class="CheckBoxClass">
+                <label for="channel4" class="CheckBoxLabelClass mb20" style="width:120px">安卓客户端</label>
+                <input id="channel5" type="checkbox" class="CheckBoxClass">
+                <label for="channel5" class="CheckBoxLabelClass mb20" style="width:120px">IOS客户端</label>
+              </div>
+            </div>
+            <div class="clearfix mt10">
+              <label for="" class="cl-name">操作员姓名：</label>
+              <input type="text" class="input">
+              <a class="btn btn-e right btn-search" href="javascript:;">查询</a>
+            </div>
+  			  </div>
+  		  </div>
+	    </div>
+    </div>
+    <div class="mb20 data-module clearfix">
+      <div>
+        <span class="mr20">订单总计：154</span>
+        <span class="mr20">酒店房间购买总数：<em class="red">201</em></span>
+      </div>
+      <div>
+        <span class="mr20">订单总额（已减去退款）：<em class="red">￥510866.00</em></span>
+        <span class="mr20">实际收入（回款）总额：<em class="red">￥507919.97</em></span>
+        <span class="mr20">第三方支付成本总额：<em class="red">￥2946.03</em></span>
+        <span class="mr20">退款总额：<em class="red">￥5196.00</em></span>
+      </div>
+      <a href="javascript:;" class="right blue">导出数据</a>
+    </div>
+    <!-- 表格 -->
+    <table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mb20">
+      <tr>
+        <th width="80">项目</th>
+        <th width="50">数量</th>
+        <th width="80">购买人手机</th>
+        <th width="80">子单编号</th>
+        <th width="100">支付商户订单号</th>
+        <th width="90">交易单号</th>
+        <th width="80">订单金额</th>
+        <th width="80">第三方支付成本</th>
+        <th width="80">收入</th>
+        <th width="80">收入渠道</th>
+        <th width="80">创建时间/退款时间</th>
+        <th width="70">订单状态</th>
+        <th width="70">操作员</th>
+        <th width="80">渠道来源</th>
+        <th>操作</th>
+      </tr>
+      <tr>
+        <td>广州长隆酒店 高级大床房</td>
+        <td>2</td>
+        <td>(+86)</br>13700559722</td>
+        <td>2940344</td>
+        <td>WXNA2018090611147353266348</td>
+        <td>CBS20180906240000173</td>
+        <td>￥2596.00</td>
+        <td>￥15.58</td>
+        <td>￥2580.42</td>
+        <td>微信</td>
+        <td>2018-09-06</br>11:14:16</td>
+        <td>已完成</td>
+        <td>林小彬</td>
+        <td>ios客户端</td>
+        <td><a href="javascript:;">查看</a></td>
+      </tr>
+      <tr>
+        <td>广州长隆酒店 高级大床房</td>
+        <td>2</td>
+        <td>(+86)</br>13700559722</td>
+        <td>2940344</td>
+        <td>WXNA2018090611147353266348</td>
+        <td>CBS20180906240000173</td>
+        <td>￥2596.00</td>
+        <td>￥15.58</td>
+        <td>￥2580.42</td>
+        <td>支付宝</td>
+        <td>2018-09-06</br>11:14:16</td>
+        <td>已改期</td>
+        <td>蒋小乐</td>
+        <td>安卓客户端</td>
+        <td><a href="javascript:;">查看</a></td>
+      </tr>
+    </table>
+    <div class="pagelist mt20 mb20 clearfix">
+      <ul class="right">
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li class="current">3</li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">下一页</a></li>
+      </ul>
+    </div>
+    <!-- 没有数据或者出现错误信息 -->
+    <div style="" class="loading-error">
+      <div>
+        <p style="text-align:center;line-height:50px;color:#ccc;padding:76px 0px;"><img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png"><br>暂时没有可售房型，请换个日期试试</p>
+      </div>
+    </div>
+    <!-- 加载中 -->
+    <p class="loading" style="height:150px;text-align:center;line-height:50px;color:#ccc;padding:120px 0px 0px;"><img src="http://static.inner.chimelong.com:30221/evente/c/wap/img/hotel/loading.gif"></p>
+  </div>
+</div>
+<footer>
+  <div class="area clearfix">
+    <ul class="footer-left footer">
+      <li style=""><a href="javascript:;">关于我们</a></li>
+      <li style="margin-top:16px"><a href="javascript:;">功能介绍</a></li>
+      <li style="margin-top:16px"><a href="javascript:;">意见反馈</a></li>
+    </ul>
+    <ul class="footer-center footer">
+      <li style=""><a href="javascript:;" style="padding-left:0">联系我们</a></li>
+      <li class="call" style="margin:16px 0"><a href="javascript:;">400-600-5412</a></li>
+      <li class="mail" style=""><a href="javascript:;">BD@eventmosh.com</a></li>
+    </ul>
+    <ul class="footer-right footer">
+      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evetmosh.jpg" alt=""><span>eventmosh</span></li>
+      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evente.jpg" alt=""><span>evente</span></li>
+    </ul>
+  </div>
+</footer>
+<!-- 弹窗 -->
+<div class="my-loyer" style="display:none"></div>
+<div class="my-window sureYudingBox" style="display:none;">
+	<div class="clearfix mt10"><em class="close">×</em></div>
+	<p class="sureTit roomAllName">您的选择是 "度假海景套房(含早),【提前7天即享9折优惠】最优房价,大床套房"</p>
+	<p class="sureTit">入住日期：<span class="cRed inRoomDate">2017-03-21</span> 退房日期：<span class="cRed outRoomDate">2017-03-22</span>共<span class="hotelNight">1</span>晚</p>
+	<p class="sureTit">单价：<span class="cRed inRoomDate">￥29087.00/间/晚</span></p>
+	<p class="cRed sureTit" style="margin-top: 0;">请确认无误后再进行预订。</p>
+	<p class="todayTips" style="color: #a1a1a1;font-size: 1rem;margin: 0 0 10px 0;"></p>
+	<div class="sureYuding align-right">
+		<span class="addSure">数量
+			<span class="reduceS">-</span>
+			<span class="numS">1</span>
+			<span class="addS">+</span>
+		</span>
+		<a class="btn btn-e ml10 btn-e-white add-shopping-cart" href="javascript:;">加入购物车</a>
+		<a class="btn btn-e ml10 btn-e-red" href="javascript:;">立即预订</a>
+	</div>
+</div>
+<!-- 弹窗  加入购物车成功 -->
+<div class="my-window my-window-message" style="z-index:10000;display:none">
+	<div class="my-window-message-box">
+		<img src="../../images/icon_zt_1.png" alt="">
+		<div class="">加入购物车成功</div>
+	</div>
+</div>
+
+<script src="../../js/lib/jquery.min.js"></script>
+<script src="https://static.evente.cn/libs/js/plugins/My97DatePicker/WdatePicker.js"></script>
+<script src="../../js/main.js"></script>
+<script>
+
+  $(function(){
+    $.ajax({
+      url: '../../data/call-in/json.js',
+      async: false,
+      success: function(result) {
+        var data = $.parseJSON(result);
+        // console.log(data);
+        for(var i=0; i<data.length; i++) {
+          $('#itemOne').find('.bea-opt').append('<li>'+ data[i].name +'</li>');
+        }
+
+        $('#itemOne').find('.bea-opt').find('li').on('click', function(){
+          $('#itemTwo').show().find('.bea-opt').html('');
+          $('#itemTwo').find('.on-sele').text('选择所属酒店').css('color', '#999');
+          $('#itemThree').hide();
+          for(var i=0; i<data.length; i++) {
+            if($(this).text() === data[i].name) {
+              for(var j=0; j<data[i].jiudian.length; j++) {
+                console.log(data[i].jiudian[j].name);
+                $('#itemTwo').find('.bea-opt').append('<li>'+ data[i].jiudian[j].name +'</li>');
+              }
+            }
+          }
+
+          $('#itemTwo').find('.bea-opt').find('li').on('click', function(){
+            $('#itemThree').show().find('.bea-opt').html('');
+            $('#itemThree').find('.on-sele').text('全部').css('color', '#999');
+            for(var i=0; i<data.length; i++) {
+              for(var j=0; j<data[i].jiudian.length; j++) {
+                if($(this).text() === data[i].jiudian[j].name) {
+                  for(var o=0; o<data[i].jiudian[j].list.length; o++) {
+                    $('#itemThree').find('.bea-opt').append('<li>'+ data[i].jiudian[j].list[o].name +'</li>');
+                  }
+                }
+              }
+            }
+          });
+        });
+      },
+    });
+  });
+  $('.CheckBoxClass').checkBoxClass();
+
+  // 时间标签切换
+  $('.time_tab >span').on('click',function(){
+  	$(this).children('a').addClass('act');
+  	$(this).siblings().children('a').removeClass('act');
+
+    var txt = $(this).text(),
+        today = getDateStr(0),
+        week  = getDateStr(7),
+        month = getDateStr(30);
+    if (txt === '全部') {
+      $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val('');
+    }
+    if (txt === '今日') {
+      $('.Wdate[name="start_date"], .Wdate[name="end_date"]').val(today);
+    }
+    if (txt === '最近7日') {
+      $('.Wdate[name="start_date"]').val(today);
+      $('.Wdate[name="end_date"]').val(week);
+    }
+    if (txt === '最近30日') {
+      $('.Wdate[name="start_date"]').val(today);
+      $('.Wdate[name="end_date"]').val(month);
+    }
+  });
+
+  //全选反选
+	$(".CheckBoxAll").on("click", function(){
+		if($(this).hasClass("LabelSelected")){
+			$(this).parent().find(".CheckBoxLabelClass").removeClass("LabelSelected");
+		}else{
+			$(this).parent().find(".CheckBoxLabelClass").addClass("LabelSelected");
+		}
+	});
+
+  // 点击查询
+  $('.btn-search').on('click', function(){
+    $(document).find('.tabel-overview').show();
+  })
+</script>
+</body>
+</html>
