@@ -491,8 +491,9 @@ $(function(){
 			onTxt.css("color","#333");
 		}
 
-		if($(this).hasClass('disable')) {
+		if($(this).hasClass('disabled')) {
 			$(this).append('<div class="disable-sele"></div>');
+			$(this).find('.bea-opt').remove();
 		}
 	});
 

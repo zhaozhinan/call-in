@@ -292,6 +292,23 @@
           $(this).siblings('.input-number').text(num+1);
           $(this).siblings('.btn-minus').removeClass('disabled');
         });
+
+
+
+        // 加入购物车按钮
+        $('body').on('click', '.cart-btn', function(){
+          console.log('加入购物车');
+          $('.J-propChoose').fadeOut(200, function(){
+            $('.my-window-message').fadeIn(200);
+            setTimeout(function(){
+              $('.my-loyer, .my-window-message').fadeOut(200);
+            }, 3000)
+          });
+        });
+
+        $('body').on('click', '.buy-btn', function(){
+          console.log('立即预订');
+        });
       });
     </script>
 </body>
