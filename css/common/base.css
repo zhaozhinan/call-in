@@ -5,7 +5,7 @@
 .input-list60{ height:60px}
 label{ display:inline-block; font-size:14px; vertical-align:middle; *display:inline}
 .inp{  height:38px; line-height:38px; border:1px solid #DCDCDC; border-radius:3px}
-.input{ width:210px; height:30px; line-height:30px; font-size:12px; padding-left:10px; border:1px solid #DCDCDC}
+.input{ width:210px; height:30px; line-height:normal; font-size:12px; padding-left:10px; border:1px solid #DCDCDC}
 .inp:hover,.input:hover, .Wdate:hover{ border:1px solid #CCC}
 .inp:focus,.input:focus, .Wdate:focus{ border:1px solid #0194FC}
 .Wdate{ width:166px; height:30px; background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAMAAADjyg5GAAAAUVBMVEUAAAAAk/0AlP0AlP0AlP0AlP0AlP0AlP0AlP0AlP0AlP0AlP0AlPwAlP0AlP0AlP0Ak/0AlPwAlP0Ak/0AlP0AlP0AlP0AlP0AlP0AlP0AlP04XE52AAAAG3RSTlMAA3HiEt7XwTch6c+bak4sJRNkYfXRvG0qGgeCvtJ1AAAAf0lEQVQI103OWQrDMAxF0fdcx/OYOdn/Qms1UHKMBRf0IQx9kTl3mdXYLdghbNZUTMTtMLgbNAj6JWBVLys+ePmMdzmiVtBdkjRqbim1WRk+ufiU/PIkdCO8B5uGZFGaOVOrIknr8nkcZ3b2t2z20mPsZTcSBAHKlyN9nP6i/wI10wUhnL8JpwAAAABJRU5ErkJggg==') no-repeat 95% center;}
@@ -55,7 +55,7 @@ label span.red{ font-size:12px; text-align:left; display:inline-block; width:12p
 .tab-tit-c li.active a{ background:#0194FC; color:#FFF}
 /* 模拟单选按钮和多选按钮 */
 .CheckBoxClass,.RadioClass{display: none}
-.CheckBoxLabelClass{padding-left: 30px;cursor: pointer;background:url(../../images/icon_24/icon-choose.png) no-repeat 7px -31px;line-height: 22px;height: 21px;display: inline-block;}
+.CheckBoxLabelClass{padding-left: 30px;cursor: pointer;background:url(../../images/icon_24/icon-choose.png) no-repeat 7px -32px;line-height: 23px;height: 21px;display: inline-block;}
 .CheckBoxLabelClass:hover, .RadioLabelClass:hover{}
 .LabelSelected{background:url(../../images/icon_24/icon-choose.png) no-repeat;background-position: 7px 3px}
 .RadioLabelClass{background:url(../../images/login/reg.png) no-repeat 4px -21px;padding-left: 30px; height: 18px;width: 18px;display: block;float: left; cursor:pointer; line-height:15px;}
@@ -91,7 +91,7 @@ label span.red{ font-size:12px; text-align:left; display:inline-block; width:12p
 .menu-set{ display:inline-block; font-size:14px; margin-right:30px; cursor:pointer}
 .menu-toggle .bea-opt{ min-width:110px; width:auto; top:40px; left:auto; right:0px}
 /* 模拟下拉框 */
-.bea-sele{ height:30px; border:1px solid #DCDCDC; line-height:30px; position:relative; float:left}
+.bea-sele{ height:30px; border:1px solid #DCDCDC; line-height:30px; position:relative; float:left; font-size: 12px;}
 .bea-sele:hover,.on-sele:hover{ border-color:#CCC}
 .on-sele, .i-triangle{ display:block; height:30px; line-height:30px; float:left;cursor: pointer;}
 .on-sele{ padding:0 10px; border-right:1px solid #DCDCDC; color:#999; background-color:#FFF; overflow:hidden}
@@ -290,14 +290,14 @@ border: 1px solid transparent;
 /* 各个部分组件 */
 /* 头部 */
 .top, .public-top{ text-align:right; width:1205px; margin:0px auto 0; height:30px; line-height:30px}
-.top a{ margin-left:35px;}
+.top a{ margin-left:35px; font-size: 12px;}
 .top .top-login{ margin:0 40px 0 0; font-size: 12px}
 .top .top-login a{ color:#0095FB; margin-left:10px;}
 .public-top{ width:1205px}
 .public-top a{ margin-left:20px}
 /* 导航 */
 .mainNav{ width:100%; height:68px; background:#F9F9FB; border:1px solid #CCC; border-left:none; border-right:none}
-.mainNav .logo{ display:block; overflow:hidden; float:left; width:auto; height:45px;border:none; margin-top:12px;}
+.mainNav .logo{ display:block; overflow:hidden; float:left; width:auto; height:40px;border:none; margin-top:15px;}
 .mainNav .logo a{}
 .mainNav .nav{ height:20px; margin-top:24px; display:inline}
 .mainNav .nav li{ float:left; height:20px; line-height:20px; text-align:center; border-left:1px solid #DDD; margin-left: 10px; position:relative;}

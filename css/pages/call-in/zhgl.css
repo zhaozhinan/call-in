@@ -8,7 +8,7 @@
 
 .zhgl-tjzh { margin-top: 30px; }
 .zhgl-tjzh-item { margin-bottom: 20px; }
-.zhgl-tjzh-item-label { width: 6em; float: left; margin-top: 6px; line-height: 18px; }
+.zhgl-tjzh-item-label { width: 6em; float: left; margin-top: 6px; line-height: 18px; text-align: right; }
 .zhgl-tjzh-item .input,
 .zhgl-tjzh-item .bea-sele { margin-right: 10px; float: left; }
 .zhgl-tjzh-item .error { margin-top: 8px; float: left; }
