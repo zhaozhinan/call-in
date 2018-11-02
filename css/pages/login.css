@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+/* @import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css"; */
+
+.f12{font-size:12px}
+.f14{font-size:14px}
+.f16{font-size:16px}
+.f18{font-size:18px}
+.f20{font-size:20px}
+.f24{font-size:24px}
+.f26{font-size:26px}
+.f28{font-size:28px}
+.mb30{margin-bottom:30px}
+.mb20{margin-bottom:20px}
+.mb10{margin-bottom:10px;}
+.text-let{letter-spacing:1.5px;}
+.underline:hover{text-decoration:underline;}
+.align-l{text-align:left}
+.ml5{margin-left:5px}
+
+body {background: rgb(246, 245, 250)}
+header{z-index:10;position:relative;min-width:1200px;border-bottom:1px solid #dcdcdc;background: #fff}
+.head{height:70px;line-height:70px;}
+.head img{vertical-align:middle;}
+.container{ position:relative; margin:30px auto 0;border:none}
+
+/*第一板块*/
+.login{background:#fff;}
+.login p{line-height:2em}
+.log-tit{height:80px;line-height:80px;border-bottom:1px solid #dcdcdc;margin:0 40px;font-size: 28px}
+.log-tit .icon_m{width:33px;height:33px;background:url(../../images/icon_m.png)0 0 no-repeat;display:inline-block;position:relative;top:6px;margin-right:15px}
+.log_box{padding:70px 0;}
+.log_l{float:left;overflow:hidden;width:654px;text-align:center;border-right:1px solid #dcdcdc;padding:10px 0 20px;}
+.log_l .icon_p{width:22px;height:22px;background:url(../images/icon_p.png)0 0 no-repeat;display:inline-block;position:relative;top:4px;left:-8px;}
+.log_r{padding:0 35px 45px;float:left;border:1px solid #DCDcDC;margin-left:85px;}
+.log_r li{padding-bottom:37px;position:relative;text-decoration:none;}
+.log_r .panel{background:#f6f5fa;padding:10px;border-left:3px solid #22AD68;}
+.error-tips{position:absolute;bottom:12px;right:0px;font-size:12px}
+.error-inp{border-color:red !important;background:url(../../images/icon_er.png) 97% center no-repeat;}
+.error-inp:focus{border-color:red;}
+.error-system-sele {border-color:red!important;}
+.error-system-sele .on-system-sele {border-right-color:red!important;}
+.log_r .panel span{margin-top:10px;float:left;font-size:18px}
+.log_r li .icon_zh{background:url(../../images/icon_i.png) 0 0 no-repeat;width:39px;height:38px;position:absolute;top:1px;left:1px}
+.log_r li .icon_mm{background:url(../../images/icon_i.png) 0 -76px no-repeat;width:39px;height:38px;position:absolute;top:1px;left:1px}
+.log_r li .icon_yzm{background:url(../../images/icon_i.png) 0 -152px no-repeat;width:39px;height:38px;position:absolute;top:1px;left:1px}
+.log_r li .img_yzm{position:absolute;top:0px;right:0;max-width:76px;border:1px solid #dcdcdc;}
+
+.log_r li input{padding:0 30px 0 45px;height:40px;font-size:14px;box-sizing: border-box;}
+.log_r li .error_tips{display:none;}
+
+.system-sele {height:40px;}
+.system-sele .on-system-sele {height:40px;line-height: 40px}
+.system-sele .e-sele .i-triangle {width:40px;height:40px}
+.system-sele .system-opt {top:41px}
+.system-sele .system-opt li {padding-bottom:0}
+.system-sele .system-opt li a {color:#333;text-decoration: none}
+.system-sele .e-sele .i-triangle i {margin-top:18px;margin-left:15px}
+
+/*  */
+/* 弹窗1 操作完成 */
+.show-tip-entry {width:500px;height:200px; margin-top: -180px; margin-left: -250px;z-index: 9999;}
+/* 弹窗2 确定此操作？ */
+.confirm-tip-entry {width:500px;height:250px; margin-top: -180px; margin-left: -250px;}
+/* 弹窗错误提示 */
+.my-window-error-message {width:300px;margin-left:-150px;min-height:150px;margin-top:-75px}
+.my-window-error-message-box {text-align: center;padding:30px 0 0;font-size: 16px;line-height: 50px}
+
+
+
+/* 111 */
