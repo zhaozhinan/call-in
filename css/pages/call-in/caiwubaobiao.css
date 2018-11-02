@@ -29,9 +29,9 @@
 .cl-check-name{width:7em;text-align:right;height:24px;line-height:24px;}
 
 /*  */
-.data-module {background: #f9f9fb;padding:20px;border:1px solid #dcdcdc;line-height: 30px}
+.data-module {background: #f9f9fb;padding:20px;border:1px solid #dcdcdc;line-height: 30px;font-size: 14px}
 
-.time_tab a {color:#333; cursor: pointer;}
+.time_tab a {color:#333; cursor: pointer;font-size: 14px}
 .time_tab .act{background:#1a96fa;color:#fff;padding:2px 5px ;}
 .time_tab a:hover{text-decoration:none;}
 
