@@ -82,11 +82,9 @@
             </div>
             <div class="mt20">
               <div class="cleafix time">
-                <label for="" class="ml30">入住日期：</label>
-                <input class="input Wdate" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
-                <label for="" class="ml20">退房日期：</label>
-                <input class="input Wdate" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
-                <span class="ml10 mr10">共2晚</span>
+                <label for="" style="margin-left: 2em;">入住日期：</label><input class="input Wdate" id="dateStart" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicking: dateStart})" placeholder="2016-07-23" readonly="true">
+                <label for="" class="ml20">退房日期：</label><input class="input Wdate" id="dateEnd" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicking: dateEnd})" placeholder="2016-07-23" readonly="true">
+                <span class="ml10 mr10" id="allDay"></span>
                 <a class="btn btn-e right btn-search" href="javascript:;">查询</a>
               </div>
   				  </div>
@@ -122,7 +120,7 @@
             <div class="mt20">
               <div class="cleafix time">
                 <div class="rates_labels clearfix">
-                  <div class="mb20 rates_labels_box clearfix">
+                  <div class="mb20 rates_labels_box clearfix J-fw">
                     <label for="" class="rates_labels_box_label">房晚：</label>
                     <span class="rates_labels_box_item active">2天1晚</span>
                     <span class="rates_labels_box_item">3天2晚</span>
@@ -146,11 +144,11 @@
                   </div>
                 </div>
                 <label for="" class="ml30">入住日期：</label>
-                <input class="input Wdate" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
+                <input class="input Wdate" id="date_start" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_start})" placeholder="2016-07-23" readonly="true">
                 <label for="" class="ml20">退房日期：</label>
-                <input class="input Wdate" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="2016-07-23">
-                <span class="ml10 mr10">共2晚</span>
-                <a class="btn btn-e right btn-search" href="javascript:;">查询</a>
+                <input class="input Wdate" id="date_end" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_end})" placeholder="2016-07-23" readonly="true">
+                <span class="ml10 mr10">共<span>0</span>晚</span>
+                <a class="btn btn-e right btn-search2" href="javascript:;">查询</a>
               </div>
   				  </div>
   			  </div>
@@ -460,8 +458,90 @@
 
   // 点击查询
   $('.btn-search').on('click', function(){
+    if($('#allDay').find('.red').length === 0) {
+      $(document).find('.tabel-overview').show();
+    }
+  })
+  $('.btn-search2').on('click', function(){
     $(document).find('.tabel-overview').show();
   })
+
+
+// 计算增加或者减少后的日期的公共方法
+function getTheDate(dd, dadd) {
+  //可以加上错误处理
+  var a = new Date(dd)
+  a = a.valueOf()
+  a = a + dadd * 24 * 60 * 60 * 1000
+  a = new Date(a);
+  var m = a.getMonth() + 1;
+  if(m.toString().length == 1){
+      m='0'+m;
+  }
+  var d = a.getDate();
+  if(d.toString().length == 1){
+      d='0'+d;
+  }
+  return a.getFullYear() + "-" + m + "-" + d;
+}
+
+// 计算两个日期的差值的公共方法
+function fnAllDay(start, end) {
+  if(start) {
+    var start = start.replace(/-/g,"/");
+  }
+  var startdate = new Date(start);
+  if(end) {
+    var end = end.replace(/-/g,"/");
+  }
+  var enddate = new Date(end);
+  var time = enddate.getTime() - startdate.getTime();
+  var days = parseInt(time/(1000 * 60 * 60 * 24));
+  return days;
+}
+
+// 净房选中开始时间后的计算多少天
+function dateStart(dp) {
+  start = dp.cal.getNewDateStr();
+  $("#dateStart").attr('value', start);
+  console.log($("#dateEnd").attr('value'));
+  var days = fnAllDay($("#dateStart").attr('value'), $("#dateEnd").attr('value'));
+  if(typeof($("#dateStart").attr('value')) === 'string' && typeof($("#dateEnd").attr('value')) === 'string') {
+    if(days > 0) {
+      $('#allDay').html('').text('共'+days+'晚');
+    } else {
+      $('#allDay').html('<span class="red">退房日期必须大于入住日期,请重新选择</span>');
+    }
+  }
+}
+
+// 净房选中结束时间后的计算多少天
+function dateEnd(dp) {
+  end = dp.cal.getNewDateStr();
+  $("#dateEnd").attr('value', end);
+  console.log(typeof $("#dateStart").attr('value'));
+  var days = fnAllDay($("#dateStart").attr('value'), $("#dateEnd").attr('value'));
+  if(typeof($("#dateStart").attr('value'))  === 'string' && typeof($("#dateEnd").attr('value'))  === 'string') {
+    if(days > 0) {
+      $('#allDay').html('').text('共'+days+'晚');
+    } else {
+      $('#allDay').html('<span class="red">退房日期必须大于入住日期,请重新选择</span>');
+    }
+  }
+}
+
+// 套餐
+function date_start(dp) {
+  var dates = dp.cal.getNewDateStr();
+  console.log(dates, getTheDate(dates, -2));
+  $("input[name='date_start']").val(dates, getTheDate(dates, -2));
+}
+function date_end(dp) {
+  var dates = dp.cal.getNewDateStr();
+  console.log(dates, getTheDate(dates, 2));
+  $("input[name='date_end']").val(dates, getTheDate(dates, 2));
+}
+
 </script>
 </body>
 </html>

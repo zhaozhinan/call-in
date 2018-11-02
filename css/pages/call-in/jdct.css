@@ -11,7 +11,7 @@
 .hotel-restaurant { margin: 0 30px; }
 #itemTwo, #itemThree { display: none; margin-left: 20px; }
 .hotel-restaurant-bd { background: #F9F9FB; border: 1px solid #dcdcdc; padding: 20px; box-sizing: border-box; margin: 20px 0; }
-.hotel-restaurant-label { float: left; margin-top: 8px; width: 7em; text-align: right; }
+.hotel-restaurant-label { float: left; margin-top: 6px; width: 7em; text-align: right; }
 .hotel-restaurant-bd-btn { float: right; margin-top: -2px; }
 
 .table-detail { width:100%; text-align:center; }
