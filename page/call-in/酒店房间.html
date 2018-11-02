@@ -94,7 +94,7 @@
   				<div class="tab_con js_tab_con_2" style="display:none">
             <div class="clearfix">
               <label for="" class="left" style="line-height:30px">选择预订酒店：</label>
-              <div class="bea-sele" id="itemOne">
+              <div class="bea-sele" id="itemOne1">
                 <div class="e-sele">
   								<span class="on-sele" style="width:200px">选择区域</span>
   								<em class="i-triangle"><i></i></em>
@@ -102,7 +102,7 @@
   							<input type="hidden" name="event_type">
   							<ul class="bea-opt"></ul>
   						</div>
-              <div class="bea-sele" id="itemTwo">
+              <div class="bea-sele" id="itemTwo1">
                 <div class="e-sele">
   								<span class="on-sele" style="width:200px">选择所属酒店</span>
   								<em class="i-triangle"><i></i></em>
@@ -110,7 +110,7 @@
   							<input type="hidden" name="event_type">
   							<ul class="bea-opt"></ul>
   						</div>
-              <div class="bea-sele" id="itemThree">
+              <div class="bea-sele" id="itemThree1">
                 <div class="e-sele">
   								<span class="on-sele" style="width:200px">全部</span>
   								<em class="i-triangle"><i></i></em>
@@ -334,6 +334,48 @@
                 if($(this).text() === data[i].jiudian[j].name) {
                   for(var o=0; o<data[i].jiudian[j].list.length; o++) {
                     $('#itemThree').find('.bea-opt').append('<li>'+ data[i].jiudian[j].list[o].name +'</li>');
+                  }
+                }
+              }
+            }
+          });
+        });
+      },
+    });
+  });
+
+  $(function(){
+    $.ajax({
+      url: '../../data/call-in/json.js',
+      async: false,
+      success: function(result) {
+        var data = $.parseJSON(result);
+        // console.log(data);
+        for(var i=0; i<data.length; i++) {
+          $('#itemOne1').find('.bea-opt').append('<li>'+ data[i].name +'</li>');
+        }
+
+        $('#itemOne1').find('.bea-opt').find('li').on('click', function(){
+          $('#itemTwo1').show().find('.bea-opt').html('');
+          $('#itemTwo1').find('.on-sele').text('选择所属酒店').css('color', '#999');
+          $('#itemThree1').hide();
+          for(var i=0; i<data.length; i++) {
+            if($(this).text() === data[i].name) {
+              for(var j=0; j<data[i].jiudian.length; j++) {
+                console.log(data[i].jiudian[j].name);
+                $('#itemTwo1').find('.bea-opt').append('<li>'+ data[i].jiudian[j].name +'</li>');
+              }
+            }
+          }
+
+          $('#itemTwo1').find('.bea-opt').find('li').on('click', function(){
+            $('#itemThree1').show().find('.bea-opt').html('');
+            $('#itemThree1').find('.on-sele').text('全部').css('color', '#999');
+            for(var i=0; i<data.length; i++) {
+              for(var j=0; j<data[i].jiudian.length; j++) {
+                if($(this).text() === data[i].jiudian[j].name) {
+                  for(var o=0; o<data[i].jiudian[j].list.length; o++) {
+                    $('#itemThree1').find('.bea-opt').append('<li>'+ data[i].jiudian[j].list[o].name +'</li>');
                   }
                 }
               }

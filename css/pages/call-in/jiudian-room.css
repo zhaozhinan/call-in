@@ -8,6 +8,7 @@
 
 .container{ position:relative; margin:0px auto 30px; }
 #itemTwo, #itemThree { display: none; margin-left: 20px; }
+#itemTwo1, #itemThree1 { display: none; margin-left: 20px; }
 
 
 /* 套餐中  房价标签 & 房型标签 */
