@@ -164,6 +164,19 @@
       <div class="J-propChoose-wrap">
         <div>您的选择是 "<i>自助晚餐 成人票券 平日</i>"</div>
         <div class="mt10 mb10">用餐日期：<span class="red">2018-08-27</span><span class="ml30">适用时段：</span><i class="red">早餐</i></div>
+        <div class="clearfix mt10">
+      		<label for="" class="left">观看时间：</label>
+      		<div class="left choose-view-time">
+      			<div class="left">
+      				<input id="Radio1" type="radio" class="RadioClass" name="viewTime" checked="">
+      				<label for="Radio1" class="RadioLabelClass RadioSelected" style="width:auto">17：00-18：10</label>
+      			</div>
+      			<div class="left">
+      				<input id="Radio2" type="radio" class="RadioClass" name="viewTime">
+      				<label for="Radio2" class="RadioLabelClass" style="width:auto">19：30-20：30</label>
+      			</div>
+      		</div>
+      	</div>
         <div class="red">请确认无误后再进行预订。</div>
       </div>
       <div class="clearfix J-propChoose-box">
@@ -211,6 +224,7 @@
 
     <script>
       $(function(){
+        $('.RadioClass').radioBoxClass();
         $.ajax({
           url: '../../data/call-in/LeYuanMenPiao.js',
           async: false,
