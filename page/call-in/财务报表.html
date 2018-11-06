@@ -114,15 +114,15 @@
               <label for="channelAll" class="CheckBoxLabelClass CheckBoxAll left">全部渠道</label>
               <div class="left labelBox ml30" style="width:850px;">
                 <input id="channel1" type="checkbox" class="CheckBoxClass">
-                <label for="channel1" class="CheckBoxLabelClass mb10" style="width:120px">PC端</label>
+                <label for="channel1" class="CheckBoxLabelClass mb10" style="width:120px" value="a">PC端</label>
                 <input id="channel2" type="checkbox" class="CheckBoxClass">
-                <label for="channel2" class="CheckBoxLabelClass mb10" style="width:120px">移动浏览器</label>
+                <label for="channel2" class="CheckBoxLabelClass mb10" style="width:120px" value="b">移动浏览器</label>
                 <input id="channel3" type="checkbox" class="CheckBoxClass">
-                <label for="channel3" class="CheckBoxLabelClass mb10" style="width:120px">微信</label>
+                <label for="channel3" class="CheckBoxLabelClass mb10" style="width:120px" value="c">微信</label>
                 <input id="channel4" type="checkbox" class="CheckBoxClass">
-                <label for="channel4" class="CheckBoxLabelClass mb10" style="width:120px">安卓客户端</label>
+                <label for="channel4" class="CheckBoxLabelClass mb10" style="width:120px" value="d">安卓客户端</label>
                 <input id="channel5" type="checkbox" class="CheckBoxClass">
-                <label for="channel5" class="CheckBoxLabelClass mb10" style="width:120px">IOS客户端</label>
+                <label for="channel5" class="CheckBoxLabelClass mb10" style="width:120px" value="e">IOS客户端</label>
               </div>
               <div class="left ml30" style="width:850px;">
                 <input id="channel11" type="checkbox" class="CheckBoxClass">
@@ -335,24 +335,29 @@
   });
 
   //全选反选
+  var channel_array = [];
+  // var deviceIds;
 	$(".CheckBoxAll").on("click", function(){
-  
-    $(this).toggleClass('LabelSelected');
-    if($(this).siblings('.CheckBoxClass').is(":checked")){
+    // $(this).toggleClass('LabelSelected');
+    if($(this).siblings('.CheckBoxClass').is(":checked") === true){
       console.log($(this).siblings('.CheckBoxClass').is(":checked"), '111');
       $(this).siblings('.labelBox').find(".CheckBoxLabelClass").removeClass("LabelSelected");
       $(this).siblings('.labelBox').find("input").removeAttr('checked');
+
+      channel_array = [];
+      deviceIds = '';
+        // console.log(channel_array);
     }else{
       console.log($(this).siblings('.CheckBoxClass').is(":checked"), '222');
+
+      $("input[name='channel_name']").each(function(){
+        channel_array.push($(this).attr('value'));
+      });
+      deviceIds = channel_array.join(',');
 			$(this).siblings('.labelBox').find(".CheckBoxLabelClass").addClass("LabelSelected");
       $(this).siblings('.labelBox').find("input").attr('checked',true);
-      //渠道来源
-        $('input[name="channel_name"]:checked').each(function(){
-            channel_array.push($(this).val());
-        });
-        var deviceIds = channel_array.join(',');
-        console.log(deviceIds);
 		}
+    console.log(channel_array, deviceIds);
 	});
 
 
