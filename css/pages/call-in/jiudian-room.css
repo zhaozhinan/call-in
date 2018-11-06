@@ -17,11 +17,11 @@
 .rates_labels_box .rates_labels_box_item {float: left;height: 23px; color: #333;line-height: 23px;background: #FFF;border: 1px solid #DCDCDC;padding: 0 10px;font-size: 14px;min-width: 58px;text-align: center;border-radius: 5px;cursor: pointer;margin-right: 5px;}
 .rates_labels_box .rates_labels_box_item.active {border-color: #0194FC;color:#0194FC;}
 .room_type_labels {margin-top:10px;}
-.room_type_labels_item {float: left;width:33px;height:14px;margin:2px;}
+.room_type_labels_item {float: left;width:33px;height:16px;line-height: 16px;text-align: center;margin:2px;background: #f05229;border-radius: 33px;color:#fff;font-size: 12px;}
 
 .promotional-info {margin:10px;line-height: 20px}
 .product-description-box {margin:10px;line-height: 20px}
-.product-description-more {margin:10px 0 10px -8px;line-height: 20px;display: none;cursor: pointer;}
+.product-description-more {margin:10px 0 10px -8px;line-height: 20px;cursor: pointer;float: left}
 
 /* 表格 */
 .align-left,.align-l{text-align:left}
@@ -44,9 +44,9 @@
 /* 产品描述 弹窗  */
 .win-tit{height:30px; line-height:30px; text-align:center; border-bottom:1px solid #DCDCDC; background:#FAFAFC}
 .my-window-product-description {width:420px;margin-left:-210px;position:fixed;height:220px}
-.product-description {text-align: left;margin:10px;line-height: 20px}
+.product-description {text-align: left;margin:10px;line-height: 20px;display: inline-block;height: 20px;overflow: hidden;width:150px;float:left}
+.product-description p {height: 20px;}
 .product-description-div {text-align: left;margin:10px;line-height: 20px}
-
 /* 选择弹窗 */
 /********/
 .sureYudingBox{background: #fff;width: 460px;height:225px;padding:10px 20px 20px;border: 1px solid #dcdcdc;position:fixed;left: 50%;top: 50%;margin-left: -240px;margin-top: -110px;z-index: 9999;display: none;text-align:left;}
@@ -63,7 +63,8 @@
 .my-window-message {min-width:402px;top:50%;left:50%;margin-left:-201px;min-height:150px;margin-top:-75px;border-radius:5px}
 .my-window-message-box {text-align: center;padding:30px 0 0;font-size: 16px;line-height: 50px}
 
-
+/* 查询区域 */
+.tab_con_search_box {padding:20px;border:1px solid #dcdcdc;background: #f9f9fb}
 
 
 

@@ -25,8 +25,10 @@
 	$.fn.checkBoxClass = function(){
 		return this.on("click", function(){
 			if($(this).is(":checked")){
+				$(this).attr('checked', true);
 				$(this).next("label").addClass("LabelSelected");
 			}else{
+				$(this).attr('checked', false);
 				$(this).next("label").removeClass("LabelSelected");
 			}
 		});
@@ -126,13 +128,13 @@
 				if($this.hasClass("on") == true){
 					return
 				}else{
-					//alert($this.index());	
+					//alert($this.index());
 				}
 				$this.parent().find("li").removeClass("on");
 				$this.addClass("on");
 				$this.parent().parent().css({"border-color":"#DCDCDC"}).find(".on-sele").css({"color":"#333","border-color":"#DCDCDC"});
 				$(".bea-opt").slideUp();
-				
+
 				event.stopPropagation();
 			});
 		}
@@ -154,39 +156,39 @@
 			if($(this).parent().find(".js-all").hasClass("on")){
 				$(this).nextAll("li").addClass("on");
 			}else{
-				$(this).nextAll("li").removeClass("on");	
+				$(this).nextAll("li").removeClass("on");
 			}
 		}else{
 			return false;
 		}
 		event.stopPropagation();
 	});
-	
+
 	//全选反选
 	$(".CheckBox-all").on("click", function(){
 		if($(this).hasClass("LabelSelected")){
-			$(this).parent().find(".CheckBoxLabelClass").removeClass("LabelSelected");	
-			$(this).parent().parent('tr').nextAll('tr').find("td:eq(0) .CheckBoxLabelClass").removeClass("LabelSelected");	
+			$(this).parent().find(".CheckBoxLabelClass").removeClass("LabelSelected");
+			$(this).parent().parent('tr').nextAll('tr').find("td:eq(0) .CheckBoxLabelClass").removeClass("LabelSelected");
 		}else{
 			$(this).parent().find(".CheckBoxLabelClass").addClass("LabelSelected");
 			$(this).parent().parent('tr').nextAll('tr').find("td:eq(0) .CheckBoxLabelClass").addClass("LabelSelected");
 		}
 	});
-	
+
 	//隐藏类弹出层
-		
+
 	$(document).on("click", ".icon-panel", function(){
 		$(this).toggleClass("icon_toggle");
 		$(this).parent(".panel-title").siblings(".panel-body").slideToggle();
 	});
-	
+
 	//可关闭的信息浮框
 	$.fn.Alert = function(){
 		return this.on("click",function(){
 			$(this).parent(".alert").fadeOut();
 		})
 	};
-	
+
 	//自定义弹窗
 	$.fn.myWindow = function(closeDom){
 		this.click(function(){
@@ -210,7 +212,7 @@
 		$(".my-loyer").fadeOut();
 	});
 	//绑定点击页面全局的事件
-	
+
 	//设置按钮下的下拉菜单
 	$(document).on("click", ".menu-set", function(e){
 		$(this).parent().find(".bea-opt").slideToggle();
@@ -219,7 +221,7 @@
 	$(document).on("click","body", function(){
 		$(".bea-opt").slideUp();
 	});
-	
+
 	//点击可编辑
 	$.fn.canEdit = function($width){
 		return this.on("click",function(){
@@ -252,7 +254,7 @@
 				});
 			}
 		});
-		
+
         input.keyup(function(event){
             var keycode = event.which;
             if (keycode == 27) {
@@ -274,7 +276,7 @@
 
 	$.fn.nextCanEdit = function($width){
 		return this.on("click",function(){
-			
+
 			var editBox = $(this).prev(".can-edit");
 			if (editBox.children("input").length > 0) {
 				return;
@@ -323,7 +325,7 @@
             }
         });
     };
-	
+
 	function isInteger(str){
 	 //判断是否为整数
 		var regu = /^[-]{0,1}[0-9]{1,}$/;
@@ -336,7 +338,7 @@
 		$(this).toggleClass("toggle-more-down");
 		e.stopPropagation();
 	});
-	
+
 	function res(){
 		var h_init = $(window).height(),
 		h_header = $("header").outerHeight(),
@@ -350,10 +352,10 @@
 	}
 	res();
 	$(window).resize(res);
-	
+
 	//$("tr").on("mouseover",function(){$(this).css("background","#F9F9FB")}).on("mouseout",function(){$(this).css("background","")})
-	
-	
+
+
 
 	$(".toggle-inst .icon-panel").on("click",function(){
 		$(this).next(".inst-info").find("p").slideToggle();
@@ -368,8 +370,8 @@
 	$("html").on("click",function(){
 		$(this).find("menu").slideUp();
 	});
-	
-	
+
+
 })(jQuery);
 
 /**
@@ -476,10 +478,10 @@ $(".list-grouping").on("click","h3",function(){
 			_this.hover(autoStop,autoPlay).mouseout();
 			_btnUp.css("cursor","pointer").click( scrollUp ).hover(autoStop,autoPlay);//Shawphy:向上向下鼠标事件绑定
 			_btnDown.css("cursor","pointer").click( scrollDown ).hover(autoStop,autoPlay);
-		} 
+		}
 	});
-	
-	
+
+
 })(jQuery);
 
 //  获得 今日 昨日  近7日 近30日 方法
@@ -525,7 +527,7 @@ $(function(){
 
 /*!
  * Evente公共方法集合
- * 
+ *
  * @Author: jingwentian
  * @Date:   2015-11-05 16:43:35
  * @Last Modified by:   jingwentian
@@ -583,10 +585,10 @@ $.extend({
 	/**
      * 获取当前页面链接某个参数的值
      */
-	getQueryString: function( name ) {  
-	    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");  
-	    var r = location.search.substr(1).match(reg);  
-	    if (r != null) return unescape(decodeURI(r[2])); return null;  
+	getQueryString: function( name ) {
+	    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+	    var r = location.search.substr(1).match(reg);
+	    if (r != null) return unescape(decodeURI(r[2])); return null;
 	},
 
 	/**
@@ -655,8 +657,8 @@ $.extend({
      * 数组去重
      */
     unique: function( array ) {
-    	var n = []; 
-		for(var i = 0; i < array.length; i++) 
+    	var n = [];
+		for(var i = 0; i < array.length; i++)
 		{
 			if (n.indexOf(array[i]) == -1) n.push(array[i]);
 		}
@@ -689,15 +691,15 @@ $.extend({
 
     strlen: function ( str ) {
 		var len = 0;
-		for (var i = 0; i < str.length; i ++) { 
-		var c = str.charCodeAt(i); 
-			//单字节加1 
-			if ((c >= 0x0001 && c <= 0x007e) || (0xff60 <= c && c <= 0xff9f)) { 
-				len ++; 
-			} else { 
-				len += 2; 
-			} 
-		} 
+		for (var i = 0; i < str.length; i ++) {
+		var c = str.charCodeAt(i);
+			//单字节加1
+			if ((c >= 0x0001 && c <= 0x007e) || (0xff60 <= c && c <= 0xff9f)) {
+				len ++;
+			} else {
+				len += 2;
+			}
+		}
 		return len;
     },
 
@@ -871,7 +873,7 @@ $.extend({
 	 *
 	 * @usage return $.request("post", url, {}).done(function(responce) {}).fail(function() {});
 	 * @usage return $.request("post", url, null).then(function(responce) {});
-	 * 
+	 *
 	 * @param {[type]} method   [POST/GET]
 	 * @param {[type]} url      [请求URL]
 	 * @param {[type]} data     [传递的数据]
@@ -990,7 +992,7 @@ $.extend({
 		}
 	},
 
-	/** 
+	/**
      * 生成唯一码
 	 */
 	getOnlyCode: function() {
@@ -1008,7 +1010,7 @@ $.extend({
 		return res;
 	},
 
-	/** 
+	/**
      * 刷新二维码
 	 */
 	refreshVerify: function(el) {
@@ -1051,60 +1053,60 @@ $.extend({
 	},
 
 	/**
-	 * js 加法计算  
-	 * 调用：$.accAdd(arg1,arg2) 
-	 * 返回值：arg1加arg2的精确结果 
+	 * js 加法计算
+	 * 调用：$.accAdd(arg1,arg2)
+	 * 返回值：arg1加arg2的精确结果
 	 */
-	accAdd: function(arg1,arg2) {   
-	  var r1,r2,m;   
-	  try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}   
-	  try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}   
-	  m=Math.pow(10,Math.max(r1,r2))   
-	  return ((arg1*m+arg2*m)/m).toFixed(2);   
-	},  
+	accAdd: function(arg1,arg2) {
+	  var r1,r2,m;
+	  try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+	  try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}
+	  m=Math.pow(10,Math.max(r1,r2))
+	  return ((arg1*m+arg2*m)/m).toFixed(2);
+	},
 
 	/**
-	 * js 减法计算  
-	 * 调用：$.Subtr(arg1,arg2)  
+	 * js 减法计算
+	 * 调用：$.Subtr(arg1,arg2)
 	 * 返回值：arg1减arg2的精确结果
-	 */   
-	Subtr: function(arg1,arg2) {  
-	     var r1,r2,m,n;  
-	     try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}  
-	     try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}  
-	     m=Math.pow(10,Math.max(r1,r2));  
-	     //last modify by deeka  
-	     //动态控制精度长度  
-	     n=(r1>=r2)?r1:r2;  
-	     return ((arg1*m-arg2*m)/m).toFixed(2);  
-	}, 
+	 */
+	Subtr: function(arg1,arg2) {
+	     var r1,r2,m,n;
+	     try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+	     try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}
+	     m=Math.pow(10,Math.max(r1,r2));
+	     //last modify by deeka
+	     //动态控制精度长度
+	     n=(r1>=r2)?r1:r2;
+	     return ((arg1*m-arg2*m)/m).toFixed(2);
+	},
 
 	/**
-	 * js 除法函数  
-	 * 调用：$.accDiv(arg1,arg2)  
+	 * js 除法函数
+	 * 调用：$.accDiv(arg1,arg2)
 	 * 返回值：arg1除以arg2的精确结果
-	 */   
-	accDiv: function(arg1,arg2) {   
-	  var t1=0,t2=0,r1,r2;   
-	  try{t1=arg1.toString().split(".")[1].length}catch(e){}   
-	  try{t2=arg2.toString().split(".")[1].length}catch(e){}   
-	  with(Math){   
-	    r1=Number(arg1.toString().replace(".",""))   
-	    r2=Number(arg2.toString().replace(".",""))   
-	    return (r1/r2)*pow(10,t2-t1);   
-	  }   
-	}, 
-	  
+	 */
+	accDiv: function(arg1,arg2) {
+	  var t1=0,t2=0,r1,r2;
+	  try{t1=arg1.toString().split(".")[1].length}catch(e){}
+	  try{t2=arg2.toString().split(".")[1].length}catch(e){}
+	  with(Math){
+	    r1=Number(arg1.toString().replace(".",""))
+	    r2=Number(arg2.toString().replace(".",""))
+	    return (r1/r2)*pow(10,t2-t1);
+	  }
+	},
+
 	/**
-	 * js 乘法函数  
-	 * 调用：$.accMul(arg1,arg2)    
+	 * js 乘法函数
+	 * 调用：$.accMul(arg1,arg2)
 	 * 返回值：arg1乘以arg2的精确结果
-	 */  
-	accMul: function(arg1,arg2) {   
-	  var m=0,s1=arg1.toString(),s2=arg2.toString();   
-	  try{m+=s1.split(".")[1].length}catch(e){}   
-	  try{m+=s2.split(".")[1].length}catch(e){}   
-	  return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m)   
+	 */
+	accMul: function(arg1,arg2) {
+	  var m=0,s1=arg1.toString(),s2=arg2.toString();
+	  try{m+=s1.split(".")[1].length}catch(e){}
+	  try{m+=s2.split(".")[1].length}catch(e){}
+	  return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m)
 	},
 
 	/**
@@ -1185,8 +1187,8 @@ $.extend({
      */
 	showTips: function ( ele, msg, align, autoClose ) {
 		var msg 		= msg 		|| '';
-		var align		= align 	|| 'right'; 
-		var autoClose	= autoClose || true; 
+		var align		= align 	|| 'right';
+		var autoClose	= autoClose || true;
 		var d = dialog({
 		    align: align,
 		    content: msg,
@@ -1228,5 +1230,3 @@ $.extend({
 	}
 
 });
-
-

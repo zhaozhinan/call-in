@@ -51,223 +51,314 @@
   				<li class="active"><a href="javascript:;">净房</a></li>
   				<li><a href="javascript:;">套餐</a></li>
   			</ul>
-  			<div class="tab_cons clearfix" style="background: #f9f9fb;padding: 20px;">
+  			<div class="tab_cons clearfix" style="border:none">
           <div class="tab_con js_tab_con_1" style="display:block">
-            <div class="clearfix">
-              <label for="" class="left" style="line-height:30px">选择预订酒店：</label>
-              <div class="bea-sele" id="itemOne">
-                <div class="e-sele">
-  								<span class="on-sele" style="width:200px">选择区域</span>
-  								<em class="i-triangle"><i></i></em>
-  							</div>
-  							<input type="hidden" name="event_type">
-  							<ul class="bea-opt"></ul>
-  						</div>
-              <div class="bea-sele" id="itemTwo">
-                <div class="e-sele">
-  								<span class="on-sele" style="width:200px">选择所属酒店</span>
-  								<em class="i-triangle"><i></i></em>
-  							</div>
-  							<input type="hidden" name="event_type">
-  							<ul class="bea-opt"></ul>
-  						</div>
-              <div class="bea-sele" id="itemThree">
-                <div class="e-sele">
-  								<span class="on-sele" style="width:200px">选择区域</span>
-  								<em class="i-triangle"><i></i></em>
-  							</div>
-  							<input type="hidden" name="event_type">
-  							<ul class="bea-opt"></ul>
-  						</div>
-            </div>
-            <div class="mt20">
-              <div class="cleafix time">
-                <label for="" style="margin-left: 2em;">入住日期：</label><input class="input Wdate" id="dateStart" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicking: dateStart})" placeholder="2016-07-23" readonly="true">
-                <label for="" class="ml20">退房日期：</label><input class="input Wdate" id="dateEnd" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicking: dateEnd})" placeholder="2016-07-23" readonly="true">
-                <span class="ml10 mr10 f14" id="allDay"></span>
-                <a class="btn btn-e right btn-search" href="javascript:;">查询</a>
+            <div class="tab_con_search_box">
+              <div class="clearfix">
+                <label for="" class="left" style="line-height:30px">选择预订酒店：</label>
+                <div class="bea-sele" id="itemOne">
+                  <div class="e-sele">
+    								<span class="on-sele" style="width:200px">选择区域</span>
+    								<em class="i-triangle"><i></i></em>
+    							</div>
+    							<input type="hidden" name="event_type">
+    							<ul class="bea-opt"></ul>
+    						</div>
+                <div class="bea-sele" id="itemTwo">
+                  <div class="e-sele">
+    								<span class="on-sele" style="width:200px">选择所属酒店</span>
+    								<em class="i-triangle"><i></i></em>
+    							</div>
+    							<input type="hidden" name="event_type">
+    							<ul class="bea-opt"></ul>
+    						</div>
+                <div class="bea-sele" id="itemThree">
+                  <div class="e-sele">
+    								<span class="on-sele" style="width:200px">选择区域</span>
+    								<em class="i-triangle"><i></i></em>
+    							</div>
+    							<input type="hidden" name="event_type">
+    							<ul class="bea-opt"></ul>
+    						</div>
               </div>
-  				  </div>
+              <div class="mt20">
+                <div class="cleafix time">
+                  <label for="" style="margin-left: 2em;">入住日期：</label><input class="input Wdate" id="dateStart" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicking: dateStart})" placeholder="2016-07-23" readonly="true">
+                  <label for="" class="ml20">退房日期：</label><input class="input Wdate" id="dateEnd" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicking: dateEnd})" placeholder="2016-07-23" readonly="true">
+                  <span class="ml10 mr10 f14" id="allDay"></span>
+                  <a class="btn btn-e right btn-search" href="javascript:;">查询</a>
+                </div>
+    				  </div>
+            </div>
+            <!-- 表格 -->
+            <table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mt20" style="display:none">
+              <tr>
+                <th width="160">房型类型</th>
+                <th width="180">名称</th>
+                <th width="160">
+                  价格
+                  <span class="arrow">
+                    <em class="arrow_up"></em>
+                    <em class="arrow_down"></em>
+                  </span>
+                </th>
+                <th width="260">促销信息</th>
+                <th width="260">产品描述</th>
+                <th>操作</th>
+              </tr>
+              <tr>
+                <td>高级房双床房</td>
+                <td>高级房双床房净住房</td>
+                <td>
+                  <span class="red">￥1,398/间/晚</span>
+                </td>
+                <td>
+                  <div class="align-left promotional-info"><span class="room_type_labels_item">促销</span>长隆野生动物世界门票+考拉小小保育员门票，搭配购买立减50 DXN</div>
+                </td>
+                <td>
+                  <div class="product-description-box">
+                    <p>产品包含：</p>
+                    <div class="align-left clearfix">
+                      <div class="product-description">
+                        <p>1、酒店主题房间1间1晚；1、酒店主题房间1间1晚；</p>
+                        <p>2、免费使用高速无线上网。</p>
+                      </div>
+                      <sapn class="blue product-description-more">查看更多</sapn>
+                    </div>
+                  </div>
+                  <!-- 查看更多弹窗 -->
+                  <div class="my-window my-window-product-description" style="display:none;">
+                    <div class="win-tit f14">产品描述<span class="close">×</span></div>
+                    <div class="product-description-div">
+                      <p>产品包含：</p>
+                      <p>1、酒店主题客房1间1晚；</p>
+                      <p>2、获得欢迎饮品及水果；</p>
+                      <p>3、免费使用高速无线上网。</p>
+                      <p>产品说明：</p>
+                      <p>提前10天或以上预订2018年9月1日至2018年12月31日期间的房间，可享受推广价9.5折优惠（此价格为9.5折后的优惠价），此优惠不可与酒店其它优惠同享，节假日不适用。</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:;" class="blue choose">选择</a>
+                </td>
+              </tr>
+              <tr>
+                <td>高级房双床房</td>
+                <td>高级房双床房净住房</td>
+                <td>
+                  <span class="red">￥1,398/间/晚</span>
+                </td>
+                <td>
+                  <div class="align-left promotional-info"><img src="../../images/icon_promrtions.png" class="room_type_labels_item">长隆野生动物世界门票+考拉小小保育员门票，搭配购买立减50 DXN</div>
+                </td>
+                <td>
+                  <div class="product-description-box">
+                    <p>产品包含：</p>
+                    <div class="align-left clearfix">
+                      <div class="product-description">
+                        <p>1、酒店主题房间1间1晚；1、酒店主题房间1间1晚；</p>
+                        <p>2、免费使用高速无线上网。</p>
+                      </div>
+                      <sapn class="blue product-description-more">查看更多</sapn>
+                    </div>
+                  </div>
+                  <!-- 查看更多弹窗 -->
+                  <div class="my-window my-window-product-description" style="display:none;">
+                    <div class="win-tit f14">产品描述<span class="close">×</span></div>
+                    <div class="product-description-div">
+                      <p>产品包含：</p>
+                      <p>1、酒店主题客房1间1晚2323；</p>
+                      <p>2、获得欢迎饮品及水果2323；</p>
+                      <p>3、免费使用高速无线上网23232。</p>
+                      <p>产品说明：</p>
+                      <p>提前10天或以上预订2018年9月1日至2018年12月31日期间的房间，可享受推广价9.5折优惠（此价格为9.5折后的优惠价），此优惠不可与酒店其它优惠同享，节假日不适用。</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:;" class="blue choose">选择</a>
+                </td>
+              </tr>
+            </table>
+            <!-- 表格 -->
+            <!-- 没有数据或者出现错误信息 -->
+            <div style="" class="loading-error">
+              <div>
+                <p style="text-align:center;line-height:50px;color:#ccc;padding:76px 0px;"><img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png"><br>暂时没有可售房型，请换个日期试试</p>
+              </div>
+            </div>
   				</div>
   				<div class="tab_con js_tab_con_2" style="display:none">
-            <div class="clearfix">
-              <label for="" class="left" style="line-height:30px">选择预订酒店：</label>
-              <div class="bea-sele" id="itemOne1">
-                <div class="e-sele">
-  								<span class="on-sele" style="width:200px">选择区域</span>
-  								<em class="i-triangle"><i></i></em>
-  							</div>
-  							<input type="hidden" name="event_type">
-  							<ul class="bea-opt"></ul>
-  						</div>
-              <div class="bea-sele" id="itemTwo1">
-                <div class="e-sele">
-  								<span class="on-sele" style="width:200px">选择所属酒店</span>
-  								<em class="i-triangle"><i></i></em>
-  							</div>
-  							<input type="hidden" name="event_type">
-  							<ul class="bea-opt"></ul>
-  						</div>
-              <div class="bea-sele" id="itemThree1">
-                <div class="e-sele">
-  								<span class="on-sele" style="width:200px">全部</span>
-  								<em class="i-triangle"><i></i></em>
-  							</div>
-  							<input type="hidden" name="event_type">
-  							<ul class="bea-opt"></ul>
-  						</div>
-            </div>
-            <div class="mt20">
-              <div class="cleafix time">
-                <div class="rates_labels clearfix">
-                  <div class="mb20 rates_labels_box clearfix J-fw">
-                    <label for="" class="rates_labels_box_label">房晚：</label>
-                    <span class="rates_labels_box_item active">2天1晚</span>
-                    <span class="rates_labels_box_item">3天2晚</span>
-                    <span class="rates_labels_box_item">4天3晚</span>
-                  </div>
-                  <div class="mb20 rates_labels_box clearfix">
-                    <label for="" class="rates_labels_box_label">类型：</label>
-                    <span class="rates_labels_box_item">双人游</span>
-                    <span class="rates_labels_box_item">家庭游</span>
-                  </div>
-                  <div class="mb20 rates_labels_box clearfix">
-                    <label for="" class="rates_labels_box_label">含乐园：</label>
-                    <span class="rates_labels_box_item">单园游</span>
-                    <span class="rates_labels_box_item">多园游</span>
-                  </div>
-                  <div class="mb20 rates_labels_box clearfix">
-                    <label for="" class="rates_labels_box_label">含餐：</label>
-                    <span class="rates_labels_box_item">自助午餐</span>
-                    <span class="rates_labels_box_item">自助晚餐</span>
-                    <span class="rates_labels_box_item">不含餐</span>
-                  </div>
-                </div>
-                <label for="" class="ml30">入住日期：</label>
-                <input class="input Wdate" id="date_start" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_start})" placeholder="2016-07-23" readonly="true">
-                <label for="" class="ml20">退房日期：</label>
-                <input class="input Wdate" id="date_end" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_end})" placeholder="2016-07-23" readonly="true">
-                <span class="ml10 mr10 f14">共<span>0</span>晚</span>
-                <a class="btn btn-e right btn-search2" href="javascript:;">查询</a>
+            <div class="tab_con_search_box">
+              <div class="clearfix">
+                <label for="" class="left" style="line-height:30px">选择预订酒店：</label>
+                <div class="bea-sele" id="itemOne1">
+                  <div class="e-sele">
+    								<span class="on-sele" style="width:200px">选择区域</span>
+    								<em class="i-triangle"><i></i></em>
+    							</div>
+    							<input type="hidden" name="event_type">
+    							<ul class="bea-opt"></ul>
+    						</div>
+                <div class="bea-sele" id="itemTwo1">
+                  <div class="e-sele">
+    								<span class="on-sele" style="width:200px">选择所属酒店</span>
+    								<em class="i-triangle"><i></i></em>
+    							</div>
+    							<input type="hidden" name="event_type">
+    							<ul class="bea-opt"></ul>
+    						</div>
+                <div class="bea-sele" id="itemThree1">
+                  <div class="e-sele">
+    								<span class="on-sele" style="width:200px">全部</span>
+    								<em class="i-triangle"><i></i></em>
+    							</div>
+    							<input type="hidden" name="event_type">
+    							<ul class="bea-opt"></ul>
+    						</div>
               </div>
-  				  </div>
+              <div class="mt20">
+                <div class="cleafix time">
+                  <div class="rates_labels clearfix">
+                    <div class="mb20 rates_labels_box clearfix J-fw">
+                      <label for="" class="rates_labels_box_label">房晚：</label>
+                      <span class="rates_labels_box_item active">2天1晚</span>
+                      <span class="rates_labels_box_item">3天2晚</span>
+                      <span class="rates_labels_box_item">4天3晚</span>
+                    </div>
+                    <div class="mb20 rates_labels_box clearfix">
+                      <label for="" class="rates_labels_box_label">类型：</label>
+                      <span class="rates_labels_box_item">双人游</span>
+                      <span class="rates_labels_box_item">家庭游</span>
+                    </div>
+                    <div class="mb20 rates_labels_box clearfix">
+                      <label for="" class="rates_labels_box_label">含乐园：</label>
+                      <span class="rates_labels_box_item">单园游</span>
+                      <span class="rates_labels_box_item">多园游</span>
+                    </div>
+                    <div class="mb20 rates_labels_box clearfix">
+                      <label for="" class="rates_labels_box_label">含餐：</label>
+                      <span class="rates_labels_box_item">自助午餐</span>
+                      <span class="rates_labels_box_item">自助晚餐</span>
+                      <span class="rates_labels_box_item">不含餐</span>
+                    </div>
+                  </div>
+                  <label for="" class="ml30">入住日期：</label>
+                  <input class="input Wdate" id="date_start" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_start})" placeholder="2016-07-23" readonly="true">
+                  <label for="" class="ml20">退房日期：</label>
+                  <input class="input Wdate" id="date_end" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_end})" placeholder="2016-07-23" readonly="true">
+                  <span class="ml10 mr10 f14">共<span>0</span>晚</span>
+                  <a class="btn btn-e right btn-search2" href="javascript:;">查询</a>
+                </div>
+    				  </div>
+            </div>
+            <!-- 表格 -->
+            <table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mt20" style="display:none">
+              <tr>
+                <th width="160">房型类型</th>
+                <th width="180">名称</th>
+                <th width="160">
+                  价格
+                  <span class="arrow">
+                    <em class="arrow_up"></em>
+                    <em class="arrow_down"></em>
+                  </span>
+                </th>
+                <th width="260">促销信息</th>
+                <th width="260">产品描述</th>
+                <th>操作</th>
+              </tr>
+              <tr>
+                <td>高级房双床房</td>
+                <td>高级房双床房净住房</td>
+                <td>
+                  <span class="red">￥1,398/间/晚</span>
+                </td>
+                <td>
+                  <div class="align-left promotional-info"><img src="../../images/icon_promrtions.png" class="room_type_labels_item">长隆野生动物世界门票+考拉小小保育员门票，搭配购买立减50 DXN</div>
+                </td>
+                <td>
+                  <div class="product-description-box">
+                    <p>产品包含：</p>
+                    <div class="align-left clearfix">
+                      <div class="product-description">
+                        <p>1、酒店主题房间1间1晚；1、酒店主题房间1间1晚；</p>
+                        <p>2、免费使用高速无线上网。</p>
+                      </div>
+                      <sapn class="blue product-description-more">查看更多</sapn>
+                    </div>
+                  </div>
+                  <!-- 查看更多弹窗 -->
+                  <div class="my-window my-window-product-description" style="display:none;">
+                    <div class="win-tit f14">产品描述<span class="close">×</span></div>
+                    <div class="product-description-div">
+                      <p>产品包含：</p>
+                      <p>1、酒店主题客房1间1晚；</p>
+                      <p>2、获得欢迎饮品及水果；</p>
+                      <p>3、免费使用高速无线上网。</p>
+                      <p>产品说明：</p>
+                      <p>提前10天或以上预订2018年9月1日至2018年12月31日期间的房间，可享受推广价9.5折优惠（此价格为9.5折后的优惠价），此优惠不可与酒店其它优惠同享，节假日不适用。</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:;" class="blue choose">选择</a>
+                </td>
+              </tr>
+              <tr>
+                <td>高级房双床房</td>
+                <td>高级房双床房净住房</td>
+                <td>
+                  <span class="red">￥1,398/间/晚</span>
+                </td>
+                <td>
+                  <div class="align-left promotional-info"><img src="../../images/icon_promrtions.png" class="room_type_labels_item">长隆野生动物世界门票+考拉小小保育员门票，搭配购买立减50 DXN</div>
+                </td>
+                <td>
+                  <div class="product-description-box">
+                    <p>产品包含：</p>
+                    <div class="align-left clearfix">
+                      <div class="product-description">
+                        <p>1、酒店主题房间1间1晚；1、酒店主题房间1间1晚；</p>
+                        <p>2、免费使用高速无线上网。</p>
+                      </div>
+                      <sapn class="blue product-description-more">查看更多</sapn>
+                    </div>
+                  </div>
+                  <!-- 查看更多弹窗 -->
+                  <div class="my-window my-window-product-description" style="display:none;">
+                    <div class="win-tit f14">产品描述<span class="close">×</span></div>
+                    <div class="product-description-div">
+                      <p>产品包含：</p>
+                      <p>1、酒店主题客房1间1晚2323；</p>
+                      <p>2、获得欢迎饮品及水果2323；</p>
+                      <p>3、免费使用高速无线上网23232。</p>
+                      <p>产品说明：</p>
+                      <p>提前10天或以上预订2018年9月1日至2018年12月31日期间的房间，可享受推广价9.5折优惠（此价格为9.5折后的优惠价），此优惠不可与酒店其它优惠同享，节假日不适用。</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a href="javascript:;" class="blue choose">选择</a>
+                </td>
+              </tr>
+            </table>
+            <!-- 表格 -->
+            <!-- 没有数据或者出现错误信息 -->
+            <div style="" class="loading-error">
+              <div>
+                <p style="text-align:center;line-height:50px;color:#ccc;padding:76px 0px;"><img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png"><br>暂时没有可售房型，请换个日期试试</p>
+              </div>
+            </div>
   			  </div>
   		  </div>
 	    </div>
-    </div>
-    <!-- 表格 -->
-    <table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mt20" style="display:none">
-      <tr>
-        <th width="160">房型类型</th>
-        <th width="180">名称</th>
-        <th width="160">
-          价格
-          <span class="arrow">
-            <em class="arrow_up"></em>
-            <em class="arrow_down"></em>
-          </span>
-        </th>
-        <th width="260">促销信息</th>
-        <th width="260">产品描述</th>
-        <th>操作</th>
-      </tr>
-      <tr>
-        <td>高级房双床房</td>
-        <td>高级房双床房净住房</td>
-        <td>
-          <span class="red">￥1,398/间/晚</span>
-        </td>
-        <td>
-          <div class="align-left promotional-info"><img src="../../images/icon_promrtions.png" class="room_type_labels_item">长隆野生动物世界门票+考拉小小保育员门票，搭配购买立减50 DXN</div>
-        </td>
-        <td>
-          <div class="product-description-box">
-            <p>产品包含：</p>
-            <p class="align-left">
-              <span class="product-description">1、酒店主题客房1间1晚酒店主题客房1间1晚</span>
-              <span class="blue product-description-more">查看更多</span>
-            </p>
-          </div>
-          <!-- 查看更多弹窗 -->
-          <div class="my-window my-window-product-description" style="display:none;">
-            <div class="win-tit f14">产品描述<span class="close">×</span></div>
-            <div class="product-description-div">
-              <p>产品包含：</p>
-              <p>1、酒店主题客房1间1晚；</p>
-              <p>2、获得欢迎饮品及水果；</p>
-              <p>3、免费使用高速无线上网。</p>
-              <p>产品说明：</p>
-              <p>提前10天或以上预订2018年9月1日至2018年12月31日期间的房间，可享受推广价9.5折优惠（此价格为9.5折后的优惠价），此优惠不可与酒店其它优惠同享，节假日不适用。</p>
-            </div>
-          </div>
-        </td>
-        <td>
-          <a href="javascript:;" class="blue choose">选择</a>
-        </td>
-      </tr>
-      <tr>
-        <td>高级房双床房</td>
-        <td>高级房双床房净住房</td>
-        <td>
-          <span class="red">￥1,398/间/晚</span>
-        </td>
-        <td>
-          <div class="align-left promotional-info"><img src="../../images/icon_promrtions.png" class="room_type_labels_item">长隆野生动物世界门票+考拉小小保育员门票，搭配购买立减50 DXN</div>
-        </td>
-        <td>
-          <div class="product-description-box">
-            <p>产品包含：</p>
-            <p class="align-left">
-              <span class="product-description">1、酒店主题酒店主题酒店主题酒店主题酒店主题店主题</span>
-              <span class="blue product-description-more">查看更多</span>
-            </p>
-          </div>
-          <!-- 查看更多弹窗 -->
-          <div class="my-window my-window-product-description" style="display:none;">
-            <div class="win-tit f14">产品描述<span class="close">×</span></div>
-            <div class="product-description-div">
-              <p>产品包含：</p>
-              <p>1、酒店主题客房1间1晚2323；</p>
-              <p>2、获得欢迎饮品及水果2323；</p>
-              <p>3、免费使用高速无线上网23232。</p>
-              <p>产品说明：</p>
-              <p>提前10天或以上预订2018年9月1日至2018年12月31日期间的房间，可享受推广价9.5折优惠（此价格为9.5折后的优惠价），此优惠不可与酒店其它优惠同享，节假日不适用。</p>
-            </div>
-          </div>
-        </td>
-        <td>
-          <a href="javascript:;" class="blue choose">选择</a>
-        </td>
-      </tr>
-    </table>
-    <!-- 没有数据或者出现错误信息 -->
-    <div style="" class="loading-error">
-      <div>
-        <p style="text-align:center;line-height:50px;color:#ccc;padding:76px 0px;"><img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png"><br>暂时没有可售房型，请换个日期试试</p>
-      </div>
     </div>
     <!-- 加载中 -->
     <p class="loading" style="height:150px;text-align:center;line-height:50px;color:#ccc;padding:120px 0px 0px;"><img src="http://static.inner.chimelong.com:30221/evente/c/wap/img/hotel/loading.gif"></p>
   </div>
 </div>
-<!-- <footer>
-  <div class="area clearfix">
-    <ul class="footer-left footer">
-      <li style=""><a href="javascript:;">关于我们</a></li>
-      <li style="margin-top:16px"><a href="javascript:;">功能介绍</a></li>
-      <li style="margin-top:16px"><a href="javascript:;">意见反馈</a></li>
-    </ul>
-    <ul class="footer-center footer">
-      <li style=""><a href="javascript:;" style="padding-left:0">联系我们</a></li>
-      <li class="call" style="margin:16px 0"><a href="javascript:;">400-600-5412</a></li>
-      <li class="mail" style=""><a href="javascript:;">BD@eventmosh.com</a></li>
-    </ul>
-    <ul class="footer-right footer">
-      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evetmosh.jpg" alt=""><span>eventmosh</span></li>
-      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evente.jpg" alt=""><span>evente</span></li>
-    </ul>
-  </div>
-</footer> -->
 <!-- 弹窗 -->
 <div class="my-loyer" style="display:none"></div>
 <div class="my-window sureYudingBox" style="display:none;">
@@ -426,7 +517,7 @@
 
     // 产品描述
     $(function(){
-      $(document).find('.product-description').each(function(e){
+      $(document).find('.product-description > p').each(function(e){
   			var text = $(this).text();
   			var text_leng = text.length;
   			if(text_leng >= 20) {
@@ -456,15 +547,27 @@
     	});
     })
 
+    $('.my-loyer, .close').on('click', function(){
+      $(".my-loyer, .my-window").fadeOut();
+    });
+
   // 点击查询
   $('.btn-search').on('click', function(){
     if($('#allDay').find('.red').length === 0) {
-      $(document).find('.tabel-overview').show();
+      $(this).parents('.tab_con').find('.tabel-overview').show();
     }
   })
-  $('.btn-search2').on('click', function(){
-    $(document).find('.tabel-overview').show();
+  $('.btn-search2').on('click', function(e){
+    // $(document).find('.tabel-overview').show();
+    $(this).parents('.tab_con').find('.tabel-overview').show();
+    aaa($(this));
   })
+
+function  aaa(e){
+  e.parents('.tab_con').find('.tabel-overview').show();
+  e.parents('.tab_con').find('.tabel-overview').show();
+}
+
 
 
 // 计算增加或者减少后的日期的公共方法

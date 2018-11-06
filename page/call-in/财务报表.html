@@ -88,31 +88,31 @@
             <div class="clearfix mt20">
               <label for="" class="left cl-check-name">房型类型：</label>
               <input id="labelAll" type="checkbox" class="CheckBoxClass">
-              <label for="labelAll" class="CheckBoxLabelClass  CheckBoxAll left">全部类型</label>
-              <div class="left ml30" style="width:850px;">
-                <input id="label1" type="checkbox" class="CheckBoxClass">
+              <label for="labelAll" class="CheckBoxLabelClass CheckBoxAll left">全部类型</label>
+              <div class="left labelBox ml30" style="width:850px;">
+                <input id="label1" type="checkbox" class="CheckBoxClass" value="1" name="channel_name">
                 <label for="label1" class="CheckBoxLabelClass mb10" style="width:175px">高级大床房</label>
-                <input id="label2" type="checkbox" class="CheckBoxClass">
+                <input id="label2" type="checkbox" class="CheckBoxClass" value="2" name="channel_name">
                 <label for="label2" class="CheckBoxLabelClass mb10" style="width:175px">高级双床房</label>
-                <input id="label3" type="checkbox" class="CheckBoxClass">
+                <input id="label3" type="checkbox" class="CheckBoxClass" value="3" name="channel_name">
                 <label for="label3" class="CheckBoxLabelClass mb10" style="width:175px">野趣房双床房</label>
-                <input id="label4" type="checkbox" class="CheckBoxClass">
+                <input id="label4" type="checkbox" class="CheckBoxClass" value="4" name="channel_name">
                 <label for="label4" class="CheckBoxLabelClass mb10" style="width:175px">野趣房双拼房（双床）</label>
-                <input id="label5" type="checkbox" class="CheckBoxClass">
+                <input id="label5" type="checkbox" class="CheckBoxClass" value="5" name="channel_name">
                 <label for="label5" class="CheckBoxLabelClass mb10" style="width:175px">野趣房大床房</label>
-                <input id="label6" type="checkbox" class="CheckBoxClass">
+                <input id="label6" type="checkbox" class="CheckBoxClass" value="6" name="channel_name">
                 <label for="label6" class="CheckBoxLabelClass mb10" style="width:175px">大床套房</label>
-                <input id="label7" type="checkbox" class="CheckBoxClass">
+                <input id="label7" type="checkbox" class="CheckBoxClass" value="7" name="channel_name">
                 <label for="label7" class="CheckBoxLabelClass mb10" style="width:175px">度假园景大床房</label>
-                <input id="label7" type="checkbox" class="CheckBoxClass">
+                <input id="label7" type="checkbox" class="CheckBoxClass" value="8" name="channel_name">
                 <label for="label7" class="CheckBoxLabelClass mb10" style="width:175px">家庭房大床+儿童床</label>
               </div>
             </div>
             <div class="clearfix mt20">
               <label for="" class="left cl-check-name">渠道来源：</label>
               <input id="channelAll" type="checkbox" class="CheckBoxClass">
-              <label for="channelAll" class="CheckBoxLabelClass  CheckBoxAll left">全部渠道</label>
-              <div class="left ml30" style="width:850px;">
+              <label for="channelAll" class="CheckBoxLabelClass CheckBoxAll left">全部渠道</label>
+              <div class="left labelBox ml30" style="width:850px;">
                 <input id="channel1" type="checkbox" class="CheckBoxClass">
                 <label for="channel1" class="CheckBoxLabelClass mb10" style="width:120px">PC端</label>
                 <input id="channel2" type="checkbox" class="CheckBoxClass">
@@ -123,6 +123,10 @@
                 <label for="channel4" class="CheckBoxLabelClass mb10" style="width:120px">安卓客户端</label>
                 <input id="channel5" type="checkbox" class="CheckBoxClass">
                 <label for="channel5" class="CheckBoxLabelClass mb10" style="width:120px">IOS客户端</label>
+              </div>
+              <div class="left ml30" style="width:850px;">
+                <input id="channel11" type="checkbox" class="CheckBoxClass">
+                <label for="channel11" class="CheckBoxLabelClass mb10 ceshi" style="width:120px">PC端ceshiceshi</label>
               </div>
             </div>
             <div class="clearfix mt10">
@@ -222,24 +226,6 @@
     <p class="loading" style="height:150px;text-align:center;line-height:50px;color:#ccc;padding:120px 0px 0px;"><img src="http://static.inner.chimelong.com:30221/evente/c/wap/img/hotel/loading.gif"></p>
   </div>
 </div>
-<!-- <footer>
-  <div class="area clearfix">
-    <ul class="footer-left footer">
-      <li style=""><a href="javascript:;">关于我们</a></li>
-      <li style="margin-top:16px"><a href="javascript:;">功能介绍</a></li>
-      <li style="margin-top:16px"><a href="javascript:;">意见反馈</a></li>
-    </ul>
-    <ul class="footer-center footer">
-      <li style=""><a href="javascript:;" style="padding-left:0">联系我们</a></li>
-      <li class="call" style="margin:16px 0"><a href="javascript:;">400-600-5412</a></li>
-      <li class="mail" style=""><a href="javascript:;">BD@eventmosh.com</a></li>
-    </ul>
-    <ul class="footer-right footer">
-      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evetmosh.jpg" alt=""><span>eventmosh</span></li>
-      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evente.jpg" alt=""><span>evente</span></li>
-    </ul>
-  </div>
-</footer> -->
 <!-- 弹窗 -->
 <div class="my-loyer" style="display:none"></div>
 <div class="my-window sureYudingBox" style="display:none;">
@@ -273,45 +259,45 @@
 <script>
 
   $(function(){
-    $.ajax({
-      url: '../../data/call-in/json.js',
-      async: false,
-      success: function(result) {
-        var data = $.parseJSON(result);
-        // console.log(data);
-        for(var i=0; i<data.length; i++) {
-          $('#itemOne').find('.bea-opt').append('<li>'+ data[i].name +'</li>');
-        }
-
-        $('#itemOne').find('.bea-opt').find('li').on('click', function(){
-          $('#itemTwo').show().find('.bea-opt').html('');
-          $('#itemTwo').find('.on-sele').text('选择所属酒店').css('color', '#999');
-          $('#itemThree').hide();
-          for(var i=0; i<data.length; i++) {
-            if($(this).text() === data[i].name) {
-              for(var j=0; j<data[i].jiudian.length; j++) {
-                console.log(data[i].jiudian[j].name);
-                $('#itemTwo').find('.bea-opt').append('<li>'+ data[i].jiudian[j].name +'</li>');
-              }
-            }
-          }
-
-          $('#itemTwo').find('.bea-opt').find('li').on('click', function(){
-            $('#itemThree').show().find('.bea-opt').html('');
-            $('#itemThree').find('.on-sele').text('全部').css('color', '#999');
-            for(var i=0; i<data.length; i++) {
-              for(var j=0; j<data[i].jiudian.length; j++) {
-                if($(this).text() === data[i].jiudian[j].name) {
-                  for(var o=0; o<data[i].jiudian[j].list.length; o++) {
-                    $('#itemThree').find('.bea-opt').append('<li>'+ data[i].jiudian[j].list[o].name +'</li>');
-                  }
-                }
-              }
-            }
-          });
-        });
-      },
-    });
+    // $.ajax({
+    //   url: '../../data/call-in/json.js',
+    //   async: false,
+    //   success: function(result) {
+    //     var data = $.parseJSON(result);
+    //     // console.log(data);
+    //     for(var i=0; i<data.length; i++) {
+    //       $('#itemOne').find('.bea-opt').append('<li>'+ data[i].name +'</li>');
+    //     }
+    //
+    //     $('#itemOne').find('.bea-opt').find('li').on('click', function(){
+    //       $('#itemTwo').show().find('.bea-opt').html('');
+    //       $('#itemTwo').find('.on-sele').text('选择所属酒店').css('color', '#999');
+    //       $('#itemThree').hide();
+    //       for(var i=0; i<data.length; i++) {
+    //         if($(this).text() === data[i].name) {
+    //           for(var j=0; j<data[i].jiudian.length; j++) {
+    //             console.log(data[i].jiudian[j].name);
+    //             $('#itemTwo').find('.bea-opt').append('<li>'+ data[i].jiudian[j].name +'</li>');
+    //           }
+    //         }
+    //       }
+    //
+    //       $('#itemTwo').find('.bea-opt').find('li').on('click', function(){
+    //         $('#itemThree').show().find('.bea-opt').html('');
+    //         $('#itemThree').find('.on-sele').text('全部').css('color', '#999');
+    //         for(var i=0; i<data.length; i++) {
+    //           for(var j=0; j<data[i].jiudian.length; j++) {
+    //             if($(this).text() === data[i].jiudian[j].name) {
+    //               for(var o=0; o<data[i].jiudian[j].list.length; o++) {
+    //                 $('#itemThree').find('.bea-opt').append('<li>'+ data[i].jiudian[j].list[o].name +'</li>');
+    //               }
+    //             }
+    //           }
+    //         }
+    //       });
+    //     });
+    //   },
+    // });
   });
   $('.CheckBoxClass').checkBoxClass();
 
@@ -350,12 +336,25 @@
 
   //全选反选
 	$(".CheckBoxAll").on("click", function(){
-		if($(this).hasClass("LabelSelected")){
-			$(this).parent().find(".CheckBoxLabelClass").removeClass("LabelSelected");
-		}else{
-			$(this).parent().find(".CheckBoxLabelClass").addClass("LabelSelected");
+  
+    $(this).toggleClass('LabelSelected');
+    if($(this).siblings('.CheckBoxClass').is(":checked")){
+      console.log($(this).siblings('.CheckBoxClass').is(":checked"), '111');
+      $(this).siblings('.labelBox').find(".CheckBoxLabelClass").removeClass("LabelSelected");
+      $(this).siblings('.labelBox').find("input").removeAttr('checked');
+    }else{
+      console.log($(this).siblings('.CheckBoxClass').is(":checked"), '222');
+			$(this).siblings('.labelBox').find(".CheckBoxLabelClass").addClass("LabelSelected");
+      $(this).siblings('.labelBox').find("input").attr('checked',true);
+      //渠道来源
+        $('input[name="channel_name"]:checked').each(function(){
+            channel_array.push($(this).val());
+        });
+        var deviceIds = channel_array.join(',');
+        console.log(deviceIds);
 		}
 	});
+
 
   // 点击查询
   $('.btn-search').on('click', function(){
