@@ -336,7 +336,6 @@
 
   //全选反选
 	$(".CheckBoxAll").on("click", function(){
-  
     $(this).toggleClass('LabelSelected');
     if($(this).siblings('.CheckBoxClass').is(":checked")){
       console.log($(this).siblings('.CheckBoxClass').is(":checked"), '111');
@@ -347,11 +346,13 @@
 			$(this).siblings('.labelBox').find(".CheckBoxLabelClass").addClass("LabelSelected");
       $(this).siblings('.labelBox').find("input").attr('checked',true);
       //渠道来源
+        var channel_array = new Array();
         $('input[name="channel_name"]:checked').each(function(){
             channel_array.push($(this).val());
         });
         var deviceIds = channel_array.join(',');
         console.log(deviceIds);
+
 		}
 	});
 
