@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <title>退款详情</title>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1,user-scalable=yes" name="viewport">
+    <link href="../../css/common/reset.css" rel="stylesheet" />
+    <link href="../../css/common/base.css" rel="stylesheet" />
+    <link href="../../css/pages/call-in/tuikuan-detail.css" rel="stylesheet" />
+    <style>
+    .order-T{text-align:center;height:35px;line-height:35px;background:#F9F9FB;border:1px solid #dcdcdc;margin-bottom:-1px;font-size: 14px;padding:0 10px}
+    .setbacks-order-T {text-align:center;height:35px;line-height:35px;background:#F9F9FB;border-bottom:1px solid #dcdcdc;margin-bottom:-1px;font-size: 14px;padding:0 10px}
+
+    /* 订单进度条 */
+    .refund-setbacks {margin:20px 0}
+.refund-setback{padding:0 20px;text-align: center}
+.refund-setback-li{display: inline-block;position:relative;width:70px;margin-right:170px;text-align:center;line-height:1em;vertical-align: top}
+.refund-setback-li:before {content:'';width:220px;height:1px;background:#999999;position:absolute;left:47px;top:24px;z-index: -1} .refund-setback-li:after {content:'';width:0px;height:1px;background:#fd883b;position:absolute;left:47px;top:24px;z-index: -1}
+
+.refund-setback-li:nth-last-child(1){margin-right:0;}
+.refund-setback-li:nth-last-child(1):before, .refund-setback-li:nth-last-child(1):after{width:0;height:0;}
+
+.Set_Num{width:27px;height:27px;display:block;border-radius:100%;margin:12px auto 0;position:relative;}
+.refund-setback-li .Set_Num .icon_f{width:27px;height:27px;background:url(../../images/icon-no-arrived.png) center center no-repeat;background-size: 100%;position:absolute;left:0px;top:0px;border-radius:100%;}
+.refund-setback-li-text {margin-top:10px;width:70px;line-height: 20px;font-size: 12px}
+
+/* 进度条已完成的 已完成不代表成功 */
+.refund-setback-li.arrvied .Set_Num .icon_f {width:27px;height:27px;background:url(../../images/icon-true.png) center center no-repeat;background-size: 100%;}
+.refund-setback-li.arrvied:after {width:110px}
+.refund-setback-li.success:after {width:220px}
+
+/* 进度条未到样式 */
+.refund-setback-li.no-arrvied .Set_Num .icon_f {width:27px;height:27px;background:url(../../images/icon-no-arrived.png) center center no-repeat;background-size: 100%;}
+
+/* 进度条失败样式 */
+.refund-setback-li.fail .Set_Num .icon_f{background:url(../../images/icon-false.png) center center no-repeat;background-size: 100%;width:27px;height:27px;}
+
+/* 新加进度条提示信息 */
+.refund-setback-status {width: 40px;padding:2px 6px;font-size: 12px;position: absolute;left:130px;top:0;background: #fd883b;color:#fff;border-radius:10px;}
+.refund-setback-status:after {content: '';position: absolute;bottom:-3px;left:50%;margin-left:-3px;width:0px;height:0px;border:3px solid #fd883d;border-top-color:transparent;border-left-color:transparent;transform: rotate(45deg)}
+
+.refund-setbacks-tips {width:550px;margin:10px auto;color:#999;line-height: 20px;text-align: center;font-size: 12px}
+.tabel-refund-setbacks {border:1px solid #dcdcdc}
+
+    </style>
+</head>
+
+<body>
+    <!-- 公共的头部 -->
+    <header class="top">
+        <span class="top-login">您好, zhaozhinan@eventmosh</span>
+        <a href="javascript:;" onclick="if (confirm('确定要注销账户？')) { location.href= 'http://login.evente.cn/b/logout'; }">退出帐号</a>
+    </header>
+    <nav class="mainNav">
+        <div class="area">
+            <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a><span class="mainNavDes">代客下单系统</span></h1>
+            <div class="right" style="margin-top:24px">
+                <ul class="nav nav-toplist">
+                    <li><a href="酒店房间.html">酒店房间</a></li>
+                    <li><a href="酒店餐厅.html">酒店餐厅</a></li>
+                    <li><a href="乐园门票.html">乐园门票</a></li>
+                    <li><a href="购物车.html">购物车</a></li>
+                    <li class="on"><a href="订单列表.html">订单中心</a></li>
+                    <li><a href="财务报表.html">财务报表</a></li>
+                    <li><a href="账号管理-列表.html">账户管理</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="crumbs area">
+        我的当前位置：<span class="on">退款详情</span>
+    </div>
+    <!-- ／公共的头部 -->
+    <div class="container clearfix">
+        <div class="order-detail">
+          <div class="panel">
+            <div class="panel-title">
+              <span class="panel-tit left">退款详情</span>
+            </div>
+          </div>
+          <!-- 退款信息 -->
+          <table class="table-brief mt20" border="1">
+            <caption class="order-T">
+							<span>退款信息</span>
+						</caption>
+            <tr>
+              <td class="first" width="250">退款编号</td>
+              <td width="280">608</td>
+              <td class="first" width="250">原始订单号</td>
+              <td>6910</td>
+            </tr>
+            <tr>
+              <td class="first">中台退单编号</td>
+              <td>00000000000030001</td>
+              <td class="first">支付商户退款单号</td>
+              <td>2018111410090608R30653</td>
+            </tr>
+            <tr>
+              <td class="first">第三方退款流水号</td>
+              <td>-</td>
+              <td class="first">申请时间</td>
+              <td>2018-11-13 19:18:20</td>
+            </tr>
+            <tr>
+              <td class="first">退款状态</td>
+              <td>退款成功</td>
+              <td class="first">退款时间</td>
+              <td>2018-11-14 10:0:20</td>
+            </tr>
+            <tr>
+              <td class="first">手续费</td>
+              <td>￥0.00</td>
+              <td class="first">实际退款金额</td>
+              <td>￥2796.00</td>
+            </tr>
+            <tr>
+              <td class="first">异常说明</td>
+              <td colspan="3">购错产品</td>
+            </tr>
+          </table>
+          <!-- 退款信息 -->
+
+          <!-- 退款进度 -->
+  				<!-- 备注：初始状态都是 no-arrvied， 完成需要改为arrvied， 成功后需要加success， 失败需要加fail-->
+          <div class="tabel-refund-setbacks mt20">
+            <div class="setbacks-order-T"><span>退款进度</span></div>
+            <div class="refund-setbacks">
+              <div class="refund-setback">
+                <ul class="clearfix">
+                  <li class="refund-setback-li arrvied success">
+                    <em class="Set_Num"><i class="icon_f"></i></em>
+                    <div class="refund-setback-li-text">
+                      <div>提交申请</div>
+                      <div>2018-09-08</div>
+                      <div>16:23:24</div>
+                    </div>
+                    <div class="refund-setback-status">审核中</div>
+                  </li>
+                  <li class="refund-setback-li arrvied">
+                    <em class="Set_Num"><i class="icon_f"></i></em>
+                    <div class="refund-setback-li-text">
+                      <div>审核中</div>
+                      <div>2018-09-08</div>
+                      <div>16:23:24</div>
+                    </div>
+                    <div class="refund-setback-status">退款中</div>
+                  </li>
+                  <li class="refund-setback-li no-arrvied">
+                    <em class="Set_Num"><i class="icon_f"></i></em>
+                    <span class=""></span>
+                    <div class="refund-setback-li-text">
+                      <div>退款成功</div>
+                      <div>2018-09-08</div>
+                      <div>16:23:24</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+    					<div class="refund-setbacks-tips">退款审核中，约3-5个工作日退款审核中，约3-5个工作日退款审核中，约3-5个工作日退款审核中，约3-5个工作日退款审核中，约3-5个工作日退款审核中，约3-5个工作日退款审核中，约3-5个工作日</div>
+    				</div>
+    				<div class="refund-setbacks">
+    					<div class="refund-setback">
+    						<ul class="clearfix">
+    							<li class="refund-setback-li arrvied success">
+    								<em class="Set_Num"><i class="icon_f"></i></em>
+    								<div class="refund-setback-li-text">
+    									<div>提交申请</div>
+    									<div>2018-09-08</div>
+    									<div>16:23:24</div>
+    								</div>
+    								<div class="refund-setback-status">审核中</div>
+    							</li>
+    							<li class="refund-setback-li no-arrvied fail">
+    								<em class="Set_Num"><i class="icon_f"></i></em>
+    								<div class="refund-setback-li-text">
+    									<div>已驳回</div>
+    									<div>2018-09-08</div>
+    									<div>16:23:24</div>
+    								</div>
+    							</li>
+    						</ul>
+    					</div>
+    					<div class="refund-setbacks-tips">退款审核中，约3-5个工作日退款审核中</div>
+    				</div>
+          </div>
+          <!-- 退款进度 -->
+
+          <!-- 原退款信息 -->
+          <table class="table-brief mt20" border="1">
+            <caption class="order-T">
+							<span>原退款信息</span>
+						</caption>
+            <tr>
+              <th width="28%">项目</th>
+              <th width="18%">单价*数量</th>
+              <th width="18%">原小计</th>
+              <th width="18%">手续费</th>
+              <th width="18%">退款小计</th>
+            </tr>
+            <tr>
+              <td>长隆横琴湾酒店-度假海景双床房|净房</td>
+              <td>￥1398.00*2</td>
+              <td>￥2796.00</td>
+              <td>0.00</td>
+              <td>￥2796.00</td>
+            </tr>
+          </table>
+          <!-- ／原退款信息 -->
+        </div>
+    </div>
+</body>
+</html>

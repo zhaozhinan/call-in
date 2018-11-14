@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+/* @import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css"; */
+
+.f12{font-size:12px}
+.f14{font-size:14px}
+.mb30{margin-bottom:30px}
+.mb20{margin-bottom:20px}
+.mb10{margin-bottom:10px;}
+.text-let{letter-spacing:1.5px;}
+
+body {background: #fff}
+/* welcome */
+/* .welcome {box-sizing: border-box;} */
+.welcome-btn {text-align: center;margin-top:8%}
+.welcome-box {position:absolute;top:18%;left:50%;transform:translate(-50%,0);height:60%;z-index:1}
+.welcome-box img {max-height: 100%}
+/*tanchuang*/
+.my-window-welcome li {position: relative;}
+
+.my-window-welcome .error-tips{position:absolute;top:32px;right:0px;font-size:12px;text-align: right}
+.my-window-welcome .error-inp{border-color:red !important;background:url(../../images/icon_er.png) 97% center no-repeat;}
+.my-window-welcome .error-inp:focus{border-color:red;}
+
+/* nav */
+.nav-tips {min-width:110px;padding:0 10px;height:30px;line-height: 30px;text-align: center;background: #f05229;color:#fff;font-size: 12px;position: absolute;top:-40px;margin-left:-16px}
+.nav-tips:after{content: '';position: absolute;width:10px;height:10px;background:#f05229;bottom:-5px;left:50%;margin-left:-5px;transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-mos-transform: rotate(-45deg);-mz-transform: rotate(-45deg);-o-transform: rotate(-45deg);}
+
+/* 111 */

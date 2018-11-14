@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name = "format-detection" content="telephone = no">
+<meta http-equiv="X-UA-Compatible" content="IE=10" >
+<meta http-equiv="Content-Language" content="zh-cn" >
+<title>welcome</title>
+<link href="../css/common/reset.css" rel="stylesheet" />
+<link href="../css/common/base.css" rel="stylesheet" />
+<link href="../css/pages/welcome.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header class="top">
+	  <span class="top-login">您好, zhaozhinan@eventmosh</span>
+	  <a href="http://b.evente.cn/account">帐号权限</a>
+	  <a href="javascript:alert('即将上线');">活动学堂</a>
+	  <a href="javascript:alert('即将上线');">消息中心</a>
+	  <a href="javascript:;" onclick="if (confirm('确定要注销账户？')) { location.href= 'http://login.evente.cn/b/logout'; }">退出帐号</a>
+	  <a href="javascript:alert('即将上线');">App下载</a>
+	</header>
+	<nav class="mainNav">
+	  <div class="area">
+	    <h1><a class="logo" title="进入首页" href="#"><img src="../images/changlong/changlong-footer.png"></a><span class="mainNavDes">代客下单系统</span></h1>
+	    <div class="right" style="margin-top:24px">
+	      <ul class="nav nav-toplist">
+					<li>
+						<a href="#">开始新订单</a>
+						<div class="nav-tips">新顾客必需点击此处</div>
+					</li>
+	        <li><a href="酒店房间.html">酒店房间</a></li>
+	        <li><a href="酒店餐厅.html">酒店餐厅</a></li>
+	        <li><a href="乐园门票.html">乐园门票</a></li>
+	        <li><a href="购物车.html">购物车</a></li>
+	        <li><a href="订单列表.html">订单中心</a></li>
+	        <li><a href="财务报表.html">财务报表</a></li>
+	        <li class="on"><a href="账号管理-列表.html">账户管理</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+<div class="container welcome" style="border:none">
+	<div class="welcome-btn">
+		<a href="javascript:;" class="btn btn-e js-welcome-btn" style="width:270px">填写新顾客手机号，并开始新订单</a>
+	</div>
+	<div class="welcome-box">
+		<img src="../images/welcome.jpg" alt="" style="" />
+	</div>
+</div>
+<div class="my-loyer" style="display:block;margin-top:100px"></div>
+<div class="my-window my-window-welcome" style="display:block">
+	<div class="align-center" style="padding:30px 0">
+		<div class="align-center mb20">新订单</div>
+		<form class="" action="" method="">
+      <ul style="width:300px;margin:0 auto">
+        <li class="align-left mt10">顾客手机号码：</li>
+        <li class="mt10">
+					<input class="input f14" name="text" placeholder="请输入顾客手机号码" style="width:288px;">
+					<span class="red error-tips" style="display:block">请正确输入手机号</span>
+				</li>
+				<li class="mt30">
+					<a href="javascript:;" class="btn btn-c f16 login-submit" style="width:300px">确认</a>
+				</li>
+      </ul>
+    </form>
+	</div>
+</div>
+<script src="../js/lib/jquery.min.js"></script>
+<!-- <script src="../js/main.js"></script> -->
+<script>
+    $(function(){
+        var Wheight=$(window).height();
+        var h=Wheight-223-30;
+        $('.welcome').css({'min-height':h});
+
+				$('.my-loyer').click(function(){
+				  $('.my-loyer, .my-window').fadeOut(200);
+				});
+
+				$('.js-welcome-btn').on('click', function(){
+					$('.my-loyer, .my-window-welcome').fadeIn(200);
+				})
+    });
+</script>
+</body>
+</html>
