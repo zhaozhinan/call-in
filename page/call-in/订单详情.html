@@ -96,7 +96,7 @@
             </tr>
           </table>
           <div class="clearfix order-detail-btn">
-            <a href="javascript:;" class="btn btn-j btn-deleteOrder">取消订单</a><a href="javascript:;" class="btn btn-j btn-shortMesg">补发短信</a><a href="javascript:;" class="btn btn-j btn-showTemplate">查看短信模版</a><a href="改期.html" class="btn btn-j">改期</a>
+            <a href="javascript:;" class="btn btn-j btn-deleteOrder">取消订单</a><a href="javascript:;" class="btn btn-j btn-shortMesg">补发短信</a><!-- <a href="javascript:;" class="btn btn-j btn-showTemplate">查看短信模版</a> --><a href="改期.html" class="btn btn-j">改期</a>
           </div>
 
           <!-- 购买人信息 -->
@@ -245,8 +245,22 @@
 <div class="my-window J-propShortMesg">
   <div class="mt30">确定发送短信吗？</div>
   <div class="input-list60 mt20">
-    <input type="text" class="input" placeholder="请输入手机号" id="shortTel" />
+    <label for="" class="J-propShortMesg-label">手机：</label>
+    <div class="bea-sele">
+      <div class="e-sele">
+        <span class="on-sele" style="width: 69px">+86</span><em class="i-triangle"><i></i></em>
+      </div>
+      <ul class="bea-opt" id="orderType">
+        <li class="on">86</li>
+        <li>+85</li>
+      </ul>
+    </div>
+    <input type="text" class="input J-propShortMesg-input" placeholder="请输入手机号" id="shortTel" />
     <div class="error red"></div>
+  </div>
+  <div class="J-propShortMesg-txt">
+    <span>短信信息</span><br />
+    <span>【长隆旅游】尊敬的宾客，感谢您选择长隆旅游度假区，您已通过长隆客服成功预订，订单号：xxxxxxxx。请于20分钟内完成支付该订单，超时未支付订单将自动取消。支付方式详情请点击：xxxxxxxxx。</span>
   </div>
   <div>
     <a href="javascript:;" class="btn btn-j mr20" onclick="$('.my-loyer, .J-propShortMesg').fadeOut(200)">取消</a>
@@ -256,13 +270,13 @@
 <!-- /确定发送短信吗？ -->
 
 <!-- 短信息弹窗 -->
-<div class="my-window J-propShowTemplate">
+<!-- <div class="my-window J-propShowTemplate">
   <div class="J-propShowTemplate-tit">短信信息</div>
   <div class="J-propShowTemplate-txt">【长隆旅游】尊敬的宾客，感谢您选择长隆旅游度假区，您已通过长隆客服成功预订，订单号：xxxxxxxx。请于20分钟内完成支付该订单，超时未支付订单将自动取消。支付方式详情请点击：xxxxxxxxx。</div>
   <div class="mt20 aligh-center">
     <a href="javascript:;" class="btn btn-e" onclick="$('.my-loyer, .J-propShowTemplate').fadeOut(200)">关闭</a>
   </div>
-</div>
+</div> -->
 <!-- ／短信息弹窗 -->
 
     <script src="../../js/lib/jquery.min.js"></script>
@@ -289,10 +303,10 @@
         });
 
         // 查看短信模版按钮
-        $('.btn-showTemplate').on('click', function() {
-          console.log('查看短信模版');
-          $('.my-loyer, .J-propShowTemplate').fadeIn(200);
-        });
+        // $('.btn-showTemplate').on('click', function() {
+        //   console.log('查看短信模版');
+        //   $('.my-loyer, .J-propShowTemplate').fadeIn(200);
+        // });
 
         // 确定取消订单按钮
         $('.J-confirmOrder').on('click', function(){

@@ -30,3 +30,22 @@
 /* loading */
 .loading { height:150px; text-align:center; line-height:50px; color:#ccc; padding:120px 0px 0px; background: url('http://static.inner.chimelong.com:30221/evente/c/wap/img/hotel/loading.gif') no-repeat center center; background-size: 30px 30px; }
 
+
+
+.tabel-overview, .tabel-detail{ width:100%; margin-left:-1px; margin-top:-1px; text-align:center}
+.tabel-overview td, .tabel-detail td{ border-top:1px solid #DCDCDC;height:50px; font-size:12px; padding: 0}
+.tabel-overview .info-box-top, .tabel-overview .info-box-bot{width:230px}
+.tabel-detail th{ height:35px}
+.tabel-detail td{ height:40px}
+.tabel-detail th{ font-size:14px}
+.tabel-overview td.first, .tabel-detail td.first{background:#F9F9FB; width:80px; font-size:14px}
+.tabel-detail th.first{ background:#F9F9FB; font-size:14px}
+
+.tabel-detail-d{ width:100%; margin-left:0}
+.tabel-detail-d td{ height:65px; padding: 0;}
+.tabel-detail-d tr td:nth-of-type(1) { padding: 8px 0; }
+.tabel-detail-d th{ background:#F9F9FB}
+.tabel-detail-d .RadioLabelClass{ float:none; display:inline-block; font-size:12px}
+.order-detail{ padding:15px 8px 20px 20px; border:1px solid #DCDCDC}
+.order-detail li{ height:24px; line-height:24px}
+.order-detail-list { height:45px;overflow-y: auto; padding: 5px;text-align: center; padding-left: 8px; padding-right: 8px}

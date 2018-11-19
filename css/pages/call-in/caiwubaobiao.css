@@ -40,4 +40,9 @@
 
 
 
-/* 111 */
+/*  */
+.tabel-overview .tabel-overview-td { padding: 0}
+.tabel-overview .tabel-overview-td-item { border-top: 1px solid #dcdcdc; padding: 0 8px; width: 130px; overflow: hidden; clear: none; display: flex; text-align: center;}
+.tabel-overview .tabel-overview-td-item:nth-of-type(1) { border-top: none; }
+.tabel-overview-td-item .tabel-overview-td-item-name { display: block; width: 82px; border-right: 1px solid #dcdcdc; padding: 8px 0; float: left; box-sizing: border-box; }
+.tabel-overview-td-item .tabel-overview-td-item-num { text-align: center; display: inline-block;margin: auto; }
