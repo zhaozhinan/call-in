@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+/* @import "../../../css/components/left.css";
+@import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css"; */
+
+.f12{font-size:12px}
+.f14{font-size:14px}
+.mb30{margin-bottom:30px}
+.mb20{margin-bottom:20px}
+.mb10{margin-bottom:10px;}
+.text-let{letter-spacing:1.5px;}
+
+body {background: #fff}
+/* welcome */
+/* .welcome {box-sizing: border-box;} */
+.welcome-btn {text-align: center;margin-top:8%}
+.welcome-box {position:absolute;top:18%;left:50%;transform:translate(-50%,0);height:60%;z-index:1}
+.welcome-box img {max-height: 100%}
+/*tanchuang*/
+.my-window-welcome li {position: relative;}
+
+.my-window-welcome .error-tips{position:absolute;top:45px;right:0px;font-size:12px;text-align: right}
+.my-window-welcome .error-inp{border-color:red !important;background:url(../../images/icon_er.png) 97% center no-repeat;}
+.my-window-welcome .error-inp:focus{border-color:red;}
+
+/* nav */
+.nav-tips {min-width:110px;padding:0 10px;height:30px;line-height: 30px;text-align: center;background: #f05229;color:#fff;font-size: 12px;position: absolute;top:-40px;margin-left:-16px}
+.nav-tips:after{content: '';position: absolute;width:10px;height:10px;background:#f05229;bottom:-5px;left:50%;margin-left:-5px;transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-mos-transform: rotate(-45deg);-mz-transform: rotate(-45deg);-o-transform: rotate(-45deg);}
+
+/* 111 */
+
+.my-window-welcome { width: 460px; }
+.welcome-tel { width: 400px; text-align: center; margin: 0 auto; font-size: 12px; }
+.welcome-tel .input { width: 222px; height: 40px; float: left; margin-left: 10px; font-size: 14px; }
+.welcome-tel .bea-sele { height: 40px; }
+.welcome-tel .on-sele { width: 40px; height: 40px; line-height: 40px; font-size: 14px; overflow: hidden; }
+.welcome-tel .welcome-tel-icon { display: inline-block; float: left; height: 40px; margin-left: 5px; text-align: center;}
+.welcome-tel .welcome-tel-icon img { vertical-align: middle; margin: 5px auto; height: 30px; width: 46px; }
+.welcome-tel .bea-opt { top: 41px; padding: 3px 0;}
+.welcome-tel .bea-opt ul { height: 175px; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+.welcome-tel .bea-opt li { height: 40px; line-height: 40px; padding-left: 3px; }
+.welcome-tel .e-sele .i-triangle { margin-top: 5px; width: 40px; }
+.welcome-tel .e-sele .i-triangle i { margin-left: 15px; }

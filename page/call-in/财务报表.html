@@ -336,10 +336,9 @@
 
   //全选反选
   var channel_array = [];
-  // var deviceIds;
+  var deviceIds;
 	$(".CheckBoxAll").on("click", function(){
-    // $(this).toggleClass('LabelSelected');
-    if($(this).siblings('.CheckBoxClass').is(":checked") === true){
+    if($(this).siblings('.CheckBoxClass').is(":checked")){
       console.log($(this).siblings('.CheckBoxClass').is(":checked"), '111');
       $(this).siblings('.labelBox').find(".CheckBoxLabelClass").removeClass("LabelSelected");
       $(this).siblings('.labelBox').find("input").removeAttr('checked');

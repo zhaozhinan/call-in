@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
-@import "../../../css/components/left.css";
+/* @import "../../../css/components/left.css";
 @import "../../../css/components/top.css";
 @import "../../../css/components/nav.css";
 @import "../../../css/components/crumbs.css";
-@import "../../../css/components/bottom.css";
+@import "../../../css/components/bottom.css"; */
 
 .container{ position:relative; margin:0px auto 30px;}
 
