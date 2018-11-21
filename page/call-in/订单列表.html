@@ -23,6 +23,10 @@
         <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a><span class="mainNavDes">代客下单系统</span></h1>
         <div class="right" style="margin-top:24px">
           <ul class="nav nav-toplist">
+            <li>
+              <a href="../欢迎页.html">开始新订单</a>
+              <div class="nav-tips">新顾客必需点击此处</div>
+            </li>
             <li><a href="酒店房间.html">酒店房间</a></li>
             <li><a href="酒店餐厅.html">酒店餐厅</a></li>
             <li><a href="乐园门票.html">乐园门票</a></li>
@@ -186,6 +190,16 @@
                 <td>***</td>
                 <td><a class="blue" href="./订单详情.html">查看订单</a></td>
               </tr>
+              <tr>
+                <td colspan="8">
+                  <!-- 为空的时候 -->
+                  <div class="loading-error">
+                      <img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png">
+                      <div class="mt20">暂时没有可售房型，请换个日期试试</div>
+                  </div>
+                  <!-- ／为空的状态 -->
+                </td>
+              </tr>
             </table>
             <div class="pagelist mt20 mb20 clearfix">
               <ul class="right">
@@ -199,10 +213,10 @@
               </ul>
             </div>
             <!-- 为空的时候 -->
-            <div class="loading-error">
+            <!-- <div class="loading-error">
                 <img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png">
                 <div class="mt20">暂时没有可售房型，请换个日期试试</div>
-            </div>
+            </div> -->
             <!-- ／为空的状态 -->
             <!-- 加载时候的loading -->
             <div class="loading"></div>

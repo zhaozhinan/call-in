@@ -106,7 +106,7 @@
 							<span class="ml10">入住人：李娜</span>
 							<span class="ml10">证件号码：1101081992072128995</span>
 						</div>
-						<div class="grzx-after-sale-box-border clearfix mt10" style="min-height:216px">
+						<div class="grzx-after-sale-box-border clearfix mt10">
 							<label for="" class="left cl_name"><em class="red">*</em>退款原因：</label>
 							<div class="bea-sele">
 						    <div class="e-sele">
@@ -120,7 +120,8 @@
 							</div>
 							<div class="grzx-after-sale-description clearfix" style="display:none">
 								<label for="" class="left cl_name"><em class="red">*</em>退款说明：</label>
-								<textarea name="name" rows="8" cols="80" placeholder="请填写具体原因(最多100个字)" class="grzx-after-sale-description-textarea"></textarea>
+								<textarea id="qwe" name="name" rows="8" cols="80" maxlength="10" placeholder="请填写具体原因(最多100个字)" class="grzx-after-sale-description-textarea"></textarea>
+                <div class="">现在剩余<span id="word">100</span></div>
 							</div>
 						</div>
 						<div class="grzx-after-sale-box-border clearfix mt10">
@@ -138,7 +139,7 @@
       </div>
     </div>
     <!-- 弹窗 -->
-    <div class="my-loyer" style="display:none;"></div>
+    <div class="my-loyer" style="display:block;"></div>
     <!-- 错误提示 -->
     <div class="my-window my-window-error-message" style="display:none;">
       <div class="my-window-error-message-box">
@@ -153,7 +154,7 @@
   		</div>
   	</div>
   	<!-- 确认信息 -->
-  	<div class="my-window my-window-confirm-information" style="display:none;">
+  	<div class="my-window my-window-confirm-information" style="display:block;">
   		<div class="my-window-title">确认信息
   			<span class="my-window-close">
   				<img src="../../images/icon-close.png" alt="" width="16">
@@ -210,6 +211,15 @@
       $(function(){
         $('.CheckBoxClass').checkBoxClass();
 
+        // $("#qwe").keyup(function(){
+        //    var len = $(this).val().length;
+        //    if(len > 139){
+        //     $(this).val($(this).val().substring(0,140));
+        //    }
+        //    var num = 140 - len;
+        //    $("#word").text(num);
+        //   });
+
         // 价格浮框
       	$(document).find('.cur-price').mouseenter(function(){
       		$(this).siblings('.price-fukuang').stop().fadeIn();
@@ -244,6 +254,10 @@
       			$(this).parents('.bea-sele').siblings('.grzx-after-sale-description').hide();
       		}
       	});
+        // 弹窗关闭
+        $('.my-loyer, .my-window-close').on('click', function(){
+      		$('.my-loyer, .my-window').fadeOut(200);
+      	})
       });
     </script>
 </body>

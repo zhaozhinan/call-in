@@ -20,19 +20,19 @@
 .refund-setback-li:nth-last-child(1):before, .refund-setback-li:nth-last-child(1):after{width:0;height:0;}
 
 .Set_Num{width:27px;height:27px;display:block;border-radius:100%;margin:12px auto 0;position:relative;}
-.refund-setback-li .Set_Num .icon_f{width:27px;height:27px;background:url(../../images/icon-no-arrived.png) center center no-repeat;background-size: 100%;position:absolute;left:0px;top:0px;border-radius:100%;}
+.refund-setback-li .Set_Num .icon_f{width:27px;height:27px;background:url(../../../ dimages/icon-no-arrived.png) center center no-repeat;background-size: 100%;position:absolute;left:0px;top:0px;border-radius:100%;}
 .refund-setback-li-text {margin-top:10px;width:70px;line-height: 20px;font-size: 12px}
 
 /* 进度条已完成的 已完成不代表成功 */
-.refund-setback-li.arrvied .Set_Num .icon_f {width:27px;height:27px;background:url(../../images/icon-true.png) center center no-repeat;background-size: 100%;}
+.refund-setback-li.arrvied .Set_Num .icon_f {width:27px;height:27px;background:url(../../../images/icon-true.png) center center no-repeat;background-size: 100%;}
 .refund-setback-li.arrvied:after {width:110px}
 .refund-setback-li.success:after {width:220px}
 
 /* 进度条未到样式 */
-.refund-setback-li.no-arrvied .Set_Num .icon_f {width:27px;height:27px;background:url(../../images/icon-no-arrived.png) center center no-repeat;background-size: 100%;}
+.refund-setback-li.no-arrvied .Set_Num .icon_f {width:27px;height:27px;background:url(../../../images/icon-no-arrived.png) center center no-repeat;background-size: 100%;}
 
 /* 进度条失败样式 */
-.refund-setback-li.fail .Set_Num .icon_f{background:url(../../images/icon-false.png) center center no-repeat;background-size: 100%;width:27px;height:27px;}
+.refund-setback-li.fail .Set_Num .icon_f{background:url(../../../images/icon-false.png) center center no-repeat;background-size: 100%;width:27px;height:27px;}
 
 /* 新加进度条提示信息 */
 .refund-setback-status {width: 40px;padding:2px 6px;font-size: 12px;position: absolute;left:130px;top:0;background: #fd883b;color:#fff;border-radius:10px;}

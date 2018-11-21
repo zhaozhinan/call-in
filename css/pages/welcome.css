@@ -16,8 +16,8 @@
 body {background: #fff}
 /* welcome */
 /* .welcome {box-sizing: border-box;} */
-.welcome-btn {text-align: center;margin-top:8%}
-.welcome-box {position:absolute;top:18%;left:50%;transform:translate(-50%,0);height:60%;z-index:1}
+.welcome-btn {text-align: center;margin-top:5%}
+.welcome-box {position:absolute;top:16%;left:50%;transform:translate(-50%,0);height:60%;z-index:1}
 .welcome-box img {max-height: 100%}
 /*tanchuang*/
 .my-window-welcome li {position: relative;}
@@ -27,7 +27,7 @@ body {background: #fff}
 .my-window-welcome .error-inp:focus{border-color:red;}
 
 /* nav */
-.nav-tips {min-width:110px;padding:0 10px;height:30px;line-height: 30px;text-align: center;background: #f05229;color:#fff;font-size: 12px;position: absolute;top:-40px;margin-left:-16px}
-.nav-tips:after{content: '';position: absolute;width:10px;height:10px;background:#f05229;bottom:-5px;left:50%;margin-left:-5px;transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-mos-transform: rotate(-45deg);-mz-transform: rotate(-45deg);-o-transform: rotate(-45deg);}
+/* .nav-tips {min-width:110px;padding:0 10px;height:30px;line-height: 30px;text-align: center;background: #f05229;color:#fff;font-size: 12px;position: absolute;top:-40px;margin-left:-16px}
+.nav-tips:after{content: '';position: absolute;width:10px;height:10px;background:#f05229;bottom:-5px;left:50%;margin-left:-5px;transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-mos-transform: rotate(-45deg);-mz-transform: rotate(-45deg);-o-transform: rotate(-45deg);} */
 
 /* 111 */

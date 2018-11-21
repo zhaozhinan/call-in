@@ -58,7 +58,7 @@ header{z-index:10;position:relative;min-width:1200px;border-bottom:1px solid #dc
 .system-sele .e-sele .i-triangle {width:40px;height:40px}
 .system-sele .system-opt {top:41px}
 .system-sele .system-opt li {padding-bottom:0}
-.system-sele .system-opt li a {color:#333;text-decoration: none}
+.system-sele .system-opt li a {color:#333;text-decoration: none;display: block}
 .system-sele .e-sele .i-triangle i {margin-top:18px;margin-left:15px}
 
 /*  */
