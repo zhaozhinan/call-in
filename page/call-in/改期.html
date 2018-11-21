@@ -79,7 +79,9 @@
   												<td colspan="2">
   													<div class="align-l">
   														<label for="" class="cl-name left f14">入住日期：</label>
-  														<input class="input Wdate left inp-disabled mr20 check-in-date" disabled="disabled" style="width:176px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicked:confirmTime,onclearing:emptyTime})" placeholder="请选择入住时间">
+  														<!-- <input class="input Wdate left inp-disabled mr20 check-in-date" disabled="disabled" style="width:176px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd',onpicked:confirmTime1,onclearing:emptyTime})" placeholder="请选择入住时间"> -->
+                              <input class="input Wdate left inp-disabled rescheduled-time" disabled="disabled" style="width:176px" onclick='WdatePicker({opposite:1,disabledDates:["2018-11-19","2018-11-20","2018-11-21","2018-11-22","2018-11-23","2018-11-26","2018-11-27","2018-11-28","2018-11-29","2018-11-30","2018-12-03","2018-12-04","2018-12-05","2018-12-06","2018-12-07","2018-12-10","2018-12-11","2018-12-12","2018-12-13","2018-12-14","2018-12-17","2018-12-18","2018-12-19","2018-12-20","2018-12-21","2018-12-24","2018-12-25","2018-12-26","2018-12-27","2018-12-28"],doubleCalendar:false,skin:"twoer",dateFmt:"yyyy-MM-dd",onpicked:confirmTime1,onclearing:emptyTime})' placeholder="请选择改期时间">
+
   														<label for="" class="cl-name left f14 ml10">离店日期：</label>
   														<input class="input Wdate left inp-disabled check-out-date" disabled="disabled" style="width:176px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd'})" placeholder="离店日期">
   													</div>
@@ -272,6 +274,10 @@
           $(this).siblings('.btn-minus').removeClass('disabled');
         });
       });
+
+      function confirmTime1() {
+        alert(98)
+      }
     </script>
 </body>
 

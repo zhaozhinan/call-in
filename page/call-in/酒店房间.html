@@ -251,7 +251,7 @@
                   <label for="" class="ml30">入住日期：</label>
                   <input class="input Wdate" id="date_start" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_start})" placeholder="2016-07-23" readonly="true">
                   <label for="" class="ml20">退房日期：</label>
-                  <input class="input Wdate" id="date_end" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_end})" placeholder="2016-07-23" readonly="true">
+                  <input class="input Wdate" id="date_end" style="width:100px" onclick="WdatePicker({doubleCalendar:false,skin:'twoer',dateFmt:'yyyy-MM-dd', onpicking: date_end, minDate: ccc})" placeholder="2016-07-23" readonly="true">
                   <span class="ml10 mr10 f14">共<span>0</span>晚</span>
                   <a class="btn btn-e right btn-search2" href="javascript:;">查询</a>
                 </div>
@@ -374,7 +374,7 @@
 	<p class="todayTips" style="color: #a1a1a1;font-size: 1rem;margin: 0 0 10px 0;"></p>
 	<div class="sureYuding align-right">
 		<span class="addSure">数量
-			<span class="reduceS">-</span>
+			<span class="reduceS disabled">-</span>
 			<span class="numS">1</span>
 			<span class="addS">+</span>
 		</span>
@@ -512,17 +512,25 @@
   })
 
   $('.addSure .addS').click(function(){
-  		var num = $(this).siblings('.numS').text();
-  		// alert(num)
-  		num++;
-  		$(this).siblings('.numS').text(num);
-  	});
+    var num = $(this).siblings('.numS').text();
+    num++;
+    $(this).siblings('.reduceS').removeClass('disabled')
+    if( num >= 3 ){
+        num = 3;
+        $(this).siblings('.numS').text(num);
+        $(this).addClass('disabled');
+    }
+    $(this).siblings('.numS').text(num);
+  });
+
   	$('.addSure .reduceS').click(function(){
   		var num = $(this).siblings('.numS').text();
   		num--;
+      $(this).siblings('.addS').removeClass('disabled');
   		if( num <=0 ){
   			num = 0;
   			$(this).siblings('.numS').text(num);
+        $(this).addClass('disabled');
   		}else{
   			$(this).siblings('.numS').text(num);
   		}
@@ -549,6 +557,7 @@
 
     // 操作 选择
     $('.choose').on('click', function(){
+      $('.addSure').find('.numS').text('0');
       $('.my-loyer, .sureYudingBox').show();
       $(document).on('click', '.add-shopping-cart', function(){
     		$('.sureYudingBox').fadeOut(200);
@@ -647,10 +656,30 @@ function dateEnd(dp) {
 }
 
 // 套餐
+function getNowFormatDate() {
+  var date = new Date();
+  var seperator1 = "-";
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var strDate = date.getDate();
+  if (month >= 1 && month <= 9) {
+      month = "0" + month;
+  }
+  if (strDate >= 0 && strDate <= 9) {
+      strDate = "0" + strDate;
+  }
+  var currentdate = year + seperator1 + month + seperator1 + strDate;
+  return currentdate;
+}
+ccc = getTheDate(getNowFormatDate(), +1);
+
+console.log(today_date);
 function date_start(dp) {
   var dates = dp.cal.getNewDateStr();
-  console.log(dates, getTheDate(dates, -2));
+  // console.log(dates, getTheDate(dates, -2));
+  ccc = getTheDate(dates, +1);
   $("input[name='date_start']").val(dates, getTheDate(dates, -2));
+  console.log(dates, dp.cal.getNewDateStr(), ccc, 'one');
 }
 function date_end(dp) {
   var dates = dp.cal.getNewDateStr();

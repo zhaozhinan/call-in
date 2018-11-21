@@ -22,7 +22,7 @@ body {background: #fff}
 /*tanchuang*/
 .my-window-welcome li {position: relative;}
 
-.my-window-welcome .error-tips{position:absolute;top:32px;right:0px;font-size:12px;text-align: right}
+.my-window-welcome .error-tips{position:absolute;top:45px;right:0px;font-size:12px;text-align: right}
 .my-window-welcome .error-inp{border-color:red !important;background:url(../../images/icon_er.png) 97% center no-repeat;}
 .my-window-welcome .error-inp:focus{border-color:red;}
 
@@ -30,4 +30,22 @@ body {background: #fff}
 /* .nav-tips {min-width:110px;padding:0 10px;height:30px;line-height: 30px;text-align: center;background: #f05229;color:#fff;font-size: 12px;position: absolute;top:-40px;margin-left:-16px}
 .nav-tips:after{content: '';position: absolute;width:10px;height:10px;background:#f05229;bottom:-5px;left:50%;margin-left:-5px;transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-mos-transform: rotate(-45deg);-mz-transform: rotate(-45deg);-o-transform: rotate(-45deg);} */
 
-/* 111 */
+/* 国家icon */
+
+.my-window-welcome { width: 460px; }
+.welcome-tel { width: 400px; text-align: center; margin: 0 auto; font-size: 12px; }
+.welcome-tel .input { width: 245px; height: 40px; float: left; margin-left: 10px; font-size: 14px; }
+.welcome-tel .bea-sele { height: 40px; }
+.welcome-tel .on-sele { width: 50px; height: 40px; line-height: 40px; font-size: 14px; overflow: hidden; padding: 0 5px; }
+.welcome-tel .welcome-tel-icon { display: inline-block; float: left; height: 40px; margin-left: 5px; text-align: center;}
+.welcome-tel .welcome-tel-icon-txt { padding-left: 5px; line-height: 16px; vertical-align: middle; }
+.welcome-tel .welcome-tel-icon img { vertical-align: middle; margin: 12px auto; height: 16px; width: 24px; }
+.welcome-tel .bea-opt { top: 41px; padding: 3px 0;}
+.welcome-tel .bea-opt ul { height: 175px; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+.welcome-tel .bea-opt li { height: 40px; line-height: 40px; padding-left: 0; text-align: right; padding-right: 5px; }
+.welcome-tel .e-sele .i-triangle { margin-top: 5px; width: 40px; }
+.welcome-tel .e-sele .i-triangle i { margin-left: 15px; }
+.welcome-tel .bea-opt li.on { background: none; }
+.welcome-tel .bea-opt ul::-webkit-scrollbar { width: 4px; background-color: #f5f5f5; }
+.welcome-tel .bea-opt ul::-webkit-scrollbar-track { border-radius: 4px; background-color: #f5f5f5; }
+.welcome-tel .bea-opt ul::-webkit-scrollbar-thumb { border-radius: 10px; background-color: #999; box-shadow: inset 0 0 6px rgba(0,0,0,.3); }

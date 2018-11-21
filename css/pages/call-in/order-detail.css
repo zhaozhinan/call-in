@@ -21,10 +21,14 @@
 /* 弹窗 */
 .J-propDeleteOrder,
 .J-propShortMesg,
-.J-propShowTemplate { text-align: center; }
+.J-propShowTemplate { text-align: center}
 .J-propShowTemplate { height: auto; margin-top: 0; padding-bottom: 30px; transform: translate(0,-50%); -webkit-transform: translate(0,-50%); -moz-transform: translate(0,-50%); -o-transform: translate(0,-50%); -ms-transform: translate(0,-50%); }
 .J-propDeleteOrder-txt { margin-top: 50px }
 .J-propShowTemplate-tit { margin-top: 30px; font-size: 16px; }
 .J-propShowTemplate-txt { margin-top: 15px; padding: 0 20px; font-size: 12px; text-align: left; line-height: 18px; }
-.J-propShortMesg .error, #shortTel { text-align: left; font-size: 12px; width: 220px; margin: 3px auto 0; box-sizing: border-box; }
-.J-propShortMesg { height: 190px; margin-top: -95px; }
+.J-propShortMesg .error { text-align: left; font-size: 12px; width: 220px; margin: 3px auto 0; box-sizing: border-box; padding-left: 80px; }
+.J-propShortMesg { min-width: 466px; width: 466px; margin-top: -95px; padding-bottom: 20px; }
+.J-propShortMesg-txt { font-size: 12px; text-align: left; padding: 0 15px 15px; }
+.J-propShortMesg-label { float: left; margin-top: 5px; margin-left: 30px}
+.J-propShortMesg .bea-sele { float: left; text-align: left; }
+.J-propShortMesg #shortTel { vertical-align: middle; float: left; margin-left: 10px; text-align: left; font-size: 12px; width: 220px;  }
