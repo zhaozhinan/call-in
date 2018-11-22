@@ -10,7 +10,7 @@
     <meta content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1,user-scalable=yes" name="viewport"/>
     <link href="http://offline.inner.chimelong.com:30221/static/css/common/reset.css" rel="stylesheet" /><link href="http://offline.inner.chimelong.com:30221/static/css/common/base.css" rel="stylesheet" /><link href="http://offline.inner.chimelong.com:30221/static/css/pages/call-in/order-detail.css" rel="stylesheet" /></head>
     <style>
-        
+
     </style>
 <body>
     <!-- 公共的头部 -->
@@ -70,9 +70,7 @@
                 <td class="first">订单时间</td>
                 <td>2018-11-17 15:02:39</td>
                 <td class="first">支付商户订单号/支付平台交易号</td>
-                <td>
-                      ALI2018111715020502878149                      <br/>
-                                            2018111722001443951016889805                </td>
+                <td>ALI2018111715020502878149<br/>2018111722001443951016889805</td>
             </tr>
             <tr>
                 <td class="first">订单总金额</td>
@@ -99,8 +97,7 @@
                 <td>2147483647</td>
             </tr>
         </table>
-        <div class="clearfix order-detail-btn">
-                                            </div>
+        <div class="clearfix order-detail-btn"></div>
 
         <!-- 购买人信息 -->
         <div class="panel mt20">
@@ -141,15 +138,15 @@
                 <th>小记</th>
                 <th>操作</th>
             </tr>
-                        <tr>
+            <tr>
                 <td>288</td>
                 <td>
                     <div class="object">
                         <p class="object-txt">3天2晚双人双园游(动物世界+大马戏)套票 x 1</p>
-                                                <span class="icon-tag">不可改</span>                                            </div>
+                        <span class="icon-tag">不可改</span>
+                    </div>
                 </td>
-                <td>
-                    2018-11-27~2018-11-29                                    </td>
+                <td>2018-11-27~2018-11-29</td>
                 <td class="table-info-list">
                     <div class="table-info-list-item">￥5998.00</div>
                 </td>
@@ -158,15 +155,15 @@
                 <td>￥5998.00</td>
                 <td><a href="javascript:;" class="blue">申请退款</a></td>
             </tr>
-                            <tr>
+            <tr>
                 <td>289</td>
                 <td>
                     <div class="object">
                         <p class="object-txt">2天1晚双人单园游(动物世界)套票 x 3</p>
-                                                <span class="icon-tag">不可改</span>                                            </div>
+                        <span class="icon-tag">不可改</span>
+                    </div>
                 </td>
-                <td>
-                    2018-11-27~2018-11-28                                    </td>
+                <td>2018-11-27~2018-11-28</td>
                 <td class="table-info-list">
                     <div class="table-info-list-item">￥2098.00</div>
                 </td>
@@ -175,15 +172,14 @@
                 <td>￥6294.00</td>
                 <td><a href="javascript:;" class="blue">申请退款</a></td>
             </tr>
-                            <tr>
+            <tr>
                 <td>290</td>
                 <td>
                     <div class="object">
                         <p class="object-txt">家庭房|净房 x 1</p>
-                                                                                            </div>
+                    </div>
                 </td>
-                <td>
-                    2018-11-26~2018-11-27                                    </td>
+                <td>2018-11-26~2018-11-27</td>
                 <td class="table-info-list">
                     <div class="table-info-list-item">￥1898.00</div>
                 </td>
@@ -192,7 +188,7 @@
                 <td>￥1898.00</td>
                 <td><a href="javascript:;" class="blue">申请退款</a></td>
             </tr>
-                                    </table>
+        </table>
         <!-- ／订单明细 -->
                 <!-- 入住人信息 -->
         <div class="panel mt20">
@@ -208,43 +204,49 @@
                 <th width="30%">入住人信息</th>
                 <th width="10%">PMS确认号</th>
             </tr>
-                        <tr>
+            <tr>
                 <td>广州长隆酒店 白虎房 3天2晚双人双园游(动物世界+大马戏)套票</td>
                 <td>2018-11-27~2018-11-29</td>
                 <td>1</td>
                 <td>
                     <table border="0" class="table-order-chr table-tel">
-                                                        <tr><td><span>雷 浩</span><span>身份证：142633199308222253</span><span class="ml10">14793247</span></td></tr>
-                                                </table>
+                          <tr>
+                            <td>
+                              <span>雷 浩</span>
+                              <span>身份证：142633199308222253</span>
+                              <span class="ml10">14793247</span>
+                            </td>
+                          </tr>
+                    </table>
                 </td>
             </tr>
-                        <tr>
+            <tr>
                 <td>广州长隆酒店 野趣房 2天1晚双人单园游(动物世界)套票</td>
                 <td>2018-11-27~2018-11-28</td>
                 <td>3</td>
                 <td>
                     <table border="0" class="table-order-chr table-tel">
-                                                        <tr><td><span>毒 新</span><span>身份证：142727199501310018</span><span class="ml10">14793244</span></td></tr>
-                                                        <tr><td><span>帅 新</span><span>身份证：110101199003070775</span><span class="ml10">14793245</span></td></tr>
-                                                        <tr><td><span>雷 浩</span><span>身份证：142633199308222253</span><span class="ml10">14793246</span></td></tr>
-                                                </table>
+                          <tr><td><span>毒 新</span><span>身份证：142727199501310018</span><span class="ml10">14793244</span></td></tr>
+                          <tr><td><span>帅 新</span><span>身份证：110101199003070775</span><span class="ml10">14793245</span></td></tr>
+                          <tr><td><span>雷 浩</span><span>身份证：142633199308222253</span><span class="ml10">14793246</span></td></tr>
+                    </table>
                 </td>
                 <td>awefar</td>
             </tr>
-                        <tr>
+            <tr>
                 <td>广州长隆酒店 家庭房 家庭房|净房</td>
                 <td>2018-11-26~2018-11-27</td>
                 <td>1</td>
                 <td>
                     <table border="0" class="table-order-chr table-tel">
-                                                        <tr><td><span>雷 浩</span><span>身份证：142633199308222253</span><span class="ml10">14793248</span></td></tr>
-                                                </table>
+                        <tr><td><span>雷 浩</span><span>身份证：142633199308222253</span><span class="ml10">14793248</span></td></tr>
+                    </table>
                 </td>
                 <td>awefar</td>
             </tr>
                     </table>
         <!-- ／入住人信息 -->
-        
+
     </div>
 </div>
 
@@ -452,4 +454,3 @@ $('.my-window-close').click(function(){
 
     });
 </script>
-

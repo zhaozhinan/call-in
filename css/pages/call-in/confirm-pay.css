@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+/* @import "../../../css/components/left.css"; */
+/* @import "../../../css/components/top.css";
+@import "../../../css/components/nav.css";
+@import "../../../css/components/crumbs.css";
+@import "../../../css/components/bottom.css"; */
+
+.container{ position:relative; margin:0px auto 30px;}
+.align-l{text-align:left}
+.f-bold{font-weight:bold;}
+label {font-size: 12px}
+
+/* 按钮 */
+.btn-y{ display:inline-block; border:none; background:#fd883b; border-radius:5px; text-align:center; line-height:30px; color:#FFF; font-size:14px; height:30px;width:90px; position:relative}
+.btn-y:hover{ background:#e06210; text-decoration:none; color:#FFF}
+.btn-y:active{ background:#fc6705}
+.btn-y-blue{box-shadow:none;background:#1996f9;color:#fff;}
+.btn-y-blue:hover{background:#0084E1}
+.btn-y-red{box-shadow:none;background:#f1375f;color:#fff;}
+.btn-y-red:hover{background:#dc0533}
+.btn-y-white{background:#fff;box-shadow:none;color:#333;border:1px solid #dcdcdc;box-sizing: border-box;}
+.btn-y-white:hover{background:#fff;color:#333;}
+.btn-y-gray, .btn-y-gray:hover {background: #999;cursor:no-drop;}
+
+/* 表格 */
+.tabel-order{ width: 100%;text-align:center;}
+.tabel-order th,.tabel-order td{border:none;font-size:12px}
+.tabel-order th{background: #F6F5FA;height:35px}
+.tabel-order td{height:40px;position:relative;}
+.tabel-order tr{/* border:1px solid #dcdcdc; */}
+.first-td{position:relative;position:relative;line-height:1.5em}
+.first-td img{width:60px;display: inline-block;}
+.first-td p{display:block;width:290px;}
+.first-td p em{display:block;}
+
+/* 页面 */
+.table-th {padding:0 20px;background: #F6F5FA}
+.table-box {border:1px solid #dcdcdc;padding:20px}
+.piao-xinxi{line-height: 20px;display: inline-block;width:290px;position: relative;}
+.piao-xinxi p {line-height: 20px}
+.piao-xinxi .po-top {line-height: 16px;margin-bottom:5px}
+.labels {margin-top:10px;}
+.labels .label {;display: inline-block;font-size: 12px;color:#f45537;border:1px solid #f45537;height:16px;line-height: 16px;padding:0 3px;border-radius: 3px;}
+.room-type-labels-item {float:left;width:30px;height:16px;line-height: 16px;margin-right:10px;color:#fff;text-align: center!important;font-size: 12px}
+.room-type-labels-item-promotion {background: #fa4858;}
+.room-type-labels-item-gift {background: #ffa303}
+.promotion-tips {position: relative;top:1px}
+
+/* 确认订单 */
+.order-info{margin-top:20px;background:#fffcdf}
+.goupiao-info {padding:20px 20px 10px;line-height: 32px;border-top:1px dashed #999;font-size: 12px}
+.goupiao-info:first-child{border-top:none}
+.goupiao-info-label5 {width:5em;float: left;text-align: right;margin:0 10px}
+.goupiao-info-label7 {width:7em;float: left;text-align: right;margin:0 10px}
+.order-area-tips {line-height: 1.75em;}
+.js-rescheduled {cursor: pointer;}
+
+/* 错误限制提示 */
+.error-tips {position: absolute;left:20px;margin-top:20px;width:max-content}
+
+/* 新加购物车 订单赠品 */
+.tabel-order-gift{ width: 100%;text-align:center;}
+/* .tabel-order-gift tr {border:1px solid #dcdcdc} */
+.tabel-order-gift th,.tabel-order-gift td{border:none;font-size:12px}
+.tabel-order-gift th{background: #F9F9FB;height:35px}
+.tabel-order-gift td{height:40px;position:relative;}
+
+/* 酒店价格浮框 */
+.cur-price{cursor:pointer;border-bottom:1px dashed #1996f9;}
+.price-fukuang{width:150px;padding:10px;line-height:20px;border:1px solid #dcdcdc;background:#fff;z-index:100;color:#333;position:absolute;left:50%;margin-left:-80px;text-align: left}
+
+/* 详情浮窗 */
+.piao-xinxi-detail-fukuang {width:300px;padding:10px;line-height:20px;border:1px solid #dcdcdc;background:#fff;z-index:100;color:#333;position:absolute;margin:10px;display: none;}
+
+
+/* 结算 */
+#jk_Box{margin-top:20px}
+#jk_Box .jiesuan{width:inherit;padding:20px 0;font-size: 12px}
+#jk_Box span{text-align:right;}
+.jk_Box {background:#f9f9fb;border:1px solid #dcdcdc}
+.jiesuan-name {float:left;margin-right:20px;width: 80px}
+.jiesuan-price {float: right;min-width:120px}
+.offer-details {cursor: pointer;}
+.offer-details-icon {background: url(../../../images/icon_24/icon-help.png) 0 0 no-repeat;display: inline-block;width:15px;height:15px;position: relative;top:3px;right:5px}
+
+
+.labels .label {;display: inline-block;font-size: 12px;color:#f45537;border:1px solid #f45537;height:16px;line-height: 16px;padding:0 3px;border-radius: 3px;}
+.room-type-labels-item {float:left;width:30px;height:16px;line-height: 16px;margin-right:10px;color:#fff;text-align: center;}
+.room-type-labels-item-promotion {background: #fa4858;}
+.room-type-labels-item-gift {background: #ffa303}
+.promotion-tips {position: relative;top:1px}
+/* 结算 促销明细 */
+.promotion-box {margin:0 20px 20px;border-top:1px dashed #dcdcdc;padding-top:20px}
+.promotion-box-text {line-height: 16px;float: left;width:600px;font-size: 12px}
+
+/* 确认支付 底部错误提示浮框 */
+.error-message {width:300px;position:fixed;bottom:10px;left:50%;margin-left:-150px;background: #999;text-align: center;font-size: 16px;line-height: 50px;color:#fff;opacity: 0.8}
+.error-message-box {}
+
+/* 弹窗 提交订单 */
+.my-window-dingdan {}
+.my-window-dingdan-box {text-align: center;line-height: 20px}
+.dingdan-xinxi {width:220px;margin:10px auto 30px;text-align: left;line-height: 1.5em;font-size: 14px}
+
+/* 弹窗 */
+.my-window-title {text-align: center;height:30px;line-height: 30px;background: #f9f9fb;border-bottom:1px solid #dcdcdc;font-size:14px}
+.my-window-close {position: absolute;top:8px;right:8px;;width: 15px;height: 15px;cursor: pointer;}
+/* 弹窗 */
+.my-window-tit, .my-window-box{text-align: center;margin-top:20px}
+
+/* 弹窗  二次确认 */
+.secondary-confirmation, .secondary-confirmation-failure {min-width:260px;min-height:106px;margin:-53px 0 0 -130px}
+
+
+
+/* 确认支付密码 */
+.pay-pass-box {display:inline-block;padding:10px 20px;background:#F6F5FA}
+
+
+/* 打印确认页 */
+.signature-bar {}
+.signature-bar-left {width:70%}
+.signature-bar-right {width:30%}
+
+
+
+
+
+
+/* 111 */

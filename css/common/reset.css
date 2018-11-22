@@ -5,7 +5,7 @@ body,button,input,select,textarea{ font:14px/1.125; color:#333;word-wrap:break-w
 body,dl,dt,dd,ul,ol,li,th,td,div,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr,header,section,article,nav{ margin:0; padding:0}
 h1,h2,h3,h4,h5,h6{ margin:0; padding:0; font-weight:100}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { color:#999}
-table,tr,td,th{ border-collapse:collapse; border-spacing:0; border-color:#DCDCDC}
+table,tbody,tr,td,th{ border-collapse:collapse; border-spacing:0; border-color:#DCDCDC}
 td,th{ border:1px solid #DCDCDC;word-break:break-all; work-wrap:break-word}
 td, td label{ font-size: 12px }
 li{ list-style:none}

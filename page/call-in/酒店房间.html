@@ -25,6 +25,7 @@
     <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a><span class="mainNavDes">代客下单系统</span></h1>
     <div class="right" style="margin-top:24px">
       <ul class="nav nav-toplist">
+        <li class="f14">当前顾客为：+86 13800000001</li>
         <li>
           <a href="../欢迎页.html">开始新订单</a>
           <div class="nav-tips">新顾客必需点击此处</div>
@@ -95,13 +96,13 @@
     				  </div>
             </div>
             <!-- 表格 -->
-            <table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mt20" style="display:none">
+            <table border="0" cellspacing="0" cellpadding="0" class="tabel-overview mt20" style="display:block">
               <tr>
                 <th width="160">房型类型</th>
                 <th width="180">名称</th>
                 <th width="160">
                   价格
-                  <span class="arrow">
+                  <span class="arrow cur_up">
                     <em class="arrow_up"></em>
                     <em class="arrow_down"></em>
                   </span>
@@ -187,7 +188,7 @@
             </table>
             <!-- 表格 -->
             <!-- 没有数据或者出现错误信息 -->
-            <div style="" class="loading-error">
+            <div style="" class="loading-error" style="display:block">
               <div>
                 <p style="text-align:center;line-height:50px;color:#ccc;padding:76px 0px;"><img src="https://static.chimelong.com/evente/c/wap/img/changlong/unwilling-1.png"><br>暂时没有可售房型，请换个日期试试</p>
               </div>
@@ -673,7 +674,7 @@ function getNowFormatDate() {
 }
 ccc = getTheDate(getNowFormatDate(), +1);
 
-console.log(today_date);
+// console.log(today_date);
 function date_start(dp) {
   var dates = dp.cal.getNewDateStr();
   // console.log(dates, getTheDate(dates, -2));

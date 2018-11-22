@@ -23,6 +23,7 @@
         <h1><a class="logo" title="进入首页" href="#"><img src="../../images/changlong/changlong-footer.png"></a><span class="mainNavDes">代客下单系统</span></h1>
         <div class="right" style="margin-top:24px">
           <ul class="nav nav-toplist">
+            <li class="f14">当前顾客：+86 13800000001</li>
             <li>
               <a href="../欢迎页.html">开始新订单</a>
               <div class="nav-tips">新顾客必需点击此处</div>
@@ -136,13 +137,14 @@
                     <th width="80">操作</th>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="td_left">
+                        2018111814410554551501<br>
                         2018111814410554551501<br>
                         原金额：1898.00<br>
                         优惠金额：0.00<br>
                         支付金额：1898.00
                     </td>
-                    <td colspan="10">
+                    <td colspan="10" class="td_right">
                         <table border="0" class="tabel-detail tabel-detail-d" style="margin:-1px;width:984px">
                             <tr>
                                 <td width="86">7236</td>
@@ -170,13 +172,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="td_left">
                         2018111814330554513663<br>
                         原金额：3396.00<br>
                         优惠金额：0.00<br>
                         支付金额：3396.00
                     </td>
-                    <td colspan="10">
+                    <td colspan="10" class="td_right">
                         <table border="0" class="tabel-detail tabel-detail-d" style="margin:-1px;width:984px">
                               <tr>
                                 <td width="86">7234</td>
@@ -193,13 +195,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="td_left">
                         2018111813590554566337<br>
                         原金额：3159.00<br>
                         优惠金额：0.00<br>
                         支付金额：3159.00
                     </td>
-                    <td colspan="10">
+                    <td colspan="10" class="td_right">
                         <table border="0" class="tabel-detail tabel-detail-d" style="margin:-1px;width:984px">
                             <tr>
                                 <td width="86">7232</td>
@@ -238,13 +240,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="td_left">
                         2018111813430554586961<br>
                         原金额：2898.00<br>
                         优惠金额：0.00<br>
                         支付金额：2898.00
                     </td>
-                    <td colspan="10">
+                    <td colspan="10" class="td_right">
                         <table border="0" class="tabel-detail tabel-detail-d" style="margin:-1px;width:984px">
                               <tr>
                                 <td width="86">7230</td>
@@ -263,13 +265,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="td_left">
                         2018111718350527874841<br>
                         原金额：2398.00<br>
                         优惠金额：0.00<br>
                         支付金额：2398.00
                     </td>
-                    <td colspan="10">
+                    <td colspan="10" class="td_right">
                         <table border="0" class="tabel-detail tabel-detail-d" style="margin:-1px;width:984px">
                              <tr>
                                 <td width="86">7228</td>
@@ -368,9 +370,6 @@
                 </td>
               </tr>
             </table>
-=======
-            </table> -->
->>>>>>> origin/master
             <div class="pagelist mt20 mb20 clearfix">
               <ul class="right">
                 <li><a href="#">上一页</a></li>
@@ -400,6 +399,12 @@
     <script src="https://static.evente.cn/libs/js/plugins/My97DatePicker/WdatePicker.js"></script>
     <!-- <script src="./json.js"></script> -->
     <script>
+      $(document).ready(function() {
+        $('.td_left').each(function(){
+          var l_h = $(this).height() + 6;//获取左侧的td的高度
+          $(this).siblings(".td_right").find("table").css("height", l_h);//给右侧嵌套table添加属性（高）
+        })
+      });
       $(function(){
         // 联动选项
         var json = [

@@ -4,11 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=10" >
 <meta http-equiv="Content-Language" content="zh-cn" >
-<title>确认订单</title>
+<title>确认支付</title>
 <meta content="width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1,user-scalable=yes" name="viewport">
 <link href="../../css/common/reset.css" rel="stylesheet" />
 <link href="../../css/common/base.css" rel="stylesheet" />
-<link href="../../css/pages/call-in/dingdan.css" rel="stylesheet" />
+<link href="../../css/pages/call-in/confirm-pay.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -42,16 +42,16 @@
   </div>
 </nav>
 <div class="crumbs area">
-	我的当前位置：<span class="on">确认订单</span>
+	我的当前位置：<span class="on">确认支付</span>
 </div>
 <div class="container clearfix">
   <div class="area" style="padding:0 30px;box-sizing:border-box">
     <div class="panel">
       <div class="panel-title clearfix" style="margin:0;">
-        <span class="panel-tit">确认订单</span>
+        <span class="panel-tit">确认支付</span>
       </div>
     </div>
-    <div class="css-bgwhite">
+    <div class="table-th">
       <table border="0" cellspacing="0" cellpadding="0" class="tabel-order mt20" style="padding:0 20px">
         <tbody>
           <tr>
@@ -73,7 +73,7 @@
             <td width="400" class="first-td align-l clearfix">
               <div class="piao-xinxi">
                 <p class="po-top"><span class="room-type-labels-item room-type-labels-item-promotion">促销</span>广州长隆酒店</p>
-                <div class="hui clearfix">高级房大床房2天1晚双人游单园游套票单园游套票（动物世界）
+                <div class="clearfix">高级房大床房2天1晚双人游单园游套票单园游套票（动物世界）
                   <a href="javascript:;" class="blue piao-xinxi-detail">详情></a>
                   <div class="piao-xinxi-detail-fukuang">
                     <div>产品详情：</div>
@@ -91,7 +91,7 @@
                     </ul>
                   </div>
                 </div>
-                <p class="hui clearfix">入住日期：2016-12-23 ~ 2016-12-23</p>
+                <p class="clearfix">入住日期：2016-12-23 ~ 2016-12-23</p>
               </div>
             </td>
             <td  width="130">
@@ -102,7 +102,7 @@
                 <div>2018-07-12<em class="red">￥580.00/间</em></div>
               </div>
             </td>
-            <td width="190" class="hui">X1</td>
+            <td width="190">X1</td>
             <td width="130">￥0.00</td>
           </tr>
         </table>
@@ -113,18 +113,12 @@
             <div class="left" style="width:1020px">
               <div class="clearfix mb10">
                 <label class="goupiao-info-label5"><em class="red">*</em>入住人姓</label>
-                <input type="text" class="input left" placeholder="姓（中文/英文）" style="width:140px">
-                <label  class="goupiao-info-label5"><em class="red">*</em>入住人名</label>
-                <input type="text" class="input left" placeholder="名（中文/英文）" style="width:140px">
+                <span class="left" style="width:150px">秦</span>
+                <label class="goupiao-info-label5"><em class="red">*</em>入住人名</label>
+                <span class="left" style="width:150px">明</span>
                 <label  class="goupiao-info-label5"><em class="red">*</em>证件号</label>
-                <div class="bea-sele mr10">
-                  <div class="e-sele"><span class="on-sele" style="width:100px">身份证</span><em class="i-triangle"><i></i></em></div>
-                  <ul class="bea-opt" style="">
-                    <li class="on">省份证</li>
-                    <li>护照</li>
-                  </ul>
-                </div>
-                <input type="text" class="input left" style="width:300px">
+                <span class="left mr20">身份证</span>
+                <span class="left">44328198001284873</span>
               </div>
             </div>
           </div>
@@ -133,18 +127,12 @@
             <div class="left" style="width:1020px">
               <div class="clearfix mb10">
                 <label class="goupiao-info-label5"><em class="red">*</em>入住人姓</label>
-                <input type="text" class="input left" placeholder="姓（中文/英文）" style="width:140px">
-                <label  class="goupiao-info-label5"><em class="red">*</em>入住人名</label>
-                <input type="text" class="input left" placeholder="名（中文/英文）" style="width:140px">
+                <span class="left" style="width:150px">秦</span>
+                <label class="goupiao-info-label5"><em class="red">*</em>入住人名</label>
+                <span class="left" style="width:150px">明</span>
                 <label  class="goupiao-info-label5"><em class="red">*</em>证件号</label>
-                <div class="bea-sele mr10">
-                  <div class="e-sele"><span class="on-sele" style="width:100px">身份证</span><em class="i-triangle"><i></i></em></div>
-                  <ul class="bea-opt" style="">
-                    <li class="on">省份证</li>
-                    <li>护照</li>
-                  </ul>
-                </div>
-                <input type="text" class="input left" style="width:300px">
+                <span class="left mr20">身份证</span>
+                <span class="left">44328198001284873</span>
               </div>
             </div>
           </div>
@@ -156,12 +144,15 @@
             <td width="400" class="first-td align-l clearfix">
               <div class="piao-xinxi">
                 <p class="po-top"><span class="room-type-labels-item room-type-labels-item-promotion">促销</span>广州长隆酒店</p>
-                <p class="hui clearfix">高级房大床房2天1晚双人游单园游套票（动物世界）</p>
-                <p class="hui clearfix">入住日期：2016-12-23 ~ 2016-12-23</p>
+                <p class="clearfix">高级房大床房2天1晚双人游单园游套票（动物世界）</p>
+                <p class="clearfix">入住日期：2016-12-23 ~ 2016-12-23</p>
+                <div class="labels">
+                  <div class="label">不可退改</div>
+                </div>
               </div>
             </td>
             <td  width="130">￥0.00</td>
-            <td width="190" class="hui">X1</td>
+            <td width="190">X1</td>
             <td width="130">￥0.00</td>
           </tr>
         </table>
@@ -172,7 +163,7 @@
             <div class="left">
               <div class="clearfix mb10">
                 <label class="goupiao-info-label7"><em class="red">*</em>入园人身份证</label>
-                <input type="text" class="input left" style="width:226px">
+                <span class="left">44328198001284873</span>
               </div>
             </div>
           </div>
@@ -181,7 +172,7 @@
             <div class="left">
               <div class="clearfix mb10">
                 <label class="goupiao-info-label7"><em class="red">*</em>入园人身份证</label>
-                <input type="text" class="input left" style="width:226px">
+                <span class="left">44328198001284873</span>
               </div>
             </div>
           </div>
@@ -193,16 +184,13 @@
           <tr>
             <td width="400" class="first-td align-l clearfix">
               <div class="piao-xinxi">
-                <p class="po-top"><span class="room-type-labels-item room-type-labels-item-promotion">促销</span>广州长隆酒店-麒麟中餐厅</p>
-                <p class="hui clearfix">[室外泳池免费畅玩]白虎美食戏水之旅自助午餐 平日成人全票</p>
-                <p class="hui clearfix">用餐时间：2016-12-23</p>
-                <div class="labels">
-                  <div class="label">不可退改</div>
-                </div>
+                <p class="po-top">广州长隆酒店-麒麟中餐厅</p>
+                <p class="clearfix">[室外泳池免费畅玩]白虎美食戏水之旅自助午餐 平日成人全票</p>
+                <p class="clearfix">用餐时间：2016-12-23</p>
               </div>
             </td>
             <td  width="130">￥1800.00</td>
-            <td width="190" class="hui">X1</td>
+            <td width="190">X1</td>
             <td width="130">￥0.00</td>
           </tr>
         </table>
@@ -214,21 +202,21 @@
             <td width="400" class="first-td align-l clearfix">
               <div class="piao-xinxi">
                 <p class="po-top"><span class="room-type-labels-item room-type-labels-item-gift">赠品</span>【赠品】广州长隆国际大马戏</p>
-                <p class="hui clearfix">长隆野生动物世界+长隆国际马戏大剧院特定日普通座全票</p>
-                <p class="hui clearfix">游玩日期：2016-12-23 20：00-21：30</p>
+                <p class="clearfix">长隆野生动物世界+长隆国际马戏大剧院特定日普通座全票</p>
+                <p class="clearfix">游玩日期：2016-12-23 20：00-21：30</p>
               </div>
             </td>
             <td  width="130">￥1800.00</td>
-            <td width="190" class="hui">X1</td>
+            <td width="190">X1</td>
             <td width="130">￥0.00</td>
           </tr>
         </table>
       </div>
       <div class="table-box mb20">
-        <div>绑定手机号</div>
+        <div>绑定会员手机号</div>
         <div class="clearfix mt10">
           <label class=""><em class="red">*</em>手机号</label>
-          <input type="text" class="input ml10" style="width:226px">
+          <span class="f12 ml10">13846589930</span>
         </div>
       </div>
       <!-- 结算 -->
@@ -238,15 +226,12 @@
     				<li class="clearfix right mr20">
     					<span class="jiesuan-name">订单金额</span>
     					<span class="right jiesuan-price">￥27000.00</span>
-    					<p style="width:100%;height:20px;clear:both"></p>
+    					<p style="width:100%;height:15px;clear:both"></p>
     					<span class="jiesuan-name">优惠</span>
     					<span class="jiesuan-price">-￥0.00</span>
-    					<p style="width:100%;height:20px;clear:both"></p>
-    					<span class="jiesuan-name">运费</span>
-    					<span class="jiesuan-price">￥10.00</span>
-    					<p style="width:100%;height:20px;clear:both"></p>
+    					<p style="width:100%;height:15px;clear:both"></p>
     					<span class="jiesuan-name">实付金额</span>
-    					<span class="f16 red jiesuan-price">￥27010.00</span>
+    					<span class="jiesuan-price">￥27010.00</span>
     				</li>
     			</ul>
           <div class="promotion-box clearfix">
@@ -280,46 +265,44 @@
   		</div>
       <div class="clearfix mb20">
         <div class="align-right mt10">
-          <a class="btn-y-blue btn-y" href="#">提交订单</a>
+          <div class="mr10 pay-pass-box">
+            <label for="" class="f14 mr10">确认支付</label>
+            <input type="text" class="input mr10" placeholder="输入登录密码">
+            <a class="btn-y-red btn-y js-btn-pay" href="#">已完成支付</a>
+          </div>
+          <a class="btn-y-blue btn-y js-btn-print" href="./确认单模板.html">打印确认单</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<footer>
-  <div class="area clearfix">
-    <ul class="footer-left footer">
-      <li style=""><a href="javascript:;">关于我们</a></li>
-      <li style="margin-top:16px"><a href="javascript:;">功能介绍</a></li>
-      <li style="margin-top:16px"><a href="javascript:;">意见反馈</a></li>
-    </ul>
-    <ul class="footer-center footer">
-      <li style=""><a href="javascript:;" style="padding-left:0">联系我们</a></li>
-      <li class="call" style="margin:16px 0"><a href="javascript:;">400-600-5412</a></li>
-      <li class="mail" style=""><a href="javascript:;">BD@eventmosh.com</a></li>
-    </ul>
-    <ul class="footer-right footer">
-      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evetmosh.jpg" alt=""><span>eventmosh</span></li>
-      <li><img src="https://static.evente.cn/evente/b/desktop/images/icon_24/evente.jpg" alt=""><span>evente</span></li>
-    </ul>
-  </div>
-</footer>
 <!-- 弹窗 -->
-<div class="my-loyer" style="display:block"></div>
-<!-- 弹窗 错误提示 -->
-<div class="my-window my-window-error-message" style="display:none;">
-  <div class="my-window-error-message-box">
-    <img src="../../images/icon_yyc.png" alt="">
-    <div class="">此产品购买数量已达上限</div>
+<div class="my-loyer" style="display:none"></div>
+<!-- 确认信息 -->
+<div class="my-window secondary-confirmation" style="display:none;min-width:320px;margin-left:-160px">
+  <div class="align-center">
+    <p class="secondary-confirmation-title mt20 f14">确认顾客已完成线下支付？</p>
+    <div class="mt20">
+      <a href="jvascript:;" class="btn-y btn-y-white mr10 my-window-cancel">取消</a>
+      <a href="jvascript:;" class="btn-y btn-y-blue ml10 my-window-submit">确定</a>
+    </div>
   </div>
 </div>
 <!-- 弹窗 提交订单提示 -->
-<div class="my-window my-window-tijiao" style="display:block;">
+<div class="my-window my-window-dingdan" style="display:none;">
   <div class="my-window-title"><span class="close">×</span></div>
-  <div class="my-window-tijiao-box">
-    <div class="mt30">已成功提交订单!</div>
-    <div>并已将订单发送至顾客绑定手机号</div>
+  <div class="my-window-dingdan-box">
+    <div class="mt30">恭喜您，订单已完成!</div>
+    <div class="dingdan-xinxi">
+      <p>交易单号：201808303223456874</p>
+      <p>订单金额：<span class="red">￥5870.00</span></p>
+      <p>您还可以：<a href="#" class="blue">查看订单详情></a></p>
+    </div>
   </div>
+</div>
+<!-- 弹窗 错误提示 -->
+<div class="error-message" style="display:none;">
+    <div class="">登录密码错误，请重新输入</div>
 </div>
 
 
@@ -327,15 +310,41 @@
 <script src="../../js/main.js"></script>
 <script>
 
-// 详情 弹窗
-$(document).find('.piao-xinxi-detail').mouseenter(function(){
-	$(this).parent().parent().find('.piao-xinxi-detail-fukuang').css('display','inline-block');
-})
+// zhifu
+$('.js-btn-pay').on('click', function(){
+  var aa = -1;
+  // 支付密码正确
+  if(aa > 0){
+    $('.my-loyer, .secondary-confirmation').fadeIn(200);
+    $('.my-window-submit').on('click', function(){
+      $('.my-window-dingdan').fadeOut(200);
+      $('.my-loyer, .my-window-dingdan').fadeIn(200);
+    })
+    $('.my-window-cancel, .close').on('click', function(){
+      $('.my-loyer, .my-window').fadeOut(200);
+    })
+  }
+  // 支付密码错误
+  if(aa < 0){
+    $(document).find('.error-message').fadeIn(200);
+    setTimeout(function() {
+  		$(document).find('.error-message').fadeOut(200);
+  	}, 2000);
+  }
+});
 
 // 弹窗关闭
 $(document).on('click', '.my-loyer, .my-window-close', function(){
 	$('.my-loyer, .my-window').fadeOut(200);
 })
+
+// 详情 弹窗
+$(document).find('.piao-xinxi-detail').mouseenter(function(){
+	$(this).parent().parent().find('.piao-xinxi-detail-fukuang').css('display','inline-block');
+})
+$(document).find('.piao-xinxi').mouseleave(function(){
+	$(this).find('.piao-xinxi-detail-fukuang').hide();
+});
 
 // 浮框
 $('.cur-price').mousemove(function(){
@@ -344,20 +353,17 @@ $('.cur-price').mousemove(function(){
   $(this).siblings('.price-fukuang').stop().fadeOut();
 });
 
-$(document).find('.piao-xinxi').mouseleave(function(){
-	$(this).find('.piao-xinxi-detail-fukuang').hide();
-});
-  function res(){
-  	var h_init = $(window).height(),
-  	h_header = $("header").outerHeight(),
-  	h_crumbs = $(".crumbs").outerHeight(),
-  	h_nav = $(".mainNav").outerHeight(),
-  	h_footer = $("footer").outerHeight();
-  	h_main = h_init - h_header - h_crumbs - h_nav - h_footer/* - 50 - 50 - 79*/-80;
-  	$(".container .gouwuche-area").css("min-height",h_main);
-  }
-  res();
-  $(window).resize(res);
+function res(){
+	var h_init = $(window).height(),
+	h_header = $("header").outerHeight(),
+	h_crumbs = $(".crumbs").outerHeight(),
+	h_nav = $(".mainNav").outerHeight(),
+	h_footer = $("footer").outerHeight();
+	h_main = h_init - h_header - h_crumbs - h_nav - h_footer/* - 50 - 50 - 79*/-80;
+	$(".container .gouwuche-area").css("min-height",h_main);
+}
+res();
+$(window).resize(res);
 
 </script>
 </body>

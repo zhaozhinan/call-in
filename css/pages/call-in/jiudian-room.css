@@ -37,8 +37,16 @@
 
 /* 表格th 上下箭头 */
 .arrow{width:14px;height:14px;display:inline-block;position:relative;}
-.arrow_down{display:block;border-right:5px solid transparent;border-left:5px solid transparent;border-top:5px solid #666;border-bottom:5px solid transparent;width:0px;height:0px;position:relative;top:0px;left:5px;}
-.arrow_up{display:block;border-right:5px solid transparent;border-left:5px solid transparent;border-top:5px solid transparent;border-bottom:5px solid #666;width:0px;height:0px;position:relative;top:-3px;left:5px;}
+.arrow_down{display:block;border-right:5px solid transparent;border-left:5px solid transparent;border-top:5px solid #666;border-bottom:5px solid transparent;width:0px;height:0px;position:relative;top:0px;left:5px;cursor: pointer;}
+.arrow_up{display:block;border-right:5px solid transparent;border-left:5px solid transparent;border-top:5px solid transparent;border-bottom:5px solid #666;width:0px;height:0px;position:relative;top:-3px;left:5px;cursor: pointer;}
+
+/* 上箭头 */
+.cur_up .arrow_down {display: none}
+.cur_up .arrow_up {top:1px}
+/* 下箭头 */
+.cur_down .arrow_up {display: none}
+.cur_down .arrow_down {top:6px}
+
 
 
 /* 产品描述 弹窗  */
