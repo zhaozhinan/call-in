@@ -123,6 +123,11 @@ label {font-size: 12px}
 .signature-bar-left {width:70%}
 .signature-bar-right {width:30%}
 
+/* add 头部订单号 */
+.dingdan-number-red {background: #fa4858;line-height: 14px;padding:10px;color:#fff}
+.dingdan-number-hui {background: #dcdcdc;line-height: 14px;padding:10px;color:#333}
+
+
 
 
 
